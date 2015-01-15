@@ -1,33 +1,22 @@
 define(
 
 	[
-		'jquery',
+		'Router',
 		'ProjectModelStore',
-		'Router'
+		'AppContainer',
 	],
 
-	function ($, ProjectModelStore, Router) {
+	function (Router, ProjectModelStore, AppContainer) {
 
 		'use strict';
 
-		var projectModelStore;
-
 		return {
 
-			$el: null,
-
 			init: function () {
-
-				this.$el = $("#main");
-
 				Router.init();
 
-				projectModelStore = ProjectModelStore.init();
-				// this.$el.append(projectModelStore.$el);
-				projectModelStore.loadProjects("data/projects.json", function () {
-					console.log(">>>>> projects loaded.");
-					// HistoryManager.init(projectModelStore);
-					// projectModelStore.$el.on("appStateChange", HistoryManager.setAppState);
+				ProjectModelStore.init().loadProjects("data/projects.json", function () {
+					AppContainer.init();
 				});
 				
 				// initModals();
@@ -41,10 +30,6 @@ define(
 					footerTitle: 'Footer Title'
 				});
 				*/
-			},
-
-			render: function () {
-
 			}
 
 		};

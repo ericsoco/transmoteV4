@@ -1,22 +1,31 @@
 define(
+	
 	[
-		'page'
+		'page',
+		'AppContainer'
 	],
 
-	function (page) {
+	function (page, AppContainer) {
 
 		"use strict";
 
 		function index () {
-			console.log(">>>>> index page");
+			AppContainer.displayPage({
+				path: 'index'
+			});
 		}
 
 		function project (context) {
-			console.log(">>>>> project page; context:", context.params.project);
+			AppContainer.displayPage({
+				path: 'project',
+				projectId: context.params.project
+			});
 		}
 
 		function fallthru () {
-			console.log(">>>>> TODO: serve a 404");
+			AppContainer.displayPage({
+				path: '404'
+			});
 		}
 
 		return {
