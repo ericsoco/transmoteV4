@@ -233,7 +233,7 @@ module.exports = function (grunt) {
 			},
 			html: {
 				// files: ['<%= copy.dev.src %>'],
-				files: ['/src/**/*.html']
+				files: ['./src/**/*.html']
 			},
 			templates: {
 				files: ['<%= templateFiles %>'],

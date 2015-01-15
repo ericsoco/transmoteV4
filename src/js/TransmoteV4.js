@@ -2,10 +2,11 @@ define(
 
 	[
 		'jquery',
-		'ProjectModelStore'
+		'ProjectModelStore',
+		'Router'
 	],
 
-	function ($, ProjectModelStore) {
+	function ($, ProjectModelStore, Router) {
 
 		'use strict';
 
@@ -19,7 +20,7 @@ define(
 
 				this.$el = $("#main");
 
-				// TODO: set up page.js router first?
+				Router.init();
 
 				projectModelStore = ProjectModelStore.init();
 				// this.$el.append(projectModelStore.$el);

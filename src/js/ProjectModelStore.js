@@ -15,6 +15,10 @@ define(
 				return this;
 			},
 
+			getProjectModel: function (projectId) {
+				return projectsById[projectId];
+			},
+
 			loadProjects: function (dataPath, loadedCB) {
 
 				// TODO: use Promises instead.
