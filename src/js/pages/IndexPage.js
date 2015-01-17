@@ -1,21 +1,14 @@
 define(
 
 	[
-		'jquery'
+		'jquery',
+		'../templates',
+		'ProjectModelStore'
 	],
 
-	function ($) {
+	function ($, templates, ProjectModelStore) {
 
 		'use strict';
-
-		function render () {
-			// TODO: render via template
-			// stuff into container element (out of DOM)
-			// return entire element
-
-			// temp for testing:
-			return $('<div>');
-		}
 
 		return {
 
@@ -23,7 +16,7 @@ define(
 
 			show: function () {
 				if (!this.$el) {
-					this.$el = render();
+					this.$el = this.render();
 				}
 
 				console.log(">>>>> IndexPage.show()");
@@ -40,6 +33,23 @@ define(
 				
 				this.$el.addClass('hidden');
 				return this.$el;
+			},
+
+			render: function () {
+				var $el = $('#main');
+
+				console.log(">>>>> render");
+				var headerHTML = templates['header']({});
+				var projectThumbHTML = templates['projectThumbList']({
+					projects: ProjectModelStore.getProjectModels()
+				});
+				var footerHTML = templates['footer']({});
+
+				$el.append(headerHTML);
+				$el.append(projectThumbHTML);
+				$el.append(footerHTML);
+
+				return $el;
 			}
 
 		};
