@@ -1,0 +1,45 @@
+header {
+	position: relative;
+	width: auto;
+	height: 8em;
+
+	background-color: #505050;
+	background-image: url(../img/fabric_plaid_med.jpg);
+	border-bottom: 1px solid #999999;
+
+	color: #FFFFFF;
+	text-decoration: none;
+}
+header h1 {
+	position: absolute;
+	right: 0.3em;
+	bottom: 0.0em;
+
+	font-family: "AllerBold", "Georgia", sans-serif;
+	font-size: 5em;
+}
+header h1 a:link,
+header h1 a:visited,
+header h1 a:hover,
+header h1 a:focus,
+header h1 a:active {
+	font-family: "AllerBold", "Georgia", sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+header h5 {
+	position: absolute;
+	left: 0.8em;
+	bottom: 0.3em;
+
+	/* responsive */
+	display: none;
+}
+header h5 a:link,
+header h5 a:visited,
+header h5 a:hover,
+header h5 a:focus,
+header h5 a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}

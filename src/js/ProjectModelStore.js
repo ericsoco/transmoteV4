@@ -50,7 +50,6 @@ define(
 							// skip projects with no media assigned yet
 							if (!project.media.length) { return; }
 
-							// p.$el.append(ProjectFactory.create(project));
 							projectsById[project.id] = project;
 						});
 

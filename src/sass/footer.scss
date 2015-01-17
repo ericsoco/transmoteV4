@@ -1,0 +1,63 @@
+footer {
+	position: relative;
+	width: auto;
+	height: auto;
+	max-height: 5em;
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	background-color: transparent;
+	color: #494949;
+	font-size: 1.4em;
+	line-height: 1.25em;
+	text-decoration: none;
+}
+
+footer a:link {
+	color: #191919;
+}
+footer a:visited {
+	color: #888888;
+}
+footer a:hover,
+footer a:focus,
+footer a:active {
+	color: #000000;
+	text-decoration: underline;
+}
+
+#footer-left {
+	position: relative;
+	display: inline-block;
+
+	width: 48%;
+	text-align: left;
+}
+
+#footer-right {
+	position: relative;
+	float: right;
+	display: inline-block;
+	
+	width: 50%;
+	max-height: 2.5em;
+    overflow: hidden;
+
+	text-align: right;
+}
+
+#footer-right-copy {
+	float: right;
+	display: inline-block;
+	width: 50%;
+}
+
+#footer-right-img {
+	float: right;
+	display: inline-block;
+	margin-left: 3%;
+
+	/* responsive */
+	display: none;
+}

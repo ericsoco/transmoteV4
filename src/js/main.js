@@ -5,20 +5,25 @@
  require.config({
 
 	paths: {
-		'domReady':				"./lib/domReady",
-		'handlebars':			"./lib/handlebars-v2.0.0",
-		'jquery':				"./lib/jquery-2.1.3",
-		'page':					"./lib/page"/*,
-		'json':					"libs/json",
-		'json2':				"libs/json2",
-		'text':					"libs/text"*/
+		'domReady':				'./lib/domReady',
+		'handlebars':			'./lib/handlebars-v2.0.0',
+		'jquery':				'./lib/jquery-2.1.3',
+		'page':					'./lib/page'/*,
+		'require-css': 			'./require-css/css'*/
 	},
 
 	shim: {
 		'handlebars': {
 			exports: "Handlebars"
 		},
+	}/*,
+	
+	map: {
+		'*': {
+			'css': './require-css/css'
+		}
 	}
+	*/
 
 });
 

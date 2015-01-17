@@ -1,0 +1,52 @@
+#site-modal {
+	min-width: 400px;
+	min-height: 400px;
+	overflow: hidden;
+}
+
+/* bootstrap override */
+#site-modal:focus {
+	outline: 0;
+}
+
+#site-modal button {
+	position: absolute;
+	right: 0.4em;
+	top: 0.2em;
+
+	color: #FFFFFF;
+	opacity: 0.8;
+	font-size: 3.5em;
+	cursor: pointer;
+}
+#site-modal .close:hover,
+#site-modal .close:focus,
+#site-modal .close:active {
+	opacity: 1.0;
+}
+
+#site-modal .modal-body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#site-modal iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.modal-large {
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.modal-small {
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+	margin-top: 0;
+}

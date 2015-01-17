@@ -4,7 +4,12 @@ define(
 		'jquery',
 		'pages/IndexPage',
 		'pages/ProjectPage',
-		'pages/MissingPage'
+		'pages/MissingPage'/*,
+		'require-css!../css/fonts',
+		'require-css!../css/base',
+		'require-css!../css/header',
+		'require-css!../css/footer',
+		'require-css!../css/responsive'*/
 	],
 
 	function ($, IndexPage, ProjectPage, MissingPage) {
