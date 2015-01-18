@@ -9,39 +9,43 @@ header {
 
 	color: #FFFFFF;
 	text-decoration: none;
-}
-header h1 {
-	position: absolute;
-	right: 15px;
-	bottom: 5px;
-	margin-bottom: 0;
 
-	font-family: "AllerBold", "Georgia", sans-serif;
-	font-size: 5em;
-}
-header h1 a:link,
-header h1 a:visited,
-header h1 a:hover,
-header h1 a:focus,
-header h1 a:active {
-	font-family: "AllerBold", "Georgia", sans-serif;
-	color: #FFFFFF;
-	text-decoration: none;
-}
-header h5 {
-	position: absolute;
-	left: 18px;
-	bottom: 13px;
-	margin-bottom: 0;
+	h1 {
+		position: absolute;
+		right: 15px;
+		bottom: 5px;
+		margin-bottom: 0;
 
-	/* responsive */
-	display: none;
-}
-header h5 a:link,
-header h5 a:visited,
-header h5 a:hover,
-header h5 a:focus,
-header h5 a:active {
-	color: #FFFFFF;
-	text-decoration: none;
+		font-family: "AllerBold", "Georgia", sans-serif;
+		font-size: 5em;
+
+		a:link,
+		a:visited,
+		a:hover,
+		a:focus,
+		a:active {
+			font-family: "AllerBold", "Georgia", sans-serif;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+	}
+
+	h5 {
+		position: absolute;
+		left: 18px;
+		bottom: 13px;
+		margin-bottom: 0;
+
+		/* responsive */
+		display: none;
+
+		a:link,
+		a:visited,
+		a:hover,
+		a:focus,
+		a:active {
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+	}
 }

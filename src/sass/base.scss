@@ -16,18 +16,19 @@ a {
 	font-family: "Aller", "Georgia", sans-serif;
 	font-weight: normal;
 	text-decoration: none;
-}
-a:link {
-	color: #FFFF88;
-}
-a:visited {
-	color: #EEEEBB;
-}
-a:hover,
-a:focus,
-a:active {
-	color: #FFFF00;
-	text-decoration: underline;
+
+	&:link {
+		color: #FFFF88;
+	}
+	&:visited {
+		color: #EEEEBB;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: #FFFF00;
+		text-decoration: underline;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {

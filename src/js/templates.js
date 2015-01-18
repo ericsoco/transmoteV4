@@ -9,7 +9,7 @@ this["webdevBoilerplate"]["footer"] = Handlebars.template({"compiler":[6,">= 2.0
 
 
 this["webdevBoilerplate"]["header"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<header>\n	<h5><a href=\"#\" class=\"modal-about\">about</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href=\"#\" class=\"modal-contact\">contact</a></h5>\n	<h1><a href=\"#\">transmote.com</a></h1>\n</header>";
+  return "<header>\n	<h5><a href=\"#\" class=\"modal-about\">about</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href=\"#\" class=\"modal-contact\">contact</a></h5>\n	<h1><a href=\"/\">transmote.com</a></h1>\n</header>";
   },"useData":true});
 
 
@@ -30,9 +30,9 @@ this["webdevBoilerplate"]["main"] = Handlebars.template({"compiler":[6,">= 2.0.0
 this["webdevBoilerplate"]["projectThumbList"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var stack1, helper, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, functionType="function", buffer = "		<a href=\""
     + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depth0 != null ? depth0.id : depth0), {"name":"concatPath","hash":{},"data":data})))
-    + "\" class=\"project-thumb-link\">\n			<div class=\"project-thumb\" data-project=\""
+    + "\">\n			<div class=\"project-thumb\" data-project=\""
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
-    + "\">\n				<div class=\"project-thumb-banner\"></div>\n				<h3 class=\"project-thumb-title\">"
+    + "\">\n				<h3 class=\"project-thumb-title\">"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
     + "</h3>\n";
   stack1 = ((helpers.ifVideo || (depth0 && depth0.ifVideo) || helperMissing).call(depth0, ((stack1 = (depth0 != null ? depth0.media : depth0)) != null ? stack1['0'] : stack1), {"name":"ifVideo","hash":{},"fn":this.program(2, data),"inverse":this.program(7, data),"data":data}));

@@ -20,7 +20,7 @@ define(
 					this.$el = this.render();
 				}
 
-				this.$el.removeClass('hidden');
+				this.$el.removeClass('closed');
 
 				return this.$el;
 			},
@@ -28,12 +28,12 @@ define(
 			hide: function () {
 				if (!this.$el) { return; }
 
-				this.$el.addClass('hidden');
+				this.$el.addClass('closed');
 				return this.$el;
 			},
 
 			render: function () {
-				var $el = $('#main');
+				var $main = $('#main');
 
 				var headerHTML = templates['header']({});
 				var projectThumbHTML = templates['projectThumbList']({
@@ -41,9 +41,11 @@ define(
 				});
 				var footerHTML = templates['footer']({});
 
-				$el.append(headerHTML);
-				$el.append(projectThumbHTML);
-				$el.append(footerHTML);
+				var $el = $(projectThumbHTML);
+
+				$main.append(headerHTML);
+				$main.append($el);
+				$main.append(footerHTML);
 
 				return $el;
 			}

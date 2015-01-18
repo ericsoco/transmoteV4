@@ -8,23 +8,13 @@ define(
 
 		'use strict';
 
-		function render (projectModel) {
-			// TODO: render via template
-			// stuff into container element (out of DOM)
-			// return entire element
-
-			// temp for testing:
-			projectModel.dummy = 'temp';
-			return $('<div>');
-		}
-
 		return {
 
 			$el: null,
 
 			show: function (projectModel) {
 				if (!this.$el) {
-					this.$el = render(projectModel);
+					this.$el = this.render(projectModel);
 				}
 
 				console.log(">>>>> ProjectPage.show() project:", projectModel);
@@ -41,6 +31,28 @@ define(
 
 				this.$el.addClass('hidden');
 				return this.$el;
+			},
+
+			render: function () {
+
+				// TODO: implement
+				return $('#main');
+
+				/*
+				var $main = $('#main');
+
+				var headerHTML = templates['header']({});
+				var projectThumbHTML = templates['projectThumbList']({
+					projects: ProjectModelStore.getProjectModels()
+				});
+				var footerHTML = templates['footer']({});
+
+				$main.append(headerHTML);
+				$main.append(projectThumbHTML);
+				$main.append(footerHTML);
+
+				return $('#projectThumbList');
+				*/
 			}
 
 		};
