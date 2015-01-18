@@ -12,8 +12,9 @@ header {
 }
 header h1 {
 	position: absolute;
-	right: 0.3em;
-	bottom: 0.0em;
+	right: 15px;
+	bottom: 5px;
+	margin-bottom: 0;
 
 	font-family: "AllerBold", "Georgia", sans-serif;
 	font-size: 5em;
@@ -29,8 +30,9 @@ header h1 a:active {
 }
 header h5 {
 	position: absolute;
-	left: 0.8em;
-	bottom: 0.3em;
+	left: 18px;
+	bottom: 13px;
+	margin-bottom: 0;
 
 	/* responsive */
 	display: none;

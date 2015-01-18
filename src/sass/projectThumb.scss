@@ -26,6 +26,9 @@ a.project-thumb-link:active {
 	border-bottom: 1px solid #999999;
 	overflow: hidden;
 	cursor: pointer;
+
+	// background-size: cover;
+	// height: 500px;
 }
 
 .videoPosterWarn {
@@ -64,3 +67,5 @@ a.project-thumb-link:active {
 .project-thumb img {
 	width: 100%;
 }
+
+// -webkit-filter: blur(1px);

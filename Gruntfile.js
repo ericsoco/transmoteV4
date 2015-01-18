@@ -170,6 +170,12 @@ module.exports = function (grunt) {
 					},
 					{
 						expand: true,
+						cwd: './src/css/',
+						src: ['**/*.*'],
+						dest: './build/dev/css/'
+					},
+					{
+						expand: true,
 						cwd: './src/data/',
 						src: ['**/*.*'],
 						dest: './build/dev/data/'
@@ -179,6 +185,12 @@ module.exports = function (grunt) {
 						cwd: './src/font/',
 						src: ['**/*.*'],
 						dest: './build/dev/font/'
+					},
+					{
+						expand: true,
+						cwd: './src/img/',
+						src: ['**/*.*'],
+						dest: './build/dev/img/'
 					},
 					{
 						expand: true,
@@ -199,6 +211,12 @@ module.exports = function (grunt) {
 					},
 					{
 						expand: true,
+						cwd: './src/css/',
+						src: ['**/*.*'],
+						dest: './build/deploy/css/'
+					},
+					{
+						expand: true,
 						cwd: './src/data/',
 						src: ['**/*.*'],
 						dest: './build/deploy/data/'
@@ -208,6 +226,12 @@ module.exports = function (grunt) {
 						cwd: './src/font/',
 						src: ['**/*.*'],
 						dest: './build/deploy/font/'
+					},
+					{
+						expand: true,
+						cwd: './src/img/',
+						src: ['**/*.*'],
+						dest: './build/deploy/img/'
 					},
 					{
 						expand: true,
