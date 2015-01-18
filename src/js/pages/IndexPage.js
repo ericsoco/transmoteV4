@@ -3,8 +3,7 @@ define(
 	[
 		'jquery',
 		'../templates',
-		'ProjectModelStore'/*,
-		'require-css!../css/projectThumb'*/
+		'ProjectModelStore'
 	],
 
 	function ($, templates, ProjectModelStore) {

@@ -2,17 +2,13 @@ define(
 
 	[
 		'jquery',
+		'ProjectModelStore',
 		'pages/IndexPage',
 		'pages/ProjectPage',
-		'pages/MissingPage'/*,
-		'require-css!../css/fonts',
-		'require-css!../css/base',
-		'require-css!../css/header',
-		'require-css!../css/footer',
-		'require-css!../css/responsive'*/
+		'pages/MissingPage'
 	],
 
-	function ($, IndexPage, ProjectPage, MissingPage) {
+	function ($, ProjectModelStore, IndexPage, ProjectPage, MissingPage) {
 
 		'use strict';
 
@@ -46,7 +42,7 @@ define(
 						break;
 					case 'project':
 						IndexPage.hide();
-						ProjectPage.show(pageData.projectId);
+						ProjectPage.show(ProjectModelStore.getProjectModel(pageData.projectId));
 						MissingPage.hide();
 						break;
 					case '404':

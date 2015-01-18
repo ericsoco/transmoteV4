@@ -27,6 +27,23 @@ this["webdevBoilerplate"]["main"] = Handlebars.template({"compiler":[6,">= 2.0.0
 
 
 
+this["webdevBoilerplate"]["projectPage"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<div id=\"project-page\">\n\n	<div id=\"project-intro\">\n		<div id=\"project-intro-header\">\n			<h2>"
+    + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
+    + "</h2>\n			<h5>"
+    + escapeExpression(((helper = (helper = helpers.tagline || (depth0 != null ? depth0.tagline : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"tagline","hash":{},"data":data}) : helper)))
+    + "</h5>\n			<h5>"
+    + escapeExpression(((helper = (helper = helpers.role || (depth0 != null ? depth0.role : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"role","hash":{},"data":data}) : helper)))
+    + " &ndash; "
+    + escapeExpression(((helpers.datestamp || (depth0 && depth0.datestamp) || helperMissing).call(depth0, (depth0 != null ? depth0.date : depth0), {"name":"datestamp","hash":{},"data":data})))
+    + "</h5>\n		</div>\n		<div id=\"project-intro-copy\">";
+  stack1 = ((helper = (helper = helpers.brief || (depth0 != null ? depth0.brief : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"brief","hash":{},"data":data}) : helper));
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "</div>\n	</div>\n\n</div>";
+},"useData":true});
+
+
+
 this["webdevBoilerplate"]["projectThumbList"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var stack1, helper, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, functionType="function", buffer = "		<a href=\""
     + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depth0 != null ? depth0.id : depth0), {"name":"concatPath","hash":{},"data":data})))

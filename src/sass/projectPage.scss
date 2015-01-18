@@ -1,0 +1,30 @@
+#project-intro {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	margin: 2em 1em 0 3em;
+
+	font-family: "AllerLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-shadow: rgba(15, 10, 0, 0.6) 0 .03em .12em;
+}
+
+#project-intro-header {
+	margin-bottom: 3em;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	h5 {
+		font-family: "Aller", "Georgia", sans-serif;
+		margin-top: 0;
+		margin-bottom: .25em;
+	}
+}
+
+#project-intro-copy {
+	font-size: 1.8em;
+	width: 90%;
+	text-shadow: rgba(15, 10, 0, 0.6) 0 .05em .25em;
+}

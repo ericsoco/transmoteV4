@@ -1,25 +1,23 @@
 define(
 
 	[
-		'jquery'
+		'jquery',
+		'../templates'
 	],
 
-	function ($) {
+	function ($, templates) {
 
 		'use strict';
+
+		var renderedPages = {};
 
 		return {
 
 			$el: null,
 
 			show: function (projectModel) {
-				if (!this.$el) {
-					this.$el = this.render(projectModel);
-				}
-
-				console.log(">>>>> ProjectPage.show() project:", projectModel);
-
-				this.$el.removeClass('hidden');
+				this.$el = this.render(projectModel);
+				$('#main').append(this.$el);
 
 				return this.$el;
 			},
@@ -27,32 +25,22 @@ define(
 			hide: function () {
 				if (!this.$el) { return; }
 
-				console.log(">>>>> ProjectPage.hide()");
-
-				this.$el.addClass('hidden');
+				this.$el.remove();
 				return this.$el;
 			},
 
-			render: function () {
+			render: function (projectModel) {
 
-				// TODO: implement
-				return $('#main');
+				var projectPageHTML;
+					
+				// Fetch from cache if available; else, render
+				projectPageHTML = renderedPages[projectModel.id];
+				if (!projectPageHTML) {
+					projectPageHTML = templates['projectPage'](projectModel);
+					renderedPages[projectModel.id] = projectPageHTML;
+				}
 
-				/*
-				var $main = $('#main');
-
-				var headerHTML = templates['header']({});
-				var projectThumbHTML = templates['projectThumbList']({
-					projects: ProjectModelStore.getProjectModels()
-				});
-				var footerHTML = templates['footer']({});
-
-				$main.append(headerHTML);
-				$main.append(projectThumbHTML);
-				$main.append(footerHTML);
-
-				return $('#projectThumbList');
-				*/
+				return $(projectPageHTML);
 			}
 
 		};
