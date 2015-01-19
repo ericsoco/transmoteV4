@@ -113,25 +113,25 @@ module.exports = function (grunt) {
 		sass: {
 			dev: {
 				options: {
-					style: 'expanded',
+					sourcemap: 'auto',
+					style: 'compressed',
 					lineNumbers: true
 				},
-				expand: true,
-				cwd: './src/sass/',
-				src: ['**/*.scss'],
-				dest: './build/dev/css/',
-				ext: '.css'
+
+				src: ['./src/sass/main.scss'],
+				dest: './build/dev/css/main.css'
+
 			},
 			deploy: {
 				options: {
+					sourcemap: 'auto',
 					style: 'compressed',
-					lineNumbers: false
+					lineNumbers: true
 				},
-				expand: true,
-				cwd: './src/sass/',
-				src: ['**/*.scss'],
-				dest: './build/deploy/css/',
-				ext: '.css'
+
+				src: ['./src/sass/main.scss'],
+				dest: './build/deploy/css/main.css'
+
 			}
 		},
 
@@ -351,7 +351,7 @@ module.exports = function (grunt) {
 		'newer:handlebars',
 		'newer:jshint:dev',
 		'requirejs:dev',
-		'newer:sass:dev',
+		'sass:dev',
 		'newer:copy:dev'
 	]);
 
@@ -364,7 +364,7 @@ module.exports = function (grunt) {
 		'notify:requirejs',
 		'requirejs:dev',
 		'notify:sass',
-		'newer:sass:dev',
+		'sass:dev',
 		'notify:copy',
 		'newer:copy:dev',
 		'notify:done'
