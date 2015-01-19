@@ -49,14 +49,14 @@ define(
 
 				switch (pageData.path) {
 					case 'index':
-						IndexPage.show();
 						ProjectPage.hide();
 						MissingPage.hide();
+						IndexPage.show();
 						break;
 					case 'project':
 						IndexPage.hide();
-						ProjectPage.show(ProjectModelStore.getProjectModel(pageData.projectId));
 						MissingPage.hide();
+						ProjectPage.show(ProjectModelStore.getProjectModel(pageData.projectId));
 						break;
 					case '404':
 						IndexPage.hide();
