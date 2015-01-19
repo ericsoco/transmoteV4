@@ -3,12 +3,13 @@ define(
 	[
 		'jquery',
 		'ProjectModelStore',
+		'templates',
 		'pages/IndexPage',
 		'pages/ProjectPage',
 		'pages/MissingPage'
 	],
 
-	function ($, ProjectModelStore, IndexPage, ProjectPage, MissingPage) {
+	function ($, ProjectModelStore, templates, IndexPage, ProjectPage, MissingPage) {
 
 		'use strict';
 
@@ -19,11 +20,23 @@ define(
 			$el: null,
 
 			init: function () {
-				this.$el = $('#main');
+				this.render();
 				if (pendingPageData) {
 					this.displayPage(pendingPageData);
 				}
 				return this;
+			},
+
+			render: function () {
+				this.$el = $('#main');
+
+				var headerHTML = templates['header']({});
+				var mainContentHTML = templates['mainContent']();
+				var footerHTML = templates['footer']({});
+
+				this.$el.append(headerHTML);
+				this.$el.append(mainContentHTML);
+				this.$el.append(footerHTML);
 			},
 
 			displayPage: function (pageData) {

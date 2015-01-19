@@ -1,13 +1,11 @@
 <div id="project-page">
 
-	<div id="project-intro">
-		<div id="project-intro-header">
-			<h2>{{name}}</h2>
-			<h5>{{tagline}}</h5>
-			<h5>{{role}} &ndash; {{datestamp date}}</h5>
-		</div>
-		<div id="project-intro-copy">{{{brief}}}</div>
+	<div id="project-header">
+		<h2>{{name}}</h2>
+		<h5>{{tagline}}</h5>
+		<h5>{{role}} &ndash; {{datestamp date}}</h5>
 	</div>
+	<div id="project-desc">{{{brief}}}</div>
 
 {{!-- 	<div id="project-body">
 		<div class="item active">

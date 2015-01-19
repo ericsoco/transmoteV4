@@ -17,7 +17,7 @@ define(
 
 			show: function (projectModel) {
 				this.$el = this.render(projectModel);
-				$('#main').append(this.$el);
+				$('#content').append(this.$el);
 
 				return this.$el;
 			},

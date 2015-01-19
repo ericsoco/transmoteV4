@@ -1,17 +1,12 @@
-#project-intro {
-	position: absolute;
-	top: 0;
-	left: 0;
+#project-page {
+	margin: 2em 0 2em 0;
 
-	margin: 2em 1em 0 3em;
-
+	color: #191919;
 	font-family: "AllerLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-shadow: rgba(15, 10, 0, 0.6) 0 .03em .12em;
 }
 
-#project-intro-header {
-	margin-bottom: 3em;
-
+#project-header {
 	h2 {
 		margin-top: 0;
 	}
@@ -23,7 +18,7 @@
 	}
 }
 
-#project-intro-copy {
+#project-desc {
 	font-size: 1.8em;
 	width: 90%;
 	text-shadow: rgba(15, 10, 0, 0.6) 0 .05em .25em;

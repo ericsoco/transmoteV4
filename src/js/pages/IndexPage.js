@@ -32,19 +32,12 @@ define(
 			},
 
 			render: function () {
-				var $main = $('#main');
-
-				var headerHTML = templates['header']({});
 				var projectThumbHTML = templates['projectThumbList']({
 					projects: ProjectModelStore.getProjectModels()
 				});
-				var footerHTML = templates['footer']({});
 
 				var $el = $(projectThumbHTML);
-
-				$main.append(headerHTML);
-				$main.append($el);
-				$main.append(footerHTML);
+				$('#content').append($el);
 
 				return $el;
 			}

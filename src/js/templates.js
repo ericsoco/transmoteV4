@@ -14,32 +14,25 @@ this["webdevBoilerplate"]["header"] = Handlebars.template({"compiler":[6,">= 2.0
 
 
 
-this["webdevBoilerplate"]["main"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "<header>\n	<h1>"
-    + escapeExpression(((helper = (helper = helpers.headerTitle || (depth0 != null ? depth0.headerTitle : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"headerTitle","hash":{},"data":data}) : helper)))
-    + "</h1>\n</header>\n<section class='main'>\n	<p>"
-    + escapeExpression(((helper = (helper = helpers.content || (depth0 != null ? depth0.content : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"content","hash":{},"data":data}) : helper)))
-    + "</p>\n</section>\n<footer>\n	<h3>"
-    + escapeExpression(((helper = (helper = helpers.footerTitle || (depth0 != null ? depth0.footerTitle : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"footerTitle","hash":{},"data":data}) : helper)))
-    + "</h3>\n</footer>";
-},"useData":true});
+this["webdevBoilerplate"]["mainContent"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  return "<div id=\"content\"></div>";
+  },"useData":true});
 
 
 
 this["webdevBoilerplate"]["projectPage"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<div id=\"project-page\">\n\n	<div id=\"project-intro\">\n		<div id=\"project-intro-header\">\n			<h2>"
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<div id=\"project-page\">\n\n	<div id=\"project-header\">\n		<h2>"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
-    + "</h2>\n			<h5>"
+    + "</h2>\n		<h5>"
     + escapeExpression(((helper = (helper = helpers.tagline || (depth0 != null ? depth0.tagline : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"tagline","hash":{},"data":data}) : helper)))
-    + "</h5>\n			<h5>"
+    + "</h5>\n		<h5>"
     + escapeExpression(((helper = (helper = helpers.role || (depth0 != null ? depth0.role : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"role","hash":{},"data":data}) : helper)))
     + " &ndash; "
     + escapeExpression(((helpers.datestamp || (depth0 && depth0.datestamp) || helperMissing).call(depth0, (depth0 != null ? depth0.date : depth0), {"name":"datestamp","hash":{},"data":data})))
-    + "</h5>\n		</div>\n		<div id=\"project-intro-copy\">";
+    + "</h5>\n	</div>\n	<div id=\"project-desc\">";
   stack1 = ((helper = (helper = helpers.brief || (depth0 != null ? depth0.brief : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"brief","hash":{},"data":data}) : helper));
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "</div>\n	</div>\n\n</div>";
+  return buffer + "</div>\n\n</div>";
 },"useData":true});
 
 
