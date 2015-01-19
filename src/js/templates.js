@@ -25,7 +25,7 @@ this["webdevBoilerplate"]["projectPage"] = Handlebars.template({"compiler":[6,">
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
     + "</h2>\n		<h5>"
     + escapeExpression(((helper = (helper = helpers.tagline || (depth0 != null ? depth0.tagline : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"tagline","hash":{},"data":data}) : helper)))
-    + "</h5>\n		<h5>"
+    + "<br>"
     + escapeExpression(((helper = (helper = helpers.role || (depth0 != null ? depth0.role : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"role","hash":{},"data":data}) : helper)))
     + " &ndash; "
     + escapeExpression(((helpers.datestamp || (depth0 && depth0.datestamp) || helperMissing).call(depth0, (depth0 != null ? depth0.date : depth0), {"name":"datestamp","hash":{},"data":data})))

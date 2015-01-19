@@ -1,25 +1,23 @@
 #project-page {
-	margin: 2em 0 2em 0;
+	padding: 3.5em 0;
 
 	color: #191919;
 	font-family: "AllerLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	text-shadow: rgba(15, 10, 0, 0.6) 0 .03em .12em;
 }
 
 #project-header {
 	h2 {
-		margin-top: 0;
+		margin: 0;
 	}
 
 	h5 {
 		font-family: "Aller", "Georgia", sans-serif;
-		margin-top: 0;
-		margin-bottom: .25em;
+		margin: .5em 0 2em 0;
 	}
 }
 
 #project-desc {
 	font-size: 1.8em;
 	width: 90%;
-	text-shadow: rgba(15, 10, 0, 0.6) 0 .05em .25em;
+	max-width: 35em;
 }

@@ -2,8 +2,7 @@
 
 	<div id="project-header">
 		<h2>{{name}}</h2>
-		<h5>{{tagline}}</h5>
-		<h5>{{role}} &ndash; {{datestamp date}}</h5>
+		<h5>{{tagline}}<br>{{role}} &ndash; {{datestamp date}}</h5>
 	</div>
 	<div id="project-desc">{{{brief}}}</div>
 
