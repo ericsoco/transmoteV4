@@ -59,6 +59,17 @@ using px units instead.
 		margin: 0 10%;
 	}
 
+	#project-page {
+		#project-header {
+			padding-left: 0;
+		}
+		#project-body {
+			.caption-title {
+				padding-left: 0;
+			}
+		}
+	}
+
 	footer {
 		padding-left: 0;
 		padding-right: 0;

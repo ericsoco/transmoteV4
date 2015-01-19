@@ -266,12 +266,6 @@ module.exports = function (grunt) {
 		},
 		
 		watch: {
-			js: {
-				files: ['<%= jsFiles %>'],
-				tasks: [
-					'dev-notify'
-				]
-			},
 			css: {
 				// files: ['<%= sass.dev.src %>'],
 				files: ['./src/sass/**/*.scss'],
@@ -279,9 +273,24 @@ module.exports = function (grunt) {
 					'dev-notify'
 				]
 			},
+			data: {
+				files: ['./src/data/*.*'],
+				tasks: [
+					'dev-notify'
+				]
+			},
 			html: {
 				// files: ['<%= copy.dev.src %>'],
-				files: ['./src/**/*.html']
+				files: ['./src/**/*.html'],
+				tasks: [
+					'dev-notify'
+				]
+			},
+			js: {
+				files: ['<%= jsFiles %>'],
+				tasks: [
+					'dev-notify'
+				]
 			},
 			templates: {
 				files: ['<%= templateFiles %>'],

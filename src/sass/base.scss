@@ -18,15 +18,15 @@ a {
 	text-decoration: none;
 
 	&:link {
-		color: #FFFF88;
+		color: #000000;
 	}
 	&:visited {
-		color: #EEEEBB;
+		color: #191919;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: #FFFF00;
+		color: #000000;
 		text-decoration: underline;
 	}
 }

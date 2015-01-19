@@ -3,21 +3,51 @@
 
 	color: #191919;
 	font-family: "AllerLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
 
-#project-header {
-	h2 {
-		margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+
+	#project-header {
+		padding-bottom: 2em;
+
+		// overridden by responsive.scss
+		padding-left: 2em;
+		
+		h2 {
+			margin: 0;
+		}
+		h5 {
+			font-family: "Aller", "Georgia", sans-serif;
+			margin: .5em 0 2em 0;
+		}
 	}
 
-	h5 {
-		font-family: "Aller", "Georgia", sans-serif;
-		margin: .5em 0 2em 0;
+	#project-desc {
+		font-size: 1.8em;
+		width: 90%;
+		max-width: 35em;
 	}
-}
 
-#project-desc {
-	font-size: 1.8em;
-	width: 90%;
-	max-width: 35em;
+	#project-body {
+		ul {
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			display: block;
+			margin-bottom: 3em;
+		}
+		img,
+		iframe {
+			max-width: 100%;
+		}
+		.caption-title {
+			font-size: 1.8em;
+			font-style: italic;
+			margin-top: 0.5em;
+
+			// overridden by responsive.scss
+			padding-left: 0.5em;
+		}
+	}
 }

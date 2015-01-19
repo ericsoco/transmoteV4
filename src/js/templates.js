@@ -20,7 +20,31 @@ this["webdevBoilerplate"]["mainContent"] = Handlebars.template({"compiler":[6,">
 
 
 
-this["webdevBoilerplate"]["projectPage"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+this["webdevBoilerplate"]["projectPage"] = Handlebars.template({"1":function(depth0,helpers,partials,data,depths) {
+  var stack1, helperMissing=helpers.helperMissing, buffer = "			<li>\n";
+  stack1 = ((helpers.ifVideo || (depth0 && depth0.ifVideo) || helperMissing).call(depth0, depth0, {"name":"ifVideo","hash":{},"fn":this.program(2, data, depths),"inverse":this.program(4, data, depths),"data":data}));
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "			</li>\n";
+},"2":function(depth0,helpers,partials,data) {
+  var helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+  return "					<div class=\"container\">\n						<iframe "
+    + escapeExpression(((helpers.createVimeoEmbed || (depth0 && depth0.createVimeoEmbed) || helperMissing).call(depth0, (data && data.index), {"name":"createVimeoEmbed","hash":{},"data":data})))
+    + " frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n					</div>\n";
+},"4":function(depth0,helpers,partials,data,depths) {
+  var stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "					<a href=\"/"
+    + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depths[2] != null ? depths[2].id : depths[2]), (depth0 != null ? depth0.path : depth0), {"name":"concatPath","hash":{},"data":data})))
+    + "\"><img src=\"/"
+    + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depths[2] != null ? depths[2].id : depths[2]), (depth0 != null ? depth0.path : depth0), {"name":"concatPath","hash":{},"data":data})))
+    + "\" /></a>\n";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.caption : depth0), {"name":"if","hash":{},"fn":this.program(5, data, depths),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer;
+},"5":function(depth0,helpers,partials,data) {
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, buffer = "						<p class=\"caption-title\">";
+  stack1 = ((helper = (helper = helpers.caption || (depth0 != null ? depth0.caption : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"caption","hash":{},"data":data}) : helper));
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "</p>\n";
+},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data,depths) {
   var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<div id=\"project-page\">\n\n	<div id=\"project-header\">\n		<h2>"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
     + "</h2>\n		<h5>"
@@ -29,11 +53,14 @@ this["webdevBoilerplate"]["projectPage"] = Handlebars.template({"compiler":[6,">
     + escapeExpression(((helper = (helper = helpers.role || (depth0 != null ? depth0.role : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"role","hash":{},"data":data}) : helper)))
     + " &ndash; "
     + escapeExpression(((helpers.datestamp || (depth0 && depth0.datestamp) || helperMissing).call(depth0, (depth0 != null ? depth0.date : depth0), {"name":"datestamp","hash":{},"data":data})))
-    + "</h5>\n	</div>\n	<div id=\"project-desc\">";
+    + "</h5>\n		<div id=\"project-desc\">";
   stack1 = ((helper = (helper = helpers.brief || (depth0 != null ? depth0.brief : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"brief","hash":{},"data":data}) : helper));
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "</div>\n\n</div>";
-},"useData":true});
+  buffer += "</div>\n	</div>\n\n	<div id=\"project-body\">\n		<ul class=\"project-media\">\n";
+  stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.media : depth0), {"name":"each","hash":{},"fn":this.program(1, data, depths),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "		</ul>\n	</div>\n\n</div>";
+},"useData":true,"useDepths":true});
 
 
 
