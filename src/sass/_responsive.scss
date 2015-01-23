@@ -22,26 +22,28 @@ using px units instead.
 		width: auto;
 	}
 
-	.modal-large {
-		width: 80%;
-		height: 80%;
-		margin-left: 10%;
-		margin-top: 50px;
-		/*
-		can't use percentage because body height increases with content (project thumbs)
-		margin-top: 10%;
-		*/
-	}
+	#site-modal {
+		.modal-large {
+			width: 80%;
+			height: 80%;
+			margin-left: 10%;
+			margin-top: 50px;
+			/*
+			can't use percentage because body height increases with content (project thumbs)
+			margin-top: 10%;
+			*/
+		}
 
-	.modal-small {
-		width: 50%;
-		height: 50%;
-		margin-left: 25%;
-		margin-top: 100px;
-		/*
-		can't use percentage because body height increases with content (project thumbs)
-		margin-top: 38%;
-		*/
+		.modal-small {
+			width: 70%;
+			height: 50%;
+			margin-left: 15%;
+			margin-top: 100px;
+			/*
+			can't use percentage because body height increases with content (project thumbs)
+			margin-top: 38%;
+			*/
+		}
 	}
 
 }
@@ -84,26 +86,28 @@ using px units instead.
 		display: inherit;
 	}
 
-	.modal-large {
-		width: 60%;
-		height: 75%;
-		margin-left: 20%;
-		margin-top: 100px;
-		/*
-		can't use percentage because body height increases with content (project thumbs)
-		margin-top: 10%;
-		*/
-	}
+	#site-modal {
+		.modal-large {
+			width: 60%;
+			height: 75%;
+			margin-left: 20%;
+			margin-top: 100px;
+			/*
+			can't use percentage because body height increases with content (project thumbs)
+			margin-top: 10%;
+			*/
+		}
 
-	.modal-small {
-		width: 24%;
-		height: 24%;
-		margin-left: 38%;
-		margin-top: 100px;
-		/*
-		can't use percentage because body height increases with content (project thumbs)
-		margin-top: 38%;
-		*/
+		.modal-small {
+			width: 50%;
+			height: 40%;
+			margin-left: 25%;
+			margin-top: 100px;
+			/*
+			can't use percentage because body height increases with content (project thumbs)
+			margin-top: 38%;
+			*/
+		}
 	}
 
 }

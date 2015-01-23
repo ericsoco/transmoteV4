@@ -2,7 +2,7 @@
 	<div id="footer-left">
 		Transmote is Eric Socolofsky.<br/>
 		<p id="footer-left-oneline">
-			<a href="#" class="modal-about">About</a>.&nbsp;&nbsp;<a href="#" class="modal-contact">Contact</a>.&nbsp;&nbsp;<a href="http://words.transmote.com/">Words</a>.&nbsp;&nbsp;<a href="http://twitter.com/ericsoco/">Characters.</a>&nbsp;&nbsp;<a href="http://flickr.com/ericsoco/">Images</a>.&nbsp;&nbsp;<a href="http://vimeo.com/ericsoco/">Videos</a>.
+			<a href="#" data-toggle="modal" data-target="#site-modal" data-src="/pages/about.html" data-class="modal-large">About</a>.&nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#site-modal" data-src="/pages/contact.html" data-class="modal-small">Contact</a>.&nbsp;&nbsp;<a href="http://words.transmote.com/">Words</a>.&nbsp;&nbsp;<a href="http://twitter.com/ericsoco/">Characters.</a>&nbsp;&nbsp;<a href="http://flickr.com/ericsoco/">Images</a>.&nbsp;&nbsp;<a href="http://vimeo.com/ericsoco/">Videos</a>.
 		</p>
 	</div>
 	<div id="footer-right">

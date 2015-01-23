@@ -3,13 +3,13 @@ define(['handlebars'], function(Handlebars) {
 this["webdevBoilerplate"] = this["webdevBoilerplate"] || {};
 
 this["webdevBoilerplate"]["footer"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<footer>\n	<div id=\"footer-left\">\n		Transmote is Eric Socolofsky.<br/>\n		<p id=\"footer-left-oneline\">\n			<a href=\"#\" class=\"modal-about\">About</a>.&nbsp;&nbsp;<a href=\"#\" class=\"modal-contact\">Contact</a>.&nbsp;&nbsp;<a href=\"http://words.transmote.com/\">Words</a>.&nbsp;&nbsp;<a href=\"http://twitter.com/ericsoco/\">Characters.</a>&nbsp;&nbsp;<a href=\"http://flickr.com/ericsoco/\">Images</a>.&nbsp;&nbsp;<a href=\"http://vimeo.com/ericsoco/\">Videos</a>.\n		</p>\n	</div>\n	<div id=\"footer-right\">\n		<div id=\"footer-right-img\">\n			<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.en_US\" target=\"_blank\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"http://i.creativecommons.org/l/by-sa/3.0/88x31.png\" /></a>\n		</div>\n		<div id=\"footer-right-copy\">\n			All works licensed under <wbr><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.en_US\" target=\"_blank\">CC BY-SA</a><br/>unless otherwise noted.\n		</div>\n	</div>\n</footer>";
+  return "<footer>\n	<div id=\"footer-left\">\n		Transmote is Eric Socolofsky.<br/>\n		<p id=\"footer-left-oneline\">\n			<a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/about.html\" data-class=\"modal-large\">About</a>.&nbsp;&nbsp;<a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/contact.html\" data-class=\"modal-small\">Contact</a>.&nbsp;&nbsp;<a href=\"http://words.transmote.com/\">Words</a>.&nbsp;&nbsp;<a href=\"http://twitter.com/ericsoco/\">Characters.</a>&nbsp;&nbsp;<a href=\"http://flickr.com/ericsoco/\">Images</a>.&nbsp;&nbsp;<a href=\"http://vimeo.com/ericsoco/\">Videos</a>.\n		</p>\n	</div>\n	<div id=\"footer-right\">\n		<div id=\"footer-right-img\">\n			<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.en_US\" target=\"_blank\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"http://i.creativecommons.org/l/by-sa/3.0/88x31.png\" /></a>\n		</div>\n		<div id=\"footer-right-copy\">\n			All works licensed under <wbr><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.en_US\" target=\"_blank\">CC BY-SA</a><br/>unless otherwise noted.\n		</div>\n	</div>\n</footer>";
   },"useData":true});
 
 
 
 this["webdevBoilerplate"]["header"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<header>\n	<h5><a href=\"#\" class=\"modal-about\">about</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href=\"#\" class=\"modal-contact\">contact</a></h5>\n	<h1><a href=\"/\">transmote.com</a></h1>\n</header>";
+  return "<header>\n	<h5><a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/about.html\" data-class=\"modal-large\">about</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/contact.html\" data-class=\"modal-small\">contact</a></h5>\n	<h1><a href=\"/\">transmote.com</a></h1>\n</header>";
   },"useData":true});
 
 
@@ -98,6 +98,12 @@ this["webdevBoilerplate"]["projectThumbList"] = Handlebars.template({"1":functio
   if (stack1 != null) { buffer += stack1; }
   return buffer + "</div>\n";
 },"useData":true});
+
+
+
+this["webdevBoilerplate"]["siteModal"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  return "<div id=\"site-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"site-modal\" aria-hidden=\"true\">\n	<div class=\"modal-dialog\">\n		<div class=\"modal-content\">\n			<div class=\"modal-body\">\n		      <iframe src=\"\" frameborder=\"0\"></iframe>\n			</div>\n			<button type=\"button\" class=\"close\" data-dismiss=\"modal\">×</button>\n		</div>\n	</div>\n</div>";
+  },"useData":true});
 
 return this["webdevBoilerplate"];
 

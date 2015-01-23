@@ -35,14 +35,12 @@ module.exports = function (grunt) {
 					{
 						name: 'main'
 					}
-				],
-				optimize: "uglify2",
-				generateSourceMaps: true,
-				preserveLicenseComments: false /* required when generateSourceMaps: true */
+				]
 			},
 			dev: {
 				options: {
-					dir: './build/dev/js'
+					dir: './build/dev/js',
+					optimize: "none"
 				}
 			},
 			deploy: {
@@ -52,7 +50,10 @@ module.exports = function (grunt) {
 						compress: {
 							drop_console: true
 						}
-					}
+					},
+					optimize: "uglify2",
+					generateSourceMaps: true,
+					preserveLicenseComments: false /* required when generateSourceMaps: true */
 				}
 			}
 		},
@@ -72,7 +73,7 @@ module.exports = function (grunt) {
 				nonbsp: true,
 				nonew: true,
 				undef: true,
-				unused: true,
+				unused: 'vars',
 				strict: true,
 				trailing: true,
 

@@ -21,8 +21,6 @@ define(
 					AppContainer.init();
 				});
 				
-				// initModals();
-
 				return this;
 
 			}

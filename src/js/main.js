@@ -8,13 +8,18 @@
 		'domReady':				'./lib/domReady',
 		'handlebars':			'./lib/handlebars-v2.0.0',
 		'jquery':				'./lib/jquery-2.1.3',
-		'page':					'./lib/page'
+		'page':					'./lib/page',
+		'bootstrap':			'./lib/bootstrap'
 	},
 
 	shim: {
 		'handlebars': {
 			exports: "Handlebars"
 		},
+		'bootstrap': {
+			deps: ['jquery'],
+			exports: "$"
+		}
 	}
 
 });
