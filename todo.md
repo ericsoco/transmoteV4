@@ -1,18 +1,20 @@
 [TODO]
 ( ) 404 page (MissingPage.js)
-( ) get modals working again
-	(X) trim bootstrap down to just modals, no other JS components (trim CSS too?)
-	( ) route /about, /contact
-		( ) client (page.js)
-		( ) server (.htaccess)
-( ) ensure clicking images to view file URL directly is not routed.
 ( ) improve index page appearance while loading
 ( ) eliminate blue outline around focused/clicked elements
+( ) route /about, /contact
+	( ) point about/contact links to ./about and ./contact
+		and open modals via that
+	( ) client (page.js)
+	( ) server (.htaccess)
 
 [BUGS]
 
 
 [DONE]
+(X) get modals working again
+	(X) trim bootstrap down to just modals, no other JS components (trim CSS too?)
+(X) ensure clicking images to view file URL directly is not routed.
 (X) compress all CSS into one stylesheet
 	(X) rename individual sass files to "_*.*" ("sass partial")
 (-) perf: make project thumbs use background-image instead of img?

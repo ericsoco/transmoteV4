@@ -9,20 +9,24 @@ define(
 
 		"use strict";
 
-		function index () {
+		function index (context, next) {
 			AppContainer.displayPage({
 				path: 'index'
 			});
 		}
 
-		function project (context) {
+		function project (context, next) {
 			AppContainer.displayPage({
 				path: 'project',
 				projectId: context.params.project
 			});
 		}
 
-		function fallthru () {
+		function passthru (context, next) {
+			window.location = '/' + context.path;
+		}
+
+		function notFound (context, next) {
 			AppContainer.displayPage({
 				path: '404'
 			});
@@ -34,7 +38,8 @@ define(
 				page.base('/');
 				page('', index);
 				page('projects/:project', project);
-				page('*', fallthru);
+				page(/^.+\.(jpg|png|gif|bmp)$/, passthru);
+				page('*', notFound);
 				page();
 			}
 
