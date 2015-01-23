@@ -15,8 +15,8 @@ html, body {
 body {
     background-color: rgba(51, 51, 51, 0.75);
     color: #F9F9F9;
-    font-family: "Aller", "Georgia", sans-serif;
-    font-size: 14px;
+    font-family: "Aller Light", "Georgia", sans-serif;
+    font-size: 16px;
     line-height: 150%;
     padding: 20px;
 }
@@ -56,7 +56,7 @@ moved to main.css
 }
 
 #contact .contentLink {
-    /*font-family: "AllerBold", "Georgia", sans-serif;*/
+    font-family: "Aller", "Georgia", sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 150%;
@@ -68,7 +68,7 @@ moved to main.css
 }
 
 #resume .contentLink {
-	/*font-family: "AllerBold", "Georgia", sans-serif;*/
+	font-family: "Aller", "Georgia", sans-serif;
     font-weight: bold;
 	font-size: 36px;
     line-height: 150%;
