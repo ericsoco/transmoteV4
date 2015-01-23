@@ -7,7 +7,7 @@
         ( ) server (.htaccess)
 ( ) ensure clicking images to view file URL directly is not routed.
 ( ) improve index page appearance while loading
-
+( ) eliminate blue outline around focused/clicked elements
 
 [BUGS]
 
