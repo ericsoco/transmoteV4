@@ -12,6 +12,7 @@ footer {
 	font-size: 1.4em;
 	line-height: 1.25em;
 	text-decoration: none;
+	outline: none;
 
 	a:link {
 		color: #191919;
@@ -24,6 +25,7 @@ footer {
 	a:active {
 		color: #000000;
 		text-decoration: underline;
+		outline: none;
 	}
 }
 

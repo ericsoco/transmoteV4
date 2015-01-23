@@ -27,12 +27,11 @@ header {
 			font-family: "AllerBold", "Georgia", sans-serif;
 			color: #FFFFFF;
 			text-decoration: none;
+			outline: none;
 		}
 	}
 
 	h5 {
-		font-size: 1.8em;
-		
 		position: absolute;
 		left: 18px;
 		bottom: 13px;
@@ -41,6 +40,8 @@ header {
 		/* responsive */
 		display: none;
 
+		font-size: 1.8em;
+
 		a:link,
 		a:visited,
 		a:hover,
@@ -48,6 +49,7 @@ header {
 		a:active {
 			color: #FFFFFF;
 			text-decoration: none;
+			outline: none;
 		}
 	}
 }
