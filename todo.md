@@ -1,7 +1,4 @@
 [TODO]
-( ) when pages show/hide, don't just add/remove 'closed' class,
-	actually pull out their DOM (and cache in memory).
-	(see MissingPage.js for example)
 ( ) improve index page appearance while loading
 ( ) route /about, /contact? (could probably just leave as full pages)
 	( ) point about/contact links to ./about and ./contact
@@ -17,6 +14,11 @@
 
 
 [DONE]
+(X) when pages show/hide, don't just add/remove 'closed' class,
+	actually pull out their DOM (and cache in memory).
+	(see MissingPage.js for example)
+	(X) IndexPage
+	(X) ProjectPage
 (X) 404 page (MissingPage.js)
 	(-) bounce-loop the gif:
 		https://github.com/buzzfeed/libgif-js

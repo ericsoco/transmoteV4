@@ -18,10 +18,9 @@ define(
 
 			show: function () {
 				if (!this.$el) {
-					this.$el = this.render();
+					this.render();
 				}
-
-				this.$el.removeClass('closed');
+				$('#content').append(this.$el);
 
 				// restore scroll position if exists.
 				// have to do this on a timeout, for some reason.
@@ -40,20 +39,15 @@ define(
 				// cache scroll position
 				scrollPosition = $(window).scrollTop();
 
-				this.$el.addClass('closed');
+				this.$el.remove();
 
 				return this.$el;
 			},
 
 			render: function () {
-				var projectThumbHTML = templates['projectThumbList']({
+				this.$el = $(templates['projectThumbList']({
 					projects: ProjectModelStore.getProjectModels()
-				});
-
-				var $el = $(projectThumbHTML);
-				$('#content').append($el);
-
-				return $el;
+				}));
 			}
 
 		};

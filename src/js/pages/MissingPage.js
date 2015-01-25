@@ -33,7 +33,6 @@ define(
 			render: function (projectModel) {
 				this.$el = $(templates['missingPage']());
 				this.$el.find('img').on('load', function (event) {
-					console.log(">>>>> img loaded");
 					this.$el.find('.copy').removeClass('hidden');
 				}.bind(this));
 			}
