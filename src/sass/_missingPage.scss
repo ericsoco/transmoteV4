@@ -29,10 +29,12 @@
 	    line-height: 0;
 
 	    a {
+	    	/*
 			-webkit-transition: all 0.2s ease-out;
 			-moz-transition: all 0.2s ease-out;
 			-o-transition: all 0.2s ease-out;
 			transition: all 0.2s ease-out;
+			*/
 
 			&:link,
 			&:visited,
@@ -46,23 +48,13 @@
 			&:hover,
 			&:focus,
 			&:active {
-				// -webkit-transform: scale(1.2);
-				// -moz-transform: scale(1.2);
-				// -o-transform: scale(1.2);
-				// transform: scale(1.2);
 				font-size: 1.2em;
 			}
 		}
 	}
 
-	.img-placeholder {
-		visibility: hidden;
-	}
-
-	.img-placeholder,
 	img {
 		width: 100%;
-
 		-webkit-filter: blur(8px);
 		filter: blur(8px);
 	}
