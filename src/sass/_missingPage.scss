@@ -1,7 +1,7 @@
 #missingPage {
 
-	// TODO: responsiveize this
-	margin: 40px 10%;
+	// responsive
+	margin: 0;
 
 	.content {
 		position: relative;
@@ -16,40 +16,33 @@
 		}
 	}
 
-	// TODO: responsiveize this
 	h1 {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
+		margin-top: 5%;
 
-	    font-size: 40em;
+	    font-size: 35em;
 	    font-weight: bold;
 	    text-align: center;
-	    line-height: 0;
+	    line-height: 100%;
+	}
 
-	    a {
-	    	/*
-			-webkit-transition: all 0.2s ease-out;
-			-moz-transition: all 0.2s ease-out;
-			-o-transition: all 0.2s ease-out;
-			transition: all 0.2s ease-out;
-			*/
+    a {
+		&:link,
+		&:visited,
+		&:hover,
+		&:focus,
+		&:active {
+			color: #F9F9F9;
+			text-decoration: none;
+		}
 
-			&:link,
-			&:visited,
-			&:hover,
-			&:focus,
-			&:active {
-				color: #F9F9F9;
-				text-decoration: none;
-			}
-
-			&:hover,
-			&:focus,
-			&:active {
-				font-size: 1.2em;
-			}
+		&.embiggen:hover,
+		&.embiggen:focus,
+		&.embiggen:active {
+			font-size: 1.2em;
 		}
 	}
 
@@ -65,10 +58,13 @@
 		left: 0;
 		width: 100%;
 
-		font-family: "Aller Light", "Georgia", sans-serif;
-		font-weight: normal;
-		text-align: center;
-		font-size: 3em;
+		// override base
+		a {
+			font-family: "Aller Light", "Georgia", sans-serif;
+			font-weight: normal;
+			text-align: center;
+			font-size: 3em;
+		}
 	}
 
 }
