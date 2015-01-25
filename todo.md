@@ -3,7 +3,7 @@
 	actually pull out their DOM (and cache in memory).
 	(see MissingPage.js for example)
 ( ) improve index page appearance while loading
-( ) route /about, /contact
+( ) route /about, /contact? (could probably just leave as full pages)
 	( ) point about/contact links to ./about and ./contact
 		and open modals via that
 	( ) client (page.js)
