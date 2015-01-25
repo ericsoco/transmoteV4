@@ -116,7 +116,8 @@ module.exports = function (grunt) {
 				options: {
 					sourcemap: 'auto',
 					style: 'compressed',
-					lineNumbers: true
+					lineNumbers: true,
+					require: 'sass-globbing'
 				},
 
 				src: ['./src/sass/main.scss'],
@@ -139,7 +140,7 @@ module.exports = function (grunt) {
 		handlebars: {
 			options: {
 				amd: true,
-				namespace: 'webdevBoilerplate',
+				namespace: 'transmote',
 				processName: function (filePath) {
 					// Strip initial path and file extension
 					console.log("filePath:", filePath);

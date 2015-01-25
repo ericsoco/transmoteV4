@@ -1,26 +1,32 @@
 define(['handlebars'], function(Handlebars) {
 
-this["webdevBoilerplate"] = this["webdevBoilerplate"] || {};
+this["transmote"] = this["transmote"] || {};
 
-this["webdevBoilerplate"]["footer"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+this["transmote"]["footer"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   return "<footer>\n	<div id=\"footer-left\">\n		Transmote is Eric Socolofsky.<br/>\n		<p id=\"footer-left-oneline\">\n			<a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/about.html\" data-class=\"modal-large\">About</a>.&nbsp;&nbsp;<a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/contact.html\" data-class=\"modal-small\">Contact</a>.&nbsp;&nbsp;<a href=\"http://words.transmote.com/\">Words</a>.&nbsp;&nbsp;<a href=\"http://twitter.com/ericsoco/\">Characters.</a>&nbsp;&nbsp;<a href=\"http://flickr.com/ericsoco/\">Images</a>.&nbsp;&nbsp;<a href=\"http://vimeo.com/ericsoco/\">Videos</a>.\n		</p>\n	</div>\n	<div id=\"footer-right\">\n		<div id=\"footer-right-img\">\n			<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.en_US\" target=\"_blank\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"http://i.creativecommons.org/l/by-sa/3.0/88x31.png\" /></a>\n		</div>\n		<div id=\"footer-right-copy\">\n			All works licensed under <wbr><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.en_US\" target=\"_blank\">CC BY-SA</a><br/>unless otherwise noted.\n		</div>\n	</div>\n</footer>";
   },"useData":true});
 
 
 
-this["webdevBoilerplate"]["header"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<header>\n	<h5><a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/about.html\" data-class=\"modal-large\">about</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/contact.html\" data-class=\"modal-small\">contact</a></h5>\n	<h1><a href=\"/\">transmote.com</a></h1>\n</header>";
+this["transmote"]["header"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  return "<header>\n	<h5><a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/about.html\" data-class=\"modal-large\">about</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href=\"#\" data-toggle=\"modal\" data-target=\"#site-modal\" data-src=\"/pages/contact.html\" data-class=\"modal-small\">contact</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href=\"foo\">broken link</a></h5>\n	<h1><a href=\"/\">transmote.com</a></h1>\n</header>";
   },"useData":true});
 
 
 
-this["webdevBoilerplate"]["mainContent"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+this["transmote"]["mainContent"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   return "<div id=\"content\"></div>";
   },"useData":true});
 
 
 
-this["webdevBoilerplate"]["projectPage"] = Handlebars.template({"1":function(depth0,helpers,partials,data,depths) {
+this["transmote"]["missingPage"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  return "<div id='missingPage'>\n	<div class='content'>\n		<img src=\"./img/jasper404.gif\" />\n		<div class=\"img-placeholder\"></div>\n		<div class=\"copy\">\n			<h1><a href=\"./\">?</a></h1>\n			<p>whoshotwhointhewhutnow?</p>\n		</div>\n	</div>\n</div>";
+  },"useData":true});
+
+
+
+this["transmote"]["projectPage"] = Handlebars.template({"1":function(depth0,helpers,partials,data,depths) {
   var stack1, helperMissing=helpers.helperMissing, buffer = "			<li>\n";
   stack1 = ((helpers.ifVideo || (depth0 && depth0.ifVideo) || helperMissing).call(depth0, depth0, {"name":"ifVideo","hash":{},"fn":this.program(2, data, depths),"inverse":this.program(4, data, depths),"data":data}));
   if (stack1 != null) { buffer += stack1; }
@@ -64,7 +70,7 @@ this["webdevBoilerplate"]["projectPage"] = Handlebars.template({"1":function(dep
 
 
 
-this["webdevBoilerplate"]["projectThumbList"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
+this["transmote"]["projectThumbList"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var stack1, helper, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, functionType="function", buffer = "		<a href=\""
     + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depth0 != null ? depth0.id : depth0), {"name":"concatPath","hash":{},"data":data})))
     + "\">\n			<div class=\"project-thumb\" data-project=\""
@@ -101,10 +107,10 @@ this["webdevBoilerplate"]["projectThumbList"] = Handlebars.template({"1":functio
 
 
 
-this["webdevBoilerplate"]["siteModal"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+this["transmote"]["siteModal"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   return "<div id=\"site-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"site-modal\" aria-hidden=\"true\">\n	<div class=\"modal-dialog\">\n		<div class=\"modal-content\">\n			<div class=\"modal-body\">\n		      <iframe src=\"\" frameborder=\"0\"></iframe>\n			</div>\n			<button type=\"button\" class=\"close\" data-dismiss=\"modal\">×</button>\n		</div>\n	</div>\n</div>";
   },"useData":true});
 
-return this["webdevBoilerplate"];
+return this["transmote"];
 
 });

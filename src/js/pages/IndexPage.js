@@ -37,9 +37,9 @@ define(
 			hide: function () {
 				if (!this.$el) { return; }
 
+				// cache scroll position
 				scrollPosition = $(window).scrollTop();
 
-				// cache scroll position
 				this.$el.addClass('closed');
 
 				return this.$el;

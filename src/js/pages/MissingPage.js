@@ -1,21 +1,13 @@
 define(
 
 	[
-		'jquery'
+		'jquery',
+		'../templates',
 	],
 
-	function ($) {
+	function ($, templates) {
 
 		'use strict';
-
-		function render () {
-			// TODO: render via template
-			// stuff into container element (out of DOM)
-			// return entire element
-
-			// temp for testing:
-			return $('<div>');
-		}
 
 		return {
 
@@ -23,12 +15,10 @@ define(
 
 			show: function () {
 				if (!this.$el) {
-					this.$el = render();
+					this.render();
 				}
 
-				console.log(">>>>> MissingPage.show()");
-
-				this.$el.removeClass('hidden');
+				$('#content').append(this.$el);
 
 				return this.$el;
 			},
@@ -36,10 +26,12 @@ define(
 			hide: function () {
 				if (!this.$el) { return; }
 
-				console.log(">>>>> MissingPage.hide()");
-				
-				this.$el.addClass('hidden');
+				this.$el.remove();
 				return this.$el;
+			},
+
+			render: function (projectModel) {
+				this.$el = $(templates['missingPage']());
 			}
 
 		};
