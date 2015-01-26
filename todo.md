@@ -6,12 +6,12 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 
 [TODO]
 ( ) serverside rendering for SEO (phantom.js?)
-( ) copy over all required markup from v4/index.html
-	(google analytics, meta for ios/mobile, etc.)
+( ) check TODO from transmote V4.0: missing anything else?
 ( ) test on mobile:
 	( ) ios
 	( ) android
 ( ) deploy
+
 ( ) add projects supported in v3
 ( ) route /about, /contact? (could probably just leave as full pages)
 	( ) point about/contact links to ./about and ./contact
@@ -22,8 +22,13 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 
 [BUGS]
 ( ) about/contact adds to history stack, minor nuisance.
+( ) scroll down, click into project, nav back, scroll up and click transmote.com link in header.
+	jumps down page because it's refreshing scroll position.
+	maybe better to cache scroll position as History state.
 
 [DONE]
+(X) copy over all required markup from v4/index.html
+	(google analytics, meta for ios/mobile, etc.)
 (X) serverside routing (.htaccess rewrites)
 	(X) move .htaccess files into their proper folders
 	(X) copy as non-hidden files to server-config
