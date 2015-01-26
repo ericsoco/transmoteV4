@@ -128,7 +128,8 @@ module.exports = function (grunt) {
 				options: {
 					sourcemap: 'auto',
 					style: 'compressed',
-					lineNumbers: true
+					lineNumbers: true,
+					require: 'sass-globbing'
 				},
 
 				src: ['./src/sass/main.scss'],
@@ -166,9 +167,25 @@ module.exports = function (grunt) {
 					{
 						expand: true,
 						cwd: './src/',
-						src: ['**/*.html'],
+						src: ['**/*.html', '.htaccess'],
 						dest: './build/dev/',
 						ext: '.html'
+					},
+					{
+						src: './src/.htaccess',
+						dest: './build/dev/.htaccess',
+					},
+					{
+						src: './src/.htaccess',
+						dest: './build/server-config/htaccess.txt',
+					},
+					{
+						src: './src/projects/.htaccess',
+						dest: './build/dev/projects/.htaccess',
+					},
+					{
+						src: './src/projects/.htaccess',
+						dest: './build/server-config/htaccess-projects.txt',
 					},
 					{
 						expand: true,
@@ -210,6 +227,14 @@ module.exports = function (grunt) {
 						src: ['**/*.html'],
 						dest: './build/deploy/',
 						ext: '.html'
+					},
+					{
+						src: './src/.htaccess',
+						dest: './build/deploy/.htaccess',
+					},
+					{
+						src: './src/projects/.htaccess',
+						dest: './build/deploy/projects/.htaccess',
 					},
 					{
 						expand: true,

@@ -1,19 +1,35 @@
+[RUN]
+local dev: `grunt` will build and start up server.
+local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.transmote.com or local.v4.transmote.com.
+	hostname configured in /etc/hosts;
+	virtual host mapping in /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
+
 [TODO]
-( ) improve index page appearance while loading
+( ) serverside rendering for SEO (phantom.js?)
+( ) copy over all required markup from v4/index.html
+	(google analytics, meta for ios/mobile, etc.)
+( ) test on mobile:
+	( ) ios
+	( ) android
+( ) deploy
+( ) add projects supported in v3
 ( ) route /about, /contact? (could probably just leave as full pages)
 	( ) point about/contact links to ./about and ./contact
 		and open modals via that
 	( ) client (page.js)
 	( ) server (.htaccess)
-( ) serverside rendering for SEO (phantom.js?)
-( ) serverside routing (.htaccess rewrites)
-( ) deploy
-( ) add projects supported in v3
+( ) improve index page appearance while loading
 
 [BUGS]
-
+( ) about/contact adds to history stack, minor nuisance.
 
 [DONE]
+(X) serverside routing (.htaccess rewrites)
+	(X) move .htaccess files into their proper folders
+	(X) copy as non-hidden files to server-config
+	(X) add tasks to gruntfile to:
+		(X) copy as non-hidden files to a folder somewhere
+		(X) copy to corresponding folders in build/
 (X) when pages show/hide, don't just add/remove 'closed' class,
 	actually pull out their DOM (and cache in memory).
 	(see MissingPage.js for example)

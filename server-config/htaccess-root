@@ -1,0 +1,54 @@
+# location: /
+# [revision log]
+#   2012.10.06: v3 launch
+#   2013.02.18: remove www subdomain
+#               /v3 redirect to /
+#   2013.08.13: /portfolio redirect to /v4
+#   2014.11.22: PHP as CGI instead of Apache module
+
+
+##### -----[php parsing within html]----- #####
+#AddType application/x-httpd-php .html .htm			# MAMP php as apache module
+#AddType application/x-httpd-php5 .html .htm		# DREAMHOST php as apache module
+AddHandler application/x-httpd-php .html .htm		# php as CGI
+
+##### -----[bot blocking]----- #####
+# explicitly deny dizzler's robots
+Order Allow,Deny
+Allow from all
+Deny from 66.232.150.219
+
+# note: THIS IS NOT ACTIVE AND I HAVE NOT YET TESTED IT.
+#		TEST IT AND IMPLEMENT IF ALL GOOD.
+# find bots that break the robots.txt rules
+# from: http://www.evolt.org/article/Using_Apache_to_stop_bad_robots/18/15126/
+# SetEnvIfNoCase User-Agent "^Wget" bad_bot
+# SetEnvIfNoCase User-Agent "^EmailSiphon" bad_bot
+# SetEnvIfNoCase User-Agent "^EmailWolf" bad_bot
+
+# <Directory "/home/ericsoco/transmote.com/">
+# 	Order Allow,Deny
+# 	Allow from all
+# 	Deny from env=bad_bot
+# </Directory>
+
+
+##### -----[rewrites]----- #####
+# remove www subdomain, per no-www.org
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+##### -----[redirects]----- #####
+# 301 redirects
+# transmote.com/flar --> words.transmote.com
+redirect permanent /flar/index.html http://words.transmote.com/wp/flarmanager/
+redirect 301 /flar/index.html http://words.transmote.com/wp/flarmanager/
+# transmote.com/v3 --> transmote.com/
+redirect permanent /v3 http://transmote.com
+redirect 301 /v3 http://transmote.com
+# transmote.com/portfolio --> transmote.com/v4/
+redirect permanent /portfolio http://transmote.com/v4
+redirect 301 /portfolio http://transmote.com/v4
