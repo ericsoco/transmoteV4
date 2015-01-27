@@ -15,7 +15,7 @@
 						<iframe {{createVimeoEmbed @index}} frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
 				{{else}}
-					<a href="/{{concatPath "projects" ../../id path}}"><img src="/{{concatPath "projects" ../../id path}}" /></a>
+					<a href="{{concatPath "projects" ../../id path}}"><img src="{{concatPath "projects" ../../id path}}" /></a>
 					{{#if caption}}
 						<p class="caption-title">{{{caption}}}</p>
 					{{/if}}

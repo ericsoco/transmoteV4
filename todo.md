@@ -5,13 +5,24 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	virtual host mapping in /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 
 [TODO]
-( ) serverside rendering for SEO (phantom.js?)
-( ) check TODO from transmote V4.0: missing anything else?
-( ) test on mobile:
+( ) test:
+	( ) browsers
 	( ) ios
 	( ) android
+( ) seo
+	( ) serverside rendering for SEO (phantom.js?)
+		http://wiki.dreamhost.com/Node.js
+		http://backbonetutorials.com/seo-for-single-page-apps/
+		http://blog.42floors.com/sever-side-rendering-single-page-apps-using-phantomjs-node-js/
+		http://thedigitalself.com/blog/seo-and-javascript-with-phantomjs-server-side-rendering
+	( ) or maybe it's fine as-is?
+		test with http://www.feedthebot.com/tools/
+	( ) improve pagespeed
+		http://www.feedthebot.com/pagespeed/
 ( ) deploy
 
+( ) update analytics to use Google Tag Manager
+	https://support.google.com/tagmanager/answer/2574305
 ( ) add projects supported in v3
 ( ) route /about, /contact? (could probably just leave as full pages)
 	( ) point about/contact links to ./about and ./contact
@@ -27,6 +38,7 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	maybe better to cache scroll position as History state.
 
 [DONE]
+(X) check TODO from transmote V4.0: missing anything else?
 (X) copy over all required markup from v4/index.html
 	(google analytics, meta for ios/mobile, etc.)
 (X) serverside routing (.htaccess rewrites)

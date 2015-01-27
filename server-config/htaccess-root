@@ -1,11 +1,17 @@
 # location: /
 # [revision log]
-#   2012.10.06: v3 launch
+#   2015.01.26: Implement gzip
+#   2014.11.22: PHP as CGI instead of Apache module
+#   2013.08.13: /portfolio redirect to /v4
 #   2013.02.18: remove www subdomain
 #               /v3 redirect to /
-#   2013.08.13: /portfolio redirect to /v4
-#   2014.11.22: PHP as CGI instead of Apache module
+#   2012.10.06: v3 launch
 
+##### -----[enable gzip compression]----- #####
+# from: http://wiki.dreamhost.com/Htaccess_tricks
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css $
+</ifmodule>
 
 ##### -----[php parsing within html]----- #####
 #AddType application/x-httpd-php .html .htm			# MAMP php as apache module

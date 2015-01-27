@@ -35,7 +35,7 @@ define(
 		return {
 
 			init: function () {
-				page.base('/');
+				page.base(document.querySelector('head base').getAttribute('href'));
 				page('', index);
 				page('projects/:project', project);
 				page(/^.+\.(jpg|png|gif|bmp)$/, passthru);
