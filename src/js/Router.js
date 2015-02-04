@@ -35,11 +35,29 @@ define(
 		return {
 
 			init: function () {
-				page.base(document.querySelector('head base').getAttribute('href'));
+				var baseElement = document.querySelector('head base');
+
+				// Use the <base> element to determine the root path for the router
+				// if it exists (it will not when this is run by the phantom.js renderer)
+				if (baseElement) {
+					page.base(baseElement.getAttribute('href'));
+				} else {
+					page.base('/');
+				}
+
+				// IndexPage
 				page('', index);
+
+				// ProjectPage
 				page('projects/:project', project);
+
+				// image files
 				page(/^.+\.(jpg|png|gif|bmp)$/, passthru);
+
+				// MissingPage
 				page('*', notFound);
+
+				// Exit the middleware
 				page();
 			}
 

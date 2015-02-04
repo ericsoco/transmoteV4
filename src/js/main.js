@@ -4,6 +4,8 @@
  */
  require.config({
 
+ 	baseUrl: '/',
+
 	paths: {
 		'domReady':				'./lib/domReady',
 		'handlebars':			'./lib/handlebars-v2.0.0',
