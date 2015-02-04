@@ -9,18 +9,89 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	( ) browsers
 	( ) ios
 	( ) android
-( ) seo
-	( ) serverside rendering for SEO (phantom.js?)
-		http://wiki.dreamhost.com/Node.js
-		http://backbonetutorials.com/seo-for-single-page-apps/
-		http://blog.42floors.com/sever-side-rendering-single-page-apps-using-phantomjs-node-js/
-		http://thedigitalself.com/blog/seo-and-javascript-with-phantomjs-server-side-rendering
-	( ) or maybe it's fine as-is?
-		test with http://www.feedthebot.com/tools/
-	( ) improve pagespeed
-		http://www.feedthebot.com/pagespeed/
 ( ) deploy
 
+( ) seo
+	( ) serverside rendering for SEO
+		( ) php-phantomJS
+			( ) .htaccess: redirect bots to php 
+
+			(X) do i even need php-phantomJS or can i just run:
+				$response = exec('/path/to/phantomjs myscript.js');
+				--> i can!
+
+			(X) why is Router.js not accepting the url i'm passing in from php (thru phantom.js)?
+				Router.js sees '/basic-request.php' instead of '/'.
+
+			(X) timeout takes care of rendering;
+				need to add functionality to pages to fire an event when they're completely loaded
+				and handle that event in phantom (don't exit or log(documentHTML) until then.)
+				don't really need images loaded tho, just html...
+				but html isn't fully loaded until js runs and page.js renders it.
+				so, event can fire after a page calls render().
+				(how to handle it in phantomjs?)
+
+			(X) SUNDAY: almost working but not quite...
+				something is causing the app to init multiple times.
+				take a careful look at the console logs and track it down...
+				(note: i've turned off all compression/optimization/etc in gruntfile -> deploy)
+				(also: does spinning up phantom take many seconds? why always so long to refresh basic_request.php?
+					concerned that would make it an unacceptable solution for bot redirection/SEO...)
+
+				note: the problem here might not be with multiple init cycles,
+				but instead with not clearing out DOM when new page is created.
+				there's an accumulation of pages at the bottom;
+				just need to keep that from happening.
+
+			i think this is mostly working,
+			but i need to write a .js for phantom to run that will pass a url
+			into Router.js, instead of letting it read window.location and
+			show a 404 page because it doesn't know what to do with basic-request.php.
+
+			trouble running php -> phantom on dreamhost?
+			https://discussion.dreamhost.com/thread-137608.html
+			more (not DH-specific):
+			https://github.com/ariya/phantomjs/issues/11463
+			http://michielve.blogspot.com/2013/04/phantomjs-cookie.html
+
+			to install php-phantomJS, create a composer.phar file (composer runtime)
+			$ curl -sS https://getcomposer.org/installer | php
+			then run this in a folder with only composer.phar in it:
+			$ php composer.phar require "jonnyw/php-phantomjs:3.*"
+
+			debug php:
+			<?php
+			ini_set('display_errors', 'On');
+			error_reporting(E_ALL);
+
+
+
+		(-) php
+			basic concept: same thing i did in v3,
+			just add a php script to html, that pulls data from projects.json.
+			keep it super simple, just get the text and images on the page.
+		(-) phantom.js + node
+			basic concept:
+			1. redirect search engine bots to a node server via .htaccess
+			2. node spawns a phantom process
+			3. phantom renders HTML and returns to bot.
+
+			however, can't run node on dreamhost shared server.
+			the following process might work...
+			1. redirect search engine bots to a phantom server via php
+				http://stackoverflow.com/questions/20202407/how-to-execute-phantomjs-from-php
+			2. requests returned by phantom are served directly to bots
+
+			http://stackoverflow.com/questions/26896787/installing-phantomjs-on-server
+			http://blog.42floors.com/sever-side-rendering-single-page-apps-using-phantomjs-node-js/
+
+			http://wiki.dreamhost.com/Node.js <-- DO NOT INSTALL NODE ON DREAMHOST SHARED SERVER! against TOS.
+			http://backbonetutorials.com/seo-for-single-page-apps/
+			http://thedigitalself.com/blog/seo-and-javascript-with-phantomjs-server-side-rendering
+	(X) or maybe it's fine as-is?
+		test with http://www.feedthebot.com/tools/
+( ) improve pagespeed
+	http://www.feedthebot.com/pagespeed/
 ( ) update analytics to use Google Tag Manager
 	https://support.google.com/tagmanager/answer/2574305
 ( ) add projects supported in v3

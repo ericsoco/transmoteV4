@@ -84,6 +84,7 @@ module.exports = function (grunt) {
 				// Environments:
 				browser: true,
 				nonstandard: true,
+				phantom: true,
 
 				globals: {
 					// AMD/Require:
@@ -172,6 +173,13 @@ module.exports = function (grunt) {
 						ext: '.html'
 					},
 					{
+						expand: true,
+						cwd: './src/',
+						src: ['**/*.php', '.htaccess'],
+						dest: './build/dev/',
+						ext: '.php'
+					},
+					{
 						src: './src/.htaccess',
 						dest: './build/dev/.htaccess',
 					},
@@ -216,6 +224,12 @@ module.exports = function (grunt) {
 						cwd: './src/projects/',
 						src: ['**/*.*'],
 						dest: './build/dev/projects/'
+					},
+					{
+						expand: true,
+						cwd: './src/renderer/',
+						src: ['**/*'],
+						dest: './build/dev/renderer/'
 					}
 				]
 			},
@@ -227,6 +241,13 @@ module.exports = function (grunt) {
 						src: ['**/*.html'],
 						dest: './build/deploy/',
 						ext: '.html'
+					},
+					{
+						expand: true,
+						cwd: './src/',
+						src: ['**/*.php', '.htaccess'],
+						dest: './build/deploy/',
+						ext: '.php'
 					},
 					{
 						src: './src/.htaccess',
@@ -265,8 +286,26 @@ module.exports = function (grunt) {
 						cwd: './src/projects/',
 						src: ['**/*.*'],
 						dest: './build/deploy/projects/'
+					},
+					{
+						expand: true,
+						cwd: './src/renderer/',
+						src: ['**/*'],
+						dest: './build/deploy/renderer/'
 					}
 				]
+			}
+		},
+
+		chmod: {
+			options: {
+				mode: '755'
+			},
+			dev: {
+				src: ['./build/dev/renderer/*']
+			},
+			deploy: {
+				src: ['./build/deploy/renderer/*']
 			}
 		},
 		
@@ -379,7 +418,8 @@ module.exports = function (grunt) {
 		'newer:jshint:dev',
 		'requirejs:dev',
 		'sass:dev',
-		'newer:copy:dev'
+		'newer:copy:dev',
+		'newer:chmod:dev'
 	]);
 
 	grunt.registerTask('dev-notify', [
@@ -394,6 +434,7 @@ module.exports = function (grunt) {
 		'sass:dev',
 		'notify:copy',
 		'newer:copy:dev',
+		'newer:chmod:dev',
 		'notify:done'
 	]);
 
@@ -402,7 +443,8 @@ module.exports = function (grunt) {
 		'jshint:dev',
 		'requirejs:dev',
 		'sass:dev',
-		'newer:copy:dev'
+		'newer:copy:dev',
+		'newer:chmod:dev'
 	]);
 
 	grunt.registerTask('deploy', [
@@ -411,6 +453,7 @@ module.exports = function (grunt) {
 		'requirejs:deploy',
 		'sass:deploy',
 		'newer:copy:deploy',
+		'newer:chmod:deploy',
 		'connect:deploy'
 	]);
 

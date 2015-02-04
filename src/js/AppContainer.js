@@ -25,7 +25,7 @@ define(
 				this.render();
 
 				if (pendingPageData) {
-					this.displayPage(pendingPageData);
+					this.displayPage(pendingPageData, true);
 				}
 
 				this.initModals();
@@ -45,7 +45,7 @@ define(
 				this.$el.append(footerHTML);
 			},
 
-			displayPage: function (pageData) {
+			displayPage: function (pageData, notifyPhantom) {
 				if (!pageData) { return; }
 
 				if (!this.$el) {
@@ -69,6 +69,10 @@ define(
 						ProjectPage.hide();
 						MissingPage.show();
 				}
+
+				if (notifyPhantom) {
+					this.notifyPhantomOnRouteComplete();
+				}
 			},
 
 			initModals: function () {
@@ -86,6 +90,27 @@ define(
 
 					modalDialog.addClass(link.data('class'));
 				});
+			},
+
+			// Notify phantom.js that route is complete,
+			// if running in phantom.js environment.
+			notifyPhantomOnRouteComplete: function () {
+				if (typeof window.callPhantom === 'function') {
+
+					// Strip <script> tags from rendered HTML to prevent JS execution
+					var scriptTags = document.querySelectorAll('script'),
+					    scriptTag;
+					for (var i=0; i<scriptTags.length; i++) {
+						scriptTag = scriptTags[i];
+						if (scriptTag.parentNode) {
+							scriptTag.parentNode.removeChild(scriptTag);
+						}
+					}
+
+					window.callPhantom({
+						type: 'initialPageRendered'
+					});
+				}
 			}
 
 		};
