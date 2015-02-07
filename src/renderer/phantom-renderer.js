@@ -9,12 +9,18 @@
 	}
 
 	var url = args[1],
-	    page = require('webpage').create();
+	    page = require('webpage').create(),
+	    pageTimeout,
+	    pageTimeoutDelay = 7000;
 
 	// Do not return the rendered page until the app says it's complete.
 	page.onCallback = function (data) {
 
 		if (data && data.type === 'initialPageRendered') {
+
+			if (pageTimeout) {
+				clearTimeout(pageTimeout);
+			}
 
 			// Render screenshot to an image file
 			// page.render('example.png');
@@ -31,6 +37,13 @@
 			phantom.exit(0);
 		}
 
+	};
+
+	page.onInitialized = function () {
+		pageTimeout = setTimeout(function () {
+			console.error('Page timeout after ' + pageTimeoutDelay + 'ms.');
+			phantom.exit(1);
+		}, pageTimeoutDelay);
 	};
 
 	page.open(url, function (status) {

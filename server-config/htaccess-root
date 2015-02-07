@@ -16,7 +16,7 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css $
 ##### -----[php parsing within html]----- #####
 #AddType application/x-httpd-php .html .htm			# MAMP php as apache module
 #AddType application/x-httpd-php5 .html .htm		# DREAMHOST php as apache module
-AddHandler application/x-httpd-php .html .htm		# php as CGI
+#AddHandler application/x-httpd-php .html .htm		# php as CGI
 
 ##### -----[bot blocking]----- #####
 # explicitly deny dizzler's robots

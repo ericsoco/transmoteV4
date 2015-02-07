@@ -9,10 +9,49 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	( ) browsers
 	( ) ios
 	( ) android
+( ) clear out unused libs, fonts, etc
 ( ) deploy
 
 ( ) seo
 	( ) serverside rendering for SEO
+		(X) render pages with phantomjs
+		(X) get phantomjs running on dreamhost
+		(X) get phantomjs rendering a page via php on dreamhost
+			http://transmote.com/lab/v4/index-bots.php
+		( ) clean up local and git commit
+		( ) pass URL through index-bots.php into phantom
+		( ) redirect bots to index-bots.php (via .htaccess)
+
+
+	WEDS NIGHT:
+	--> have to set absolute path; relative paths don't work in both <base> and in page.js.
+	--> got php running by commenting out all AddType/AddHandler stuff in all
+	    .htaccess files from lab/v4 up to root.
+	(X) not, index-bots.php is returning nothing. is it actually running phantom?
+		1. wrong url is hardcoded into index-bots.php
+		2. running phantom from CLI via ./renderer/phantomjs ./renderer/phantom-renderer.js /lab/v4
+			generates error: cannot execute binary file
+			--> need to compile on DH server; file compiled on OSX cannot run on linux.
+				https://groups.google.com/forum/#!topic/phantomjs/cgTH-jqCSGg
+				http://stackoverflow.com/questions/8778513/how-can-i-setup-run-phantomjs-on-ubuntu
+			    or just get binary?
+			    Running 64-bit (x86_64) Debian Ubuntu 12.04.5 LTS (Precise Pangolin)
+			(-) no support for Function.prototype.bind() (could only find linux binary 1.9.2)
+				polyfill here: https://github.com/ariya/phantomjs/issues/10522#issuecomment-39248521
+				--> doesn't seem to be a problem for my app...
+
+
+	AS OF TUES NIGHT:
+	trying to get site to run on transmote.com/lab/v4
+	but there's path issues.
+	base path is set in index.html,
+	and *should* be copied in Router.js.
+	also had it set in main.js require.config(), but removed that.
+
+	once path issues resolved, test index-bots.php
+	against http://www.feedthebot.com/pagespeed/
+
+
 		( ) php-phantomJS
 			( ) .htaccess: redirect bots to php 
 
