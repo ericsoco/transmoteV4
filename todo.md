@@ -18,8 +18,8 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 		(X) get phantomjs running on dreamhost
 		(X) get phantomjs rendering a page via php on dreamhost
 			http://transmote.com/lab/v4/index-bots.php
-		( ) clean up local and git commit
-		( ) pass URL through index-bots.php into phantom
+		(X) clean up local and git commit
+		(X) pass URL through index-bots.php into phantom
 		( ) redirect bots to index-bots.php (via .htaccess)
 
 
