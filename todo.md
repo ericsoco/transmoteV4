@@ -21,6 +21,43 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 		(X) clean up local and git commit
 		(X) pass URL through index-bots.php into phantom
 		( ) redirect bots to index-bots.php (via .htaccess)
+			seems like deploy/lab/v4/.htaccess is almost working,
+			but it's always sending /lab/v4/index.html to index-bots.php?url=
+			where is redirect for all pages to /index.html? this seems to be why things are breaking...
+			oh yeah, it's /projects/.htaccess, right? so i need to redirect bots there too...
+
+			now fully-qualifying URL in index-bots.php, and it's pretty much working.
+			however, output is unstyled...bots don't care but why is this different than
+			when hitting index-bots.php directly?
+			(note, testing by spoofing googlebot using devtools emulation.)
+			--> it's the MIME type:
+				Resource interpreted as Stylesheet but transferred with MIME type text/html:
+
+			SUNDAY: there's some sort of redirect loop happening, most likely in my htaccess setup.
+			Activity Monitor is showing many instances of phantomjs spun up simultaneously
+			(and my compy is locking up!)
+			may need to check htaccess logs to figure this out...
+			is it possible that phantom is triggering htaccess rules and redirecting to itself?
+			need to exclude phantom from rewrites....
+
+			turned on LogLevel debug in httpd.conf, logs filling up in /Applications/MAMP/logs/apache_access.log
+			i think the problem may be that my bot RewriteRule is acting on every resource request,
+			not just the initial page request.
+			need to limit the rewrite to act only on folder requests, not on file requests.
+
+			>>>>> SUNDAY NIGHT: figured it out. <<<<<
+			need to ensure bot rewrite rules don't affect file requests (add RewriteCond with !-f).
+			have this set up on both /lab/v4/.htaccess and /lab/v4/projects/.htaccess.
+			next steps:
+			(X) get bot routing for index.html and '/' working
+			(X) clean up .htaccess files; ensure bot rewrites with !-f are in place
+			(X) update .htaccess files in /src and /src/projects,
+				ensure they're copied correctly to build folders
+			(X) same for index-bots.php and phantom-renderer.js
+			( ) deploy to http://transmote.com/lab/v4 and test
+				( ) verify unsafe access dump at bottom of page does not appear in prod
+				( ) verify www.transmote.com works the same as transmote.com
+					(rewrite in root .htaccess before bot rewrite)
 
 
 	WEDS NIGHT:
