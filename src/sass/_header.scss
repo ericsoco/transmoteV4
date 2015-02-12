@@ -52,4 +52,11 @@ header {
 			outline: none;
 		}
 	}
+
+	.separator {
+		display: inline-block;
+		text-align: center;
+		width: 1.5em;
+		font-family: "Aller", "Georgia", sans-serif;
+	}
 }

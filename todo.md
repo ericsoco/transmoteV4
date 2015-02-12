@@ -5,22 +5,57 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	virtual host mapping in /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 
 [TODO]
+( ) clear out unused libs, fonts, etc
+( ) add alt to <img> tags
+( ) add projects supported in v3
+	( ) display on homepage as second section,
+		with shorter (very cropped) hero images
+( ) should bot rewrites be [R=301]s?
+	tried adding that flag but it broke rewrites in funny ways.
 ( ) test:
 	( ) browsers
 	( ) ios
 	( ) android
-( ) clear out unused libs, fonts, etc
+( ) improve pagespeed
+	http://www.feedthebot.com/pagespeed/
+	( ) cache TTL in htaccess
+		http://www.feedthebot.com/pagespeed/leverage-browser-caching.html
+	( ) concat CSS into one file if possible
 ( ) deploy
+	- note: `<base>` in index.html should contain current directory.
+	  so, `<base href="/" />` at root; `<base href="/lab/v4/" />` in /lab/v4, etc.
+	- note: phantom binary must be made executable (chmod 755);
+	  must use linux-compiled binary (i'm currently on 1.9.2).
+	  
+( ) update analytics to use Google Tag Manager
+	https://support.google.com/tagmanager/answer/2574305
+( ) route /about, /contact? (could probably just leave as full pages)
+	( ) point about/contact links to ./about and ./contact
+		and open modals via that
+	( ) client (page.js)
+	( ) server (.htaccess)
+( ) improve index page appearance while loading
 
-( ) seo
-	( ) serverside rendering for SEO
+[BUGS]
+( ) 'about | contact' spacing is off in header
+( ) visiting http://transmote.com/lab/v4/projects/vizthebay as UA: bot gets redirected incorrectly,
+	to http://transmote.com/lab/v4/projects/vizthebay/?url=/lab/v4/projects/vizthebay
+	HTML still looks fine but that URL is all jacked up...
+( ) about/contact adds to history stack, minor nuisance.
+( ) scroll down, click into project, nav back, scroll up and click transmote.com link in header.
+	jumps down page because it's refreshing scroll position.
+	maybe better to cache scroll position as History state.
+
+[DONE]
+(X) seo
+	(X) serverside rendering for SEO
 		(X) render pages with phantomjs
 		(X) get phantomjs running on dreamhost
 		(X) get phantomjs rendering a page via php on dreamhost
 			http://transmote.com/lab/v4/index-bots.php
 		(X) clean up local and git commit
 		(X) pass URL through index-bots.php into phantom
-		( ) redirect bots to index-bots.php (via .htaccess)
+		(X) redirect bots to index-bots.php (via .htaccess)
 			seems like deploy/lab/v4/.htaccess is almost working,
 			but it's always sending /lab/v4/index.html to index-bots.php?url=
 			where is redirect for all pages to /index.html? this seems to be why things are breaking...
@@ -54,9 +89,9 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 			(X) update .htaccess files in /src and /src/projects,
 				ensure they're copied correctly to build folders
 			(X) same for index-bots.php and phantom-renderer.js
-			( ) deploy to http://transmote.com/lab/v4 and test
-				( ) verify unsafe access dump at bottom of page does not appear in prod
-				( ) verify www.transmote.com works the same as transmote.com
+			(X) deploy to http://transmote.com/lab/v4 and test
+				(X) verify unsafe access dump at bottom of page does not appear in prod
+				(X) verify www.transmote.com works the same as transmote.com
 					(rewrite in root .htaccess before bot rewrite)
 
 
@@ -89,8 +124,8 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	against http://www.feedthebot.com/pagespeed/
 
 
-		( ) php-phantomJS
-			( ) .htaccess: redirect bots to php 
+		(X) php-phantomJS
+			(X) .htaccess: redirect bots to php 
 
 			(X) do i even need php-phantomJS or can i just run:
 				$response = exec('/path/to/phantomjs myscript.js');
@@ -166,25 +201,6 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 			http://thedigitalself.com/blog/seo-and-javascript-with-phantomjs-server-side-rendering
 	(X) or maybe it's fine as-is?
 		test with http://www.feedthebot.com/tools/
-( ) improve pagespeed
-	http://www.feedthebot.com/pagespeed/
-( ) update analytics to use Google Tag Manager
-	https://support.google.com/tagmanager/answer/2574305
-( ) add projects supported in v3
-( ) route /about, /contact? (could probably just leave as full pages)
-	( ) point about/contact links to ./about and ./contact
-		and open modals via that
-	( ) client (page.js)
-	( ) server (.htaccess)
-( ) improve index page appearance while loading
-
-[BUGS]
-( ) about/contact adds to history stack, minor nuisance.
-( ) scroll down, click into project, nav back, scroll up and click transmote.com link in header.
-	jumps down page because it's refreshing scroll position.
-	maybe better to cache scroll position as History state.
-
-[DONE]
 (X) check TODO from transmote V4.0: missing anything else?
 (X) copy over all required markup from v4/index.html
 	(google analytics, meta for ios/mobile, etc.)
