@@ -5,8 +5,8 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	virtual host mapping in /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 
 [TODO]
-( ) clear out unused libs, fonts, etc
-( ) add alt to <img> tags
+( ) verify all existing projects look correct
+	(img paths, copy, etc)
 ( ) add projects supported in v3
 	( ) display on homepage as second section,
 		with shorter (very cropped) hero images
@@ -26,7 +26,7 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	  so, `<base href="/" />` at root; `<base href="/lab/v4/" />` in /lab/v4, etc.
 	- note: phantom binary must be made executable (chmod 755);
 	  must use linux-compiled binary (i'm currently on 1.9.2).
-	  
+
 ( ) update analytics to use Google Tag Manager
 	https://support.google.com/tagmanager/answer/2574305
 ( ) route /about, /contact? (could probably just leave as full pages)
@@ -37,7 +37,6 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 ( ) improve index page appearance while loading
 
 [BUGS]
-( ) 'about | contact' spacing is off in header
 ( ) visiting http://transmote.com/lab/v4/projects/vizthebay as UA: bot gets redirected incorrectly,
 	to http://transmote.com/lab/v4/projects/vizthebay/?url=/lab/v4/projects/vizthebay
 	HTML still looks fine but that URL is all jacked up...
@@ -47,6 +46,9 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	maybe better to cache scroll position as History state.
 
 [DONE]
+(X) clear out unused libs, fonts, etc
+(X) add alt to <img> tags
+(X) 'about | contact' spacing is off in header
 (X) seo
 	(X) serverside rendering for SEO
 		(X) render pages with phantomjs

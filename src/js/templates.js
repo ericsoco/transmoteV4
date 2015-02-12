@@ -41,11 +41,19 @@ this["transmote"]["projectPage"] = Handlebars.template({"1":function(depth0,help
     + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depths[2] != null ? depths[2].id : depths[2]), (depth0 != null ? depth0.path : depth0), {"name":"concatPath","hash":{},"data":data})))
     + "\"><img src=\""
     + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depths[2] != null ? depths[2].id : depths[2]), (depth0 != null ? depth0.path : depth0), {"name":"concatPath","hash":{},"data":data})))
-    + "\" /></a>\n";
-  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.caption : depth0), {"name":"if","hash":{},"fn":this.program(5, data, depths),"inverse":this.noop,"data":data});
+    + "\" ";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.alt : depth0), {"name":"if","hash":{},"fn":this.program(5, data, depths),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  buffer += "/></a>\n";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.caption : depth0), {"name":"if","hash":{},"fn":this.program(7, data, depths),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
   return buffer;
 },"5":function(depth0,helpers,partials,data) {
+  var lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "alt=\""
+    + escapeExpression(lambda((depth0 != null ? depth0.alt : depth0), depth0))
+    + "\" ";
+},"7":function(depth0,helpers,partials,data) {
   var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, buffer = "						<p class=\"caption-title\">";
   stack1 = ((helper = (helper = helpers.caption || (depth0 != null ? depth0.caption : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"caption","hash":{},"data":data}) : helper));
   if (stack1 != null) { buffer += stack1; }
@@ -94,10 +102,12 @@ this["transmote"]["projectThumbList"] = Handlebars.template({"1":function(depth0
 },"5":function(depth0,helpers,partials,data) {
   return "						<div class=\"img-responsive videoPosterWarn\">\n							If first image is a video, include { 'poster': 'imgpath' }.\n						</div>\n";
   },"7":function(depth0,helpers,partials,data) {
-  var stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+  var stack1, helper, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, functionType="function";
   return "					<img src=\""
     + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depth0 != null ? depth0.id : depth0), ((stack1 = ((stack1 = (depth0 != null ? depth0.media : depth0)) != null ? stack1['0'] : stack1)) != null ? stack1.path : stack1), {"name":"concatPath","hash":{},"data":data})))
-    + "\" class=\"img-responsive\" />\n";
+    + "\" class=\"img-responsive\" alt=\""
+    + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
+    + "\" />\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var stack1, buffer = "<div id=\"project-thumb-list\">\n";
   stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.projects : depth0), {"name":"each","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});

@@ -46,19 +46,23 @@
 					},
 					{
 						"path": "buildARoom02.jpg",
-						"caption": "Visitors often work together to design and build their room."
+						"caption": "Visitors often work together to design and build their room.",
+						"alt": "Visitors working together"
 					},
 					{
 						"path": "spinashape01.jpg",
-						"caption": "The first iteration focused on rotational geometry, created by spinning objects."
+						"caption": "The first iteration focused on rotational geometry, created by spinning objects.",
+						"alt": "Spinning shapes"
 					},
 					{
 						"path": "screenshot04.jpg",
-						"caption": "While spinning objects made interesting shapes, visitors just wanted to paint with light."
+						"caption": "While spinning objects made interesting shapes, visitors just wanted to paint with light.",
+						"alt": "Light painting"
 					},
 					{
 						"path": "longExposure01.jpg",
-						"caption": "Early tests involved light sabers and long-exposure photography."
+						"caption": "Early tests involved light sabers and long-exposure photography.",
+						"alt": "Jedi fun"
 					}
 				],
 				"tagline": "3D drawing in physical space",
@@ -195,15 +199,18 @@
 				"media": [
 					{
 						"path": "factory01.jpg",
-						"caption": "Factory 7, home of the 6 schools of Game Mechanics."
+						"caption": "Factory 7, home of the 6 schools of Game Mechanics.",
+						"alt": "Factory 7"
 					},
 					{
 						"path": "game01.jpg",
-						"caption": "Simple and complex games can be built with Gamestar Mechanic."
+						"caption": "Simple and complex games can be built with Gamestar Mechanic.",
+						"alt": "Top-down game"
 					},
 					{
 						"path": "repairJob01.jpg",
-						"caption": "A drag-and-drop game editor allows for quick design and iteration."
+						"caption": "A drag-and-drop game editor allows for quick design and iteration.",
+						"alt": "Game editor"
 					},
 					{
 						"path": "http://player.vimeo.com/video/10275263",
@@ -228,47 +235,58 @@
 					},
 					{
 						"path": "editor01.jpg",
-						"caption": "This series of screenshots demonstrates the ease of quickly sketching out a simple action game."
+						"caption": "This series of screenshots demonstrates the ease of quickly sketching out a simple action game.",
+						"alt": "Creating a new game"
 					},
 					{
 						"path": "editor02.jpg",
-						"caption": "After choosing parameters for the game, place a player avatar."
+						"caption": "After choosing parameters for the game, place a player avatar.",
+						"alt": "Placing a player avatar"
 					},
 					{
 						"path": "editor03.jpg",
-						"caption": "Do it Bob Ross-style and add some fluffy clouds."
+						"caption": "Do it Bob Ross-style and add some fluffy clouds.",
+						"alt": "Add some clouds"
 					},
 					{
 						"path": "editor04.jpg",
-						"caption": "Place a Goal Block up in the sky for the player to jump towards."
+						"caption": "Place a Goal Block up in the sky for the player to jump towards.",
+						"alt": "Add a Goal Block"
 					},
 					{
 						"path": "editor05.jpg",
-						"caption": "Flip the Edit/Play switch at any time to test the design immediately."
+						"caption": "Flip the Edit/Play switch at any time to test the design immediately.",
+						"alt": "Iterate quickly"
 					},
 					{
 						"path": "editor06.jpg",
-						"caption": "Platformers are even better with enemies. Let's add some."
+						"caption": "Platformers are even better with enemies. Let's add some.",
+						"alt": "Add some enemies"
 					},
 					{
 						"path": "editor07.jpg",
-						"caption": "Collectable points add a little variety."
+						"caption": "Collectable points add a little variety.",
+						"alt": "Add some points"
 					},
 					{
 						"path": "editor08.jpg",
-						"caption": "A Health Counter and Points Counter round out the interface."
+						"caption": "A Health Counter and Points Counter round out the interface.",
+						"alt": "Add some counters"
 					},
 					{
 						"path": "editor09.jpg",
-						"caption": "Require the player collect all points for an additional challenge."
+						"caption": "Require the player collect all points for an additional challenge.",
+						"alt": "Collect 'em all"
 					},
 					{
 						"path": "editor10.jpg",
-						"caption": "A background image and some music add some polish."
+						"caption": "A background image and some music add some polish.",
+						"alt": "Finishing touches"
 					},
 					{
 						"path": "editor11.jpg",
-						"caption": "Only takes a few minutes to design and build a working game. A few more will make it really great!"
+						"caption": "Only takes a few minutes to design and build a working game. A few more will make it really great!",
+						"alt": "The final product"
 					}
 				],
 				"brief": "<p><a href=\"http://gamestarmechanic.com\" target=\"_blank\">Gamestar Mechanic</a> is a game about game design. A game editor, online role playing game, and community site are designed to teach kids about complex systems by providing tools to build them.</p><p>Gamestar Mechanic is the brainchild of Katie Salen of the <a href=\"http://www.instituteofplay.org/\" target=\"blank\">Institute of Play</a>. I was the lead developer and architect for the components built in Flash, including a drag-and-drop game editor, a top-down and platformer game engine, and an embeddable game player widget. I also contributed significantly to the user interface and game design.</p>"
@@ -351,39 +369,48 @@
 					{ "path": "shipTracker01.jpg" },
 					{
 						"path": "shipTracker02.jpg",
-						"caption": "Visitors can see where boats are and have been recently..."
+						"caption": "Visitors can see where boats are and have been recently...",
+						"alt": "Recent ship tracks"
 					},
 					{
 						"path": "styleTest03.jpg",
-						"caption": "...and visitors can see aggregated ship paths over months of traffic."
+						"caption": "...and visitors can see aggregated ship paths over months of traffic.",
+						"alt": "Aggregated ship tracks"
 					},
 					{
 						"path": "20130709_americasCup01.jpg",
-						"caption": "An America's Cup race appears on July 9, 2013"
+						"caption": "An America's Cup race appears on July 9, 2013",
+						"alt": "America's Cup race"
 					},
 					{
 						"path": "prototype01.jpg",
-						"caption": "An early prototype showed only the central Bay"
+						"caption": "An early prototype showed only the central Bay",
+						"alt": "Early prototype"
 					},
 					{
 						"path": "tugApproach.jpg",
-						"caption": "The view out the window adjacent to Ship Tracker"
+						"caption": "The view out the window adjacent to Ship Tracker",
+						"alt": "View at the exhibit"
 					},
 					{
 						"path": "colorTest_cargo.jpg",
-						"caption": "Container ship paths for two months"
+						"caption": "Container ship paths for two months",
+						"alt": "Container ship tracks"
 					},
 					{
 						"path": "colorTest_passenger.jpg",
-						"caption": "Ferry paths for two months"
+						"caption": "Ferry paths for two months",
+						"alt": "Ferry tracks"
 					},
 					{
 						"path": "colorTest_tanker.jpg",
-						"caption": "Tanker paths for two months; note the mooring circles to the south"
+						"caption": "Tanker paths for two months; note the mooring circles to the south",
+						"alt": "Tanker tracks"
 					},
 					{
 						"path": "colorTest_tugPilot.jpg",
-						"caption": "Tugboats and Bar Pilot paths for two months"
+						"caption": "Tugboats and Bar Pilot paths for two months",
+						"alt": "Tugboat tracks"
 					}
 				],
 				"tagline": "tracking ships through the Bay",
@@ -406,11 +433,13 @@
 					{ "path": "otis.jpg" },
 					{
 						"path": "development01.jpg",
-						"caption": "The first successful test"
+						"caption": "The first successful test",
+						"alt": "The first successful test"
 					},
 					{
 						"path": "development02.jpg",
-						"caption": "A lucky accident, writing code in the sun"
+						"caption": "A lucky accident, writing code in the sun",
+						"alt": "A lucky accident"
 					}
 				],
 				"tagline": "the wedding photo booth, reinvented",
@@ -434,22 +463,26 @@
 				"media": [
 					{ 
 						"path": "tidalRibbon01.jpg",
-						"caption": "Close-up of tide slices"
+						"caption": "Close-up of tide slices",
+						"alt": "Tide slices"
 					},
 					{
 						"path": "tidalRibbon02.jpg"
 					},
 					{
 						"path": "waves.jpg",
-						"caption": "Tides arrive about one hour later every day, creating a wave pattern."
+						"caption": "Tides arrive about one hour later every day, creating a wave pattern.",
+						"alt": "Staggered tides"
 					},
 					{
 						"path": "protoWood02.jpg",
-						"caption": "The first prototype, showing The Tōhoku tsunami in March 2011"
+						"caption": "The first prototype, showing The Tōhoku tsunami in March 2011",
+						"alt": "First prototype"
 					},
 					{
 						"path": "both01.jpg",
-						"caption": "Two early iterations side-by-side"
+						"caption": "Two early iterations side-by-side",
+						"alt": "Two early iterations"
 					}
 				],
 				"tagline": "one year of tides, made touchable",
@@ -474,19 +507,23 @@
 					},
 					{
 						"path": "tileDesigner02.jpg",
-						"caption": "Tile Designer gives visitors the creative power to decorate the exhibition."
+						"caption": "Tile Designer gives visitors the creative power to decorate the exhibition.",
+						"alt": "Decorate the exhibition"
 					},
 					{
 						"path": "lowerScreen01.jpg",
-						"caption": "Simply dragging a line segment creates an infinite range of patterns."
+						"caption": "Simply dragging a line segment creates an infinite range of patterns.",
+						"alt": "Simple interface"
 					},
 					{
 						"path": "upperScreen01.jpg",
-						"caption": "Three patterns are created simultaneously from the same line segment."
+						"caption": "Three patterns are created simultaneously from the same line segment.",
+						"alt": "Three patterns"
 					},
 					{
 						"path": "sketches01.jpg",
-						"caption": "Early sketches explore ideas about environmental applications of visitors' designs."
+						"caption": "Early sketches explore ideas about environmental applications of visitors' designs.",
+						"alt": "Early sketches"
 					}
 				],
 				"tagline": "pattern designer and explainer",
@@ -509,23 +546,28 @@
 				"media": [
 					{
 						"path": "vizTheBay01.jpg",
-						"caption": "Visitors explore Fog Browser"
+						"caption": "Visitors explore Fog Browser",
+						"alt": "Fog Browser"
 					},
 					{
 						"path": "findingFaultLines.jpg",
-						"caption": "Seismology and fault lines of the Bay Area, by <a href='http://www.yellowskyscraper.com/' target='_blank'>James Hovell</a>"
+						"caption": "Seismology and fault lines of the Bay Area, by <a href='http://www.yellowskyscraper.com/' target='_blank'>James Hovell</a>",
+						"alt": "Seismology and fault lines"
 					},
 					{
 						"path": "fogBrowser.jpg",
-						"caption": "Fog patterns over San Francisco Bay, by <a href='http://transmote.com/' target='_blank'>Eric Socolofsky</a>"
+						"caption": "Fog patterns over San Francisco Bay, by <a href='http://transmote.com/' target='_blank'>Eric Socolofsky</a>",
+						"alt": "SF fog patterns"
 					},
 					{
 						"path": "population_age18.jpg",
-						"caption": "Demographics studies, by <a href='http://www.flickr.com/photos/walkingsf/' target='_blank'>Eric Fischer</a>"
+						"caption": "Demographics studies, by <a href='http://www.flickr.com/photos/walkingsf/' target='_blank'>Eric Fischer</a>",
+						"alt": "Demographics"
 					},
 					{
 						"path": "salinity.jpg",
-						"caption": "Salinity in the Bay, modeled by <a href='http://berkeley.academia.edu/RustyHolleman' target='_blank'>Rusty Holleman</a>"
+						"caption": "Salinity in the Bay, modeled by <a href='http://berkeley.academia.edu/RustyHolleman' target='_blank'>Rusty Holleman</a>",
+						"alt": "Salinity in the Bay"
 					},
 					{
 						"path": "http://player.vimeo.com/video/73115373",
@@ -543,11 +585,13 @@
 					},
 					{
 						"path": "topoModel.jpg",
-						"caption": "Carved from a solid block of maple, the model is designed to support multiple visualizations."
+						"caption": "Carved from a solid block of maple, the model is designed to support multiple visualizations.",
+						"alt": "Carved maple model"
 					},
 					{
 						"path": "bayModel_topoTests.jpg",
-						"caption": "Early fabrication tests."
+						"caption": "Early fabrication tests.",
+						"alt": "Early fabrication tests"
 					}
 				],
 				"tagline": "illustrating Bay Area systems",

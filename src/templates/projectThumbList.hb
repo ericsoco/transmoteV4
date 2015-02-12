@@ -13,7 +13,7 @@
 						</div>
 					{{/if}}
 				{{else}}
-					<img src="{{concatPath "projects" id media.[0].path}}" class="img-responsive" />
+					<img src="{{concatPath "projects" id media.[0].path}}" class="img-responsive" alt="{{name}}" />
 				{{/ifVideo}}
 			</div>
 		</a>
