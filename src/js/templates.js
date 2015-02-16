@@ -98,12 +98,12 @@ this["transmote"]["projectThumbList"] = Handlebars.template({"1":function(depth0
   if (stack1 != null) { buffer += stack1; }
   buffer += "\" data-project=\""
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
-    + "\">\n				<h3 class=\"project-thumb-title\">"
-    + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
-    + "</h3>\n";
+    + "\">\n";
   stack1 = ((helpers.ifVideo || (depth0 && depth0.ifVideo) || helperMissing).call(depth0, ((stack1 = (depth0 != null ? depth0.media : depth0)) != null ? stack1['0'] : stack1), {"name":"ifVideo","hash":{},"fn":this.program(4, data),"inverse":this.program(9, data),"data":data}));
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "			</div>\n		</a>\n";
+  return buffer + "				<h3 class=\"project-thumb-title\">"
+    + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
+    + "</h3>\n			</div>\n		</a>\n";
 },"2":function(depth0,helpers,partials,data) {
   return " featured";
   },"4":function(depth0,helpers,partials,data) {
@@ -112,19 +112,21 @@ this["transmote"]["projectThumbList"] = Handlebars.template({"1":function(depth0
   if (stack1 != null) { buffer += stack1; }
   return buffer;
 },"5":function(depth0,helpers,partials,data) {
-  var stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "						<img src=\""
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+  return "						<div class=\"project-img\" title="
+    + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
+    + " style=\"background-image: url("
     + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depth0 != null ? depth0.id : depth0), ((stack1 = ((stack1 = (depth0 != null ? depth0.media : depth0)) != null ? stack1['0'] : stack1)) != null ? stack1.poster : stack1), {"name":"concatPath","hash":{},"data":data})))
-    + "\" class=\"img-responsive\" />\n";
+    + ");\"></div>\n";
 },"7":function(depth0,helpers,partials,data) {
   return "						<div class=\"img-responsive videoPosterWarn\">\n							If first image is a video, include { 'poster': 'imgpath' }.\n						</div>\n";
   },"9":function(depth0,helpers,partials,data) {
-  var stack1, helper, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, functionType="function";
-  return "					<img src=\""
-    + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depth0 != null ? depth0.id : depth0), ((stack1 = ((stack1 = (depth0 != null ? depth0.media : depth0)) != null ? stack1['0'] : stack1)) != null ? stack1.path : stack1), {"name":"concatPath","hash":{},"data":data})))
-    + "\" class=\"img-responsive\" alt=\""
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+  return "					<div class=\"project-img\" title="
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
-    + "\" />\n";
+    + " style=\"background-image: url("
+    + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depth0 != null ? depth0.id : depth0), ((stack1 = ((stack1 = (depth0 != null ? depth0.media : depth0)) != null ? stack1['0'] : stack1)) != null ? stack1.path : stack1), {"name":"concatPath","hash":{},"data":data})))
+    + ");\"></div>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var stack1, buffer = "<div class=\"project-thumb-list\">\n";
   stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.projects : depth0), {"name":"each","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
