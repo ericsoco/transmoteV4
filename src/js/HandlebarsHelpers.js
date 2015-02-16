@@ -1,9 +1,10 @@
 define(
 	[
-		'handlebars'
+		'handlebars',
+		'./templates',
 	],
 
-	function (Handlebars) {
+	function (Handlebars, templates) {
 
 		"use strict";
 
@@ -23,6 +24,8 @@ define(
 
 				if (inited) { return; }
 				inited = true;
+
+				Handlebars.registerPartial("projectThumbList", templates['projectThumbList']);
 
 				/**
 				 * Concatenates a list of string arguments with "/" as a delimiter,

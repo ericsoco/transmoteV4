@@ -45,8 +45,15 @@ define(
 			},
 
 			render: function () {
-				this.$el = $(templates['projectThumbList']({
-					projects: ProjectModelStore.getProjectModels()
+				this.$el = $(templates['index']({
+					featuredProjects: {
+						featured: true,
+						projects: ProjectModelStore.getFeaturedProjectModels()
+					},
+					moreProjects: {
+						featured: false,
+						projects: ProjectModelStore.getMoreProjectModels()
+					}
 				}));
 			}
 

@@ -1,8 +1,8 @@
-<div id="project-thumb-list">
+<div class="project-thumb-list">
 	{{#each projects}}
 		<a href="{{concatPath "projects" id}}">
 			{{!-- <div class="project-thumb" data-project="{{id}}" style="background-image:url({{concatPath "projects" id media.[0].path}})"> --}}
-			<div class="project-thumb" data-project="{{id}}">
+			<div class="project-thumb{{#if featured}} featured{{/if}}" data-project="{{id}}">
 				<h3 class="project-thumb-title">{{name}}</h3>
 				{{#ifVideo media.[0]}}
 					{{#if media.[0].poster}}

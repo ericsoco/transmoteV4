@@ -8,6 +8,8 @@ define(
 		"use strict";
 
 		var projectsById;
+		var featuredProjectsById;
+		var moreProjectsById;
 
 		return {
 
@@ -19,8 +21,16 @@ define(
 				return projectsById[projectId];
 			},
 
-			getProjectModels: function () {
+			getAllProjectModels: function () {
 				return projectsById;
+			},
+
+			getFeaturedProjectModels: function () {
+				return featuredProjectsById;
+			},
+
+			getMoreProjectModels: function () {
+				return moreProjectsById;
 			},
 
 			loadProjects: function (dataPath, loadedCB) {
@@ -46,11 +56,19 @@ define(
 						});
 
 						projectsById = {};
+						featuredProjectsById = {};
+						moreProjectsById = {};
 						projects.forEach(function (project) {
 							// skip projects with no media assigned yet
 							if (!project.media.length) { return; }
 
 							projectsById[project.id] = project;
+
+							if (project.featured) {
+								featuredProjectsById[project.id] = project;
+							} else {
+								moreProjectsById[project.id] = project;
+							}
 						});
 
 						loadedCB();

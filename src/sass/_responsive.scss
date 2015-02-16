@@ -49,6 +49,11 @@ using px units instead.
 	#missingPage {
 		margin: 20px 20px;
 	}
+
+	.project-thumb-header {
+		padding-top: 1.0em;
+		margin-bottom: 0.2em;
+	}
 }
 
 /*@media all and (min-width: 80rem) {*/
@@ -58,7 +63,8 @@ using px units instead.
 	}
 
 	header,
-	#project-thumb-list,
+	.project-thumb-list,
+	.project-thumb-header,
 	#project-page,
 	footer {
 		margin: 0 10%;
@@ -121,12 +127,17 @@ using px units instead.
 		}
 	}
 
+	.project-thumb-header {
+		padding: 1.5em 0 0.25em 0.25em;
+	}
+
 }
 
 /*@media all and (min-width: 120rem) {*/
 @media all and (min-width: 1200px) {
 	header,
-	#project-thumb-list,
+	.project-thumb-list,
+	.project-thumb-header,
 	#project-page,
 	footer {
 		margin: 0 15%;

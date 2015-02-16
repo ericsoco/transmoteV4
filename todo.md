@@ -7,6 +7,7 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 [TODO]
 ( ) verify all existing projects look correct
 	(img paths, copy, etc)
+	( ) links to images (from project pages) get routed strangely
 ( ) add projects supported in v3
 	( ) display on homepage as second section,
 		with shorter (very cropped) hero images
@@ -16,17 +17,17 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	( ) browsers
 	( ) ios
 	( ) android
-( ) improve pagespeed
-	http://www.feedthebot.com/pagespeed/
-	( ) cache TTL in htaccess
-		http://www.feedthebot.com/pagespeed/leverage-browser-caching.html
-	( ) concat CSS into one file if possible
 ( ) deploy
 	- note: `<base>` in index.html should contain current directory.
 	  so, `<base href="/" />` at root; `<base href="/lab/v4/" />` in /lab/v4, etc.
 	- note: phantom binary must be made executable (chmod 755);
 	  must use linux-compiled binary (i'm currently on 1.9.2).
 
+( ) improve pagespeed
+	http://www.feedthebot.com/pagespeed/
+	( ) cache TTL in htaccess
+		http://www.feedthebot.com/pagespeed/leverage-browser-caching.html
+	( ) concat CSS into one file if possible
 ( ) update analytics to use Google Tag Manager
 	https://support.google.com/tagmanager/answer/2574305
 ( ) route /about, /contact? (could probably just leave as full pages)
@@ -35,12 +36,16 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	( ) client (page.js)
 	( ) server (.htaccess)
 ( ) improve index page appearance while loading
+( ) font-family mixins file (standardize across site)
+	maybe also include box-shadows?
 
 [BUGS]
 ( ) visiting http://transmote.com/lab/v4/projects/vizthebay as UA: bot gets redirected incorrectly,
 	to http://transmote.com/lab/v4/projects/vizthebay/?url=/lab/v4/projects/vizthebay
 	HTML still looks fine but that URL is all jacked up...
 ( ) about/contact adds to history stack, minor nuisance.
+( ) about/contact modal contains content of previously-clicked item, while animating in.
+	repro: click about, then contact, or v.v.
 ( ) scroll down, click into project, nav back, scroll up and click transmote.com link in header.
 	jumps down page because it's refreshing scroll position.
 	maybe better to cache scroll position as History state.
