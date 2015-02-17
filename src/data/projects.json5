@@ -722,13 +722,12 @@
 				"date": "2002.01.01",
 				"role": "architect, designer",
 				"tag": [
+					{ "id": "architecture" },
+					{ "id": "featured" },
+					{ "id": "spatial" },
+					{ "id": "fabrication" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -742,33 +741,13 @@
 				"date": "2005.06.01",
 				"role": "moving image designer",
 				"tag": [
+					{ "id": "artwork" },
+					{ "id": "clients" },
+					{ "id": "eyebeam" },
+					{ "id": "flash" },
+					{ "id": "motiongfx" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
-				],
-				"tagline": "",
-				"brief": ""
-			},
-
-
-			{
-				"name": "chromoscope",
-				"id": "chromoscope",
-				"featured": false,
-				"date": "2003.06.15",
-				"role": "artist/coder",
-				"tag": [
-				],
-				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -781,13 +760,16 @@
 				"date": "2004.05.15",
 				"role": "artist/coder",
 				"tag": [
+					{ "id": "algorithmic" },
+					{ "id": "artwork" },
+					{ "id": "code" },
+					{ "id": "installations" },
+					{ "id": "itp" },
+					{ "id": "maxmsp" },
+					{ "id": "processing" },
+					{ "id": "spatial" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -800,32 +782,13 @@
 				"date": "2015.09.01",
 				"role": "game designer/developer",
 				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "flash" },
+					{ "id": "games" },
+					{ "id": "itp" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
-				],
-				"tagline": "",
-				"brief": ""
-			},
-
-			{
-				"name": "eyebeam logo",
-				"id": "eyebeamlogo",
-				"featured": false,
-				"date": "2004.11.11",
-				"role": "artist/coder",
-				"tag": [
-				],
-				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -838,13 +801,13 @@
 				"date": "2003.12.15",
 				"role": "artist",
 				"tag": [
+					{ "id": "artwork" },
+					{ "id": "fabrication" },
+					{ "id": "installations" },
+					{ "id": "itp" },
+					{ "id": "spatial" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -857,13 +820,13 @@
 				"date": "2006.08.04",
 				"role": "game developer",
 				"tag": [
+					{ "id": "clients" },
+					{ "id": "code" },
+					{ "id": "educational" },
+					{ "id": "flash" },
+					{ "id": "games" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -876,13 +839,15 @@
 				"date": "2005.01.05",
 				"role": "moving image designer",
 				"tag": [
+					{ "id": "artwork" },
+					{ "id": "clients" },
+					{ "id": "eyebeam" },
+					{ "id": "motiongfx" },
+					{ "id": "code" },
+					{ "id": "processing" },
+					{ "id": "flash" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -895,51 +860,15 @@
 				"date": "2005.10.01",
 				"role": "developer",
 				"tag": [
+					{ "id": "clients" },
+					{ "id": "eyebeam" },
+					{ "id": "installations" },
+					{ "id": "spatial" },
+					{ "id": "flash" },
+					{ "id": "code" },
+					{ "id": "artwork" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
-				],
-				"tagline": "",
-				"brief": ""
-			},
-
-			{
-				"name": "NOCH for AIA 2002",
-				"id": "eleminer",
-				"featured": false,
-				"date": "2002.08.01",
-				"role": "graphic designer",
-				"tag": [
-				],
-				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
-				],
-				"tagline": "",
-				"brief": ""
-			},
-
-			{
-				"name": "plympton citrus",
-				"id": "plympton",
-				"featured": false,
-				"date": "2003.06.25",
-				"role": "game designer/developer",
-				"tag": [
-				],
-				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -952,13 +881,15 @@
 				"date": "2006.10.27",
 				"role": "concept, interaction designer, developer",
 				"tag": [
+					{ "id": "webdev" },
+					{ "id": "code" },
+					{ "id": "usergen" },
+					{ "id": "flash" },
+					{ "id": "ixd" },
+					{ "id": "social" },
+					{ "id": "featured" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -971,13 +902,14 @@
 				"date": "2009.10.04",
 				"role": "co-artist",
 				"tag": [
+					{ "id": "artwork" },
+					{ "id": "installations" },
+					{ "id": "spatial" },
+					{ "id": "code" },
+					{ "id": "maxmsp" },
+					{ "id": "featured" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -990,32 +922,16 @@
 				"date": "2006.03.08",
 				"role": "concept, interaction designer, developer",
 				"tag": [
+					{ "id": "ixd" },
+					{ "id": "usergen" },
+					{ "id": "clients" },
+					{ "id": "flash" },
+					{ "id": "featured" },
+					{ "id": "social" },
+					{ "id": "games" },
+					{ "id": "code" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
-				],
-				"tagline": "",
-				"brief": ""
-			},
-
-			{
-				"name": "swiss box",
-				"id": "swissbox",
-				"featured": false,
-				"date": "2002.12.10",
-				"role": "artist/coder",
-				"tag": [
-				],
-				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -1028,13 +944,12 @@
 				"date": "2003.05.15",
 				"role": "game designer/developer",
 				"tag": [
+					{ "id": "games" },
+					{ "id": "code" },
+					{ "id": "flash" },
+					{ "id": "itp" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -1047,13 +962,12 @@
 				"date": "2004.03.15",
 				"role": "artist/coder",
 				"tag": [
+					{ "id": "code" },
+					{ "id": "flash" },
+					{ "id": "ixd" },
+					{ "id": "webdev" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -1066,13 +980,13 @@
 				"date": "2010.09.19",
 				"role": "artist/coder",
 				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "flash" },
+					{ "id": "ixd" },
+					{ "id": "webdev" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""
@@ -1085,51 +999,16 @@
 				"date": "2004.08.01",
 				"role": "artist/coder",
 				"tag": [
+					{ "id": "algorithmic" },
+					{ "id": "artwork" },
+					{ "id": "code" },
+					{ "id": "flash" },
+					{ "id": "fabrication" },
+					{ "id": "games" },
+					{ "id": "installations" },
+					{ "id": "usergen" }
 				],
 				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
-				],
-				"tagline": "",
-				"brief": ""
-			},
-
-			{
-				"name": "verbrator",
-				"id": "verbrator",
-				"featured": false,
-				"date": "2003.06.25",
-				"role": "artist/coder",
-				"tag": [
-				],
-				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
-				],
-				"tagline": "",
-				"brief": ""
-			},
-
-			{
-				"name": "wallop",
-				"id": "wallop",
-				"featured": false,
-				"date": "2006.08.01",
-				"role": "front-end developer",
-				"tag": [
-				],
-				"media": [
-					{
-						"path": ".jpg",
-						"caption": "",
-						"alt": ""
-					}
 				],
 				"tagline": "",
 				"brief": ""

@@ -139,6 +139,26 @@ module.exports = function (grunt) {
 			}
 		},
 
+		json5_to_json: {
+			options: {
+				space: '\t'
+			},
+			dev: {
+				options: {
+					space: '\t'
+				},
+				src: ['./src/data/projects.json5'],
+				dest: './build/dev/data/projects.json'
+			},
+			deploy: {
+				options: {
+					space: '\t'
+				},
+				src: ['./src/data/projects.json5'],
+				dest: './build/deploy/data/projects.json'
+			}
+		},
+
 		handlebars: {
 			options: {
 				amd: true,
@@ -203,12 +223,6 @@ module.exports = function (grunt) {
 					},
 					{
 						expand: true,
-						cwd: './src/data/',
-						src: ['**/*.*'],
-						dest: './build/dev/data/'
-					},
-					{
-						expand: true,
 						cwd: './src/font/',
 						src: ['**/*.*'],
 						dest: './build/dev/font/'
@@ -262,12 +276,6 @@ module.exports = function (grunt) {
 						cwd: './src/css/',
 						src: ['**/*.*'],
 						dest: './build/deploy/css/'
-					},
-					{
-						expand: true,
-						cwd: './src/data/',
-						src: ['**/*.*'],
-						dest: './build/deploy/data/'
 					},
 					{
 						expand: true,
@@ -397,6 +405,12 @@ module.exports = function (grunt) {
 					message: '...Sassifying...'
 				}
 			},
+			json5_to_json: {
+				options: {
+					title: '-- Building --',
+					message: '...converting JSON5...'
+				}
+			},
 			copy: {
 				options: {
 					title: '-- Building --',
@@ -418,6 +432,7 @@ module.exports = function (grunt) {
 		'newer:jshint:dev',
 		'requirejs:dev',
 		'sass:dev',
+		'newer:json5_to_json:dev',
 		'newer:copy:dev',
 		'newer:chmod:dev'
 	]);
@@ -432,6 +447,8 @@ module.exports = function (grunt) {
 		'requirejs:dev',
 		'notify:sass',
 		'sass:dev',
+		'notify:json5_to_json',
+		'newer:json5_to_json:dev',
 		'notify:copy',
 		'newer:copy:dev',
 		'newer:chmod:dev',
@@ -443,8 +460,9 @@ module.exports = function (grunt) {
 		'jshint:dev',
 		'requirejs:dev',
 		'sass:dev',
-		'newer:copy:dev',
-		'newer:chmod:dev'
+		'json5_to_json:dev',
+		'copy:dev',
+		'chmod:dev'
 	]);
 
 	grunt.registerTask('deploy', [
@@ -452,8 +470,9 @@ module.exports = function (grunt) {
 		'jshint:deploy',
 		'requirejs:deploy',
 		'sass:deploy',
-		'newer:copy:deploy',
-		'newer:chmod:deploy',
+		'json5_to_json:deploy',
+		'copy:deploy',
+		'chmod:deploy',
 		'connect:deploy'
 	]);
 
