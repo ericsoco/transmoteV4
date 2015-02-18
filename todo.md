@@ -8,8 +8,11 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 ( ) verify all existing projects look correct
 	(img paths, copy, etc)
 	( ) links to images (from project pages) get routed strangely
+( ) vertically center images
 ( ) add projects supported in v3
-	( ) display on homepage as second section,
+	( ) elastotron
+		( ) new explo footage??
+	(X) display on homepage as second section,
 		with shorter (very cropped) hero images
 ( ) should bot rewrites be [R=301]s?
 	tried adding that flag but it broke rewrites in funny ways.
@@ -23,6 +26,8 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	- note: phantom binary must be made executable (chmod 755);
 	  must use linux-compiled binary (i'm currently on 1.9.2).
 
+( ) support captions below video embeds
+( ) support youtube embeds?
 ( ) improve pagespeed
 	http://www.feedthebot.com/pagespeed/
 	( ) cache TTL in htaccess

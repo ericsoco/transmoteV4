@@ -95,7 +95,8 @@
 						"videoplayer": "vimeo"
 					}
 				],
-				"brief": "<p>A collection of style tests and production runs I completed while at <a href=\"http://eyebeam.org\" target=\"_blank\">Eyebeam</a> for a multichannel moving image installation, by UK-based artist collective D-Fuse.</p><p>\"Small Global\" juxtaposes visualizations of paired data sets to highlight relationships that often go unnoticed by mass media.</p>"
+				"tagline": "a stylized glimpse into the world's data",
+				"brief": "A collection of style tests and production runs I completed while at <a href=\"http://eyebeam.org\" target=\"_blank\">Eyebeam</a> for a multichannel moving image installation, by UK-based artist collective D-Fuse.<br><br>\"Small Global\" juxtaposes visualizations of paired data sets to highlight relationships that often go unnoticed by mass media."
 			},
 
 			{
@@ -130,7 +131,7 @@
 					{ "path": "proto02.jpg" }
 				],
 				"tagline": "hands-on geometry exploration",
-				"brief": "<p>Understanding geometry doesn't require pen, paper, and textbooks. Another way to learn geometry is to experience it and experiment with it. This is the philosophy behind the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition.</p><p>Dividing Space presents an interactive <a href=\"http://en.wikipedia.org/wiki/Voronoi_diagram\" target=\"_blank\">Voronoi diagram</a> &ndash; visitors can manipulate the diagram by configuring a field of red pegs and sending a blue puck through them. Custom software ties into a computer vision system to enable this realtime, playful interaction with otherwise complex geometry.</p><p>Dividing Space uses <a href=\"http://processing.org/\" target=\"_blank\">Processing</a>, <a href=\"http://reactivision.sourceforge.net/\" target=\"_blank\">ReacTIVision</a> and <a href=\"http://www.leebyron.com/else/mesh/\" target=\"_blank\">Mesh</a>.</p>"
+				"brief": "Understanding geometry doesn't require pen, paper, and textbooks. Another way to learn geometry is to experience it and experiment with it. This is the philosophy behind the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition.<br><br>Dividing Space presents an interactive <a href=\"http://en.wikipedia.org/wiki/Voronoi_diagram\" target=\"_blank\">Voronoi diagram</a> &ndash; visitors can manipulate the diagram by configuring a field of red pegs and sending a blue puck through them. Custom software ties into a computer vision system to enable this realtime, playful interaction with otherwise complex geometry.</p><p>Dividing Space uses <a href=\"http://processing.org/\" target=\"_blank\">Processing</a>, <a href=\"http://reactivision.sourceforge.net/\" target=\"_blank\">ReacTIVision</a> and <a href=\"http://www.leebyron.com/else/mesh/\" target=\"_blank\">Mesh</a>."
 			},
 
 			{
@@ -150,7 +151,49 @@
 					{ "id": "processing" }
 				],
 				"media": [
+					{
+						"path": "reflections01.jpg",
+						"caption": "Elastotron was shown in 2009 at San Francisco's Exploratorium in the 'Reflections' exhibition, which showcased works that asked viewers to, um, reflect on the nature of their self-image.",
+						"alt": "'Reflections', Exploratorium, 2009"
+					},
+					{
+						"path": "reflections04.jpg",
+						"caption": "Elastotron offers six different modes, each of which highlights different elements of reflection, from motion to depth to color.<br>Viewers can also toggle a flood lamp providing contrast for their reflection, casting themselves into shadow and changing peaks into valleys.",
+						"alt": "Visitors exploring Elastotron"
+					},
+					{
+						"path": "http://player.vimeo.com/video/13992186",
+						"poster": "elastotronReflections.jpg",
+						"width": "640",
+						"height": "480",
+						"videoplayer": "vimeo"
+					},
+					{
+						"path": "promo01.jpg",
+						"caption": "Elastotron's six display modes.",
+						"alt": "Elastotron's six display modes."
+					},
+					{
+						"path": "greatwall03.jpg",
+						"caption": "Elastotron was featured on the <a href=\"http://greatwallofoakland.org/\" target=\"_blank\">Great Wall of Oakland</a>, a 10-story outdoor projection, in April 2009.",
+						"alt": "Elastotron on the Great Wall of Oaloand"
+					},
+					{
+						"path": "http://player.vimeo.com/video/13845931",
+						"poster": "greatwall03.jpg",
+						"width": "640",
+						"height": "480",
+						"videoplayer": "vimeo"
+					},
+					{
+						"path": "http://player.vimeo.com/video/9809759",
+						"poster": "invite_thumb.jpg",
+						"width": "640",
+						"height": "480",
+						"videoplayer": "vimeo"
+					}
 				],
+				"tagline": "rippling reflections",
 				"brief": "A video mirror that projects two-dimensional media into three-dimensional space.<br/><br/>Elastotron exists in multiple iterations, each of which grows from an elastic motion algorithm that creates a bouncy, rippling effect that responds fluidly to viewers' movements."
 			},
 
@@ -676,46 +719,6 @@
 			},
 
 			{
-				"name": "FLARManager",
-				"id": "flarmanager",
-				"featured": false,
-				"date": "2010.09.01",
-				"role": "library author",
-				"tag": [
-					{ "id": "code" },
-					{ "id": "featured" },
-					{ "id": "flash" },
-					{ "id": "usergen" }
-				],
-				"media": [
-					{
-						"path": "flarManager_v01.jpg",
-						"caption": "Inspired by the <a href=\"http://ge.ecomagination.com/smartgrid/#/augmented_reality\" target=\"_blank\">GE Smart Grid campaign</a>, I decided to put together a toolset to make creating applications with <a href=\"http://www.libspark.org/wiki/saqoosha/FLARToolKit/en\" target=\"_blank\">FLARToolkit</a> easier.",
-						"alt": "FLARManager"
-					},
-					{
-						"path": "http://player.vimeo.com/video/11916909",
-						"poster": "flarManagerFlareNFT.jpg",
-						"width": "640",
-						"height": "480",
-						"videoplayer": "vimeo"
-					},
-					{
-						"path": "flarManager_v07.jpg",
-						"caption": "FLARManager also provides smarter marker recognition and tracking, similar to other fiducial-tracking engines like <a href=\"http://reactivision.sourceforge.net/\" target=\"_blank\">reacTIVision</a>.",
-						"alt": "Marker recognition and tracking"
-					},
-					{	
-						"path": "flarManager_v06.jpg",
-						"caption": "Unfortunately, I haven't had much time to use the tools that I've created.  However, producing examples and documentation have led to <a href=\"http://www.youtube.com/watch?v=r2IShy6uvyE\" target=\"_blank\">some fun side experiments</a>.",
-						"alt": "FLARCatz"
-					}
-				],
-				"tagline": "taking the 'augh' out of 'augmented reality'",
-				"brief": "FLARManager is a lightweight framework that makes it easier to build augmented reality applications for Flash. This open-source project began as a side project and grew into a full-featured product available for both open and commercial use."
-			},
-
-			{
 				"name": "breaking ground",
 				"id": "breakingground",
 				"featured": false,
@@ -792,6 +795,46 @@
 				],
 				"tagline": "",
 				"brief": ""
+			},
+
+			{
+				"name": "FLARManager",
+				"id": "flarmanager",
+				"featured": false,
+				"date": "2010.09.01",
+				"role": "library author",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "flash" },
+					{ "id": "usergen" }
+				],
+				"media": [
+					{
+						"path": "flarManager_v01.jpg",
+						"caption": "Inspired by the <a href=\"http://ge.ecomagination.com/smartgrid/#/augmented_reality\" target=\"_blank\">GE Smart Grid campaign</a>, I decided to put together a toolset to make creating applications with <a href=\"http://www.libspark.org/wiki/saqoosha/FLARToolKit/en\" target=\"_blank\">FLARToolkit</a> easier.",
+						"alt": "FLARManager"
+					},
+					{
+						"path": "http://player.vimeo.com/video/11916909",
+						"poster": "flarManagerFlareNFT.jpg",
+						"width": "640",
+						"height": "480",
+						"videoplayer": "vimeo"
+					},
+					{
+						"path": "flarManager_v07.jpg",
+						"caption": "FLARManager also provides smarter marker recognition and tracking, similar to other fiducial-tracking engines like <a href=\"http://reactivision.sourceforge.net/\" target=\"_blank\">reacTIVision</a>.",
+						"alt": "Marker recognition and tracking"
+					},
+					{	
+						"path": "flarManager_v06.jpg",
+						"caption": "Unfortunately, I haven't had much time to use the tools that I've created.  However, producing examples and documentation have led to <a href=\"http://www.youtube.com/watch?v=r2IShy6uvyE\" target=\"_blank\">some fun side experiments</a>.",
+						"alt": "FLARCatz"
+					}
+				],
+				"tagline": "taking the 'augh' out of 'augmented reality'",
+				"brief": "FLARManager is a lightweight framework that makes it easier to build augmented reality applications for Flash. This open-source project began as a side project and grew into a full-featured product available for both open and commercial use."
 			},
 
 			{
