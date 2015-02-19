@@ -42,11 +42,13 @@ this["transmote"]["projectPage"] = Handlebars.template({"1":function(depth0,help
   var stack1, helperMissing=helpers.helperMissing, buffer = "			<li>\n";
   stack1 = ((helpers.ifVideo || (depth0 && depth0.ifVideo) || helperMissing).call(depth0, depth0, {"name":"ifVideo","hash":{},"fn":this.program(2, data, depths),"inverse":this.program(4, data, depths),"data":data}));
   if (stack1 != null) { buffer += stack1; }
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.caption : depth0), {"name":"if","hash":{},"fn":this.program(7, data, depths),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
   return buffer + "			</li>\n";
 },"2":function(depth0,helpers,partials,data) {
   var helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
   return "					<div class=\"container\">\n						<iframe "
-    + escapeExpression(((helpers.createVimeoEmbed || (depth0 && depth0.createVimeoEmbed) || helperMissing).call(depth0, (data && data.index), {"name":"createVimeoEmbed","hash":{},"data":data})))
+    + escapeExpression(((helpers.createVideoEmbed || (depth0 && depth0.createVideoEmbed) || helperMissing).call(depth0, (data && data.index), {"name":"createVideoEmbed","hash":{},"data":data})))
     + " frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n					</div>\n";
 },"4":function(depth0,helpers,partials,data,depths) {
   var stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "					<a href=\""
@@ -56,17 +58,14 @@ this["transmote"]["projectPage"] = Handlebars.template({"1":function(depth0,help
     + "\" ";
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.alt : depth0), {"name":"if","hash":{},"fn":this.program(5, data, depths),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  buffer += "/></a>\n";
-  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.caption : depth0), {"name":"if","hash":{},"fn":this.program(7, data, depths),"inverse":this.noop,"data":data});
-  if (stack1 != null) { buffer += stack1; }
-  return buffer;
+  return buffer + "/></a>\n";
 },"5":function(depth0,helpers,partials,data) {
   var lambda=this.lambda, escapeExpression=this.escapeExpression;
   return "alt=\""
     + escapeExpression(lambda((depth0 != null ? depth0.alt : depth0), depth0))
     + "\" ";
 },"7":function(depth0,helpers,partials,data) {
-  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, buffer = "						<p class=\"caption-title\">";
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, buffer = "					<p class=\"caption-title\">";
   stack1 = ((helper = (helper = helpers.caption || (depth0 != null ? depth0.caption : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"caption","hash":{},"data":data}) : helper));
   if (stack1 != null) { buffer += stack1; }
   return buffer + "</p>\n";

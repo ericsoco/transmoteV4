@@ -15,7 +15,52 @@ define(
 		var inited = false;
 
 		function isVideo (media) {
-			return media.videoplayer === "vimeo";
+			return typeof media.videoplayer !== "undefined";
+		}
+
+		/**
+		 * Creates an embedded Vimeo player.
+		 */
+		function createVimeoEmbed (obj, index) {
+			var vimeoPlayerId = VIMEO_PLAYER_PREFIX + index;
+
+			// iframe id to access via Froogaloop
+			// https://developer.vimeo.com/player/js-api
+			var embedStr = "id="+ vimeoPlayerId;
+
+			// link to video
+			embedStr += " src="+ obj.path;
+
+			// apply vimeo settings
+			embedStr += "?title=1&byline=0&portrait=0&color=C3C3B9&api=1&player_id="+ vimeoPlayerId;
+
+			embedStr += " width="+ obj.width;
+			embedStr += " height="+ obj.height;
+
+			return embedStr;
+		}
+
+		/**
+		 * Creates an embedded Youtube player.
+		 */
+		function createYoutubeEmbed (obj, index) {
+			// <iframe width="560" height="315" src="https://www.youtube.com/embed/tysoSbEL8Zw" frameborder="0" allowfullscreen></iframe>
+			// var vimeoPlayerId = VIMEO_PLAYER_PREFIX + index;
+
+			// iframe id to access via Froogaloop
+			// https://developer.vimeo.com/player/js-api
+			// var embedStr = "id="+ vimeoPlayerId;
+
+			// link to video
+			var embedStr = " src="+ obj.path;
+
+			// apply vimeo settings
+			// embedStr += "?title=1&byline=0&portrait=0&color=C3C3B9&api=1&player_id="+ vimeoPlayerId;
+
+			embedStr += " width="+ obj.width;
+			embedStr += " height="+ obj.height;
+
+			return embedStr;
 		}
 
 		return {
@@ -75,26 +120,16 @@ define(
 					}
 				});
 
-				/**
-				 * Creates an embedded Vimeo player.
-				 */
-				Handlebars.registerHelper("createVimeoEmbed", function (index) {
-					var vimeoPlayerId = VIMEO_PLAYER_PREFIX + index;
-
-					// iframe id to access via Froogaloop
-					// https://developer.vimeo.com/player/js-api
-					var vimeoStr = "id="+ vimeoPlayerId;
-
-					// link to vimeo video
-					vimeoStr += " src="+ this.path;
-
-					// apply vimeo settings
-					vimeoStr += "?title=1&byline=0&portrait=0&color=C3C3B9&api=1&player_id="+ vimeoPlayerId;
-
-					vimeoStr += " width="+ this.width;
-					vimeoStr += " height="+ this.height;
-
-					return vimeoStr;
+				Handlebars.registerHelper("createVideoEmbed", function (index) {
+					switch (this.videoplayer) {
+						case 'vimeo':
+							return createVimeoEmbed(this, index);
+						case 'youtube':
+							return createYoutubeEmbed(this, index);
+						default:
+							console.warn("Invalid videoplayer specified:", this.videoplayer);
+							return '';
+					}
 				});
 
 			}

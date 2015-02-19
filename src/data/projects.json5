@@ -18,6 +18,8 @@
 					{ "id": "maxmsp" },
 					{ "id": "spatial" }
 				],
+				"tagline": "3D drawing in physical space",
+				"brief": "At the core of the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition is the concept of spatial reasoning: the ability to create a mental model of a space, and to navigate and manipulate it. Build A Room allows visitors to create three-dimensional spaces out of thin air with a \"light brush\", custom software, and a room-sized canvas.",
 				"media": [
 					{ "path": "buildARoom01.jpg" },
 					{
@@ -47,9 +49,7 @@
 						"caption": "Early tests involved light sabers and long-exposure photography.",
 						"alt": "Jedi fun"
 					}
-				],
-				"tagline": "3D drawing in physical space",
-				"brief": "At the core of the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition is the concept of spatial reasoning: the ability to create a mental model of a space, and to navigate and manipulate it. Build A Room allows visitors to create three-dimensional spaces out of thin air with a \"light brush\", custom software, and a room-sized canvas."
+				]
 			},
 
 			{
@@ -68,6 +68,8 @@
 					{ "id": "processing" },
 					{ "id": "visualization" }
 				],
+				"tagline": "a stylized glimpse into the world's data",
+				"brief": "A collection of style tests and production runs I completed while at <a href=\"http://eyebeam.org\" target=\"_blank\">Eyebeam</a> for a multichannel moving image installation, by UK-based artist collective D-Fuse.<br><br>\"Small Global\" juxtaposes visualizations of paired data sets to highlight relationships that often go unnoticed by mass media.",
 				"media": [
 					{
 						"path": "http://player.vimeo.com/video/10275443",
@@ -94,9 +96,7 @@
 						"height": "412",
 						"videoplayer": "vimeo"
 					}
-				],
-				"tagline": "a stylized glimpse into the world's data",
-				"brief": "A collection of style tests and production runs I completed while at <a href=\"http://eyebeam.org\" target=\"_blank\">Eyebeam</a> for a multichannel moving image installation, by UK-based artist collective D-Fuse.<br><br>\"Small Global\" juxtaposes visualizations of paired data sets to highlight relationships that often go unnoticed by mass media."
+				]
 			},
 
 			{
@@ -116,6 +116,8 @@
 					{ "id": "ixd" },
 					{ "id": "processing" }
 				],
+				"tagline": "hands-on geometry exploration",
+				"brief": "Understanding geometry doesn't require pen, paper, and textbooks. Another way to learn geometry is to experience it and experiment with it. This is the philosophy behind the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition.<br><br>Dividing Space presents an interactive <a href=\"http://en.wikipedia.org/wiki/Voronoi_diagram\" target=\"_blank\">Voronoi diagram</a> &ndash; visitors can manipulate the diagram by configuring a field of red pegs and sending a blue puck through them. Custom software ties into a computer vision system to enable this realtime, playful interaction with otherwise complex geometry.</p><p>Dividing Space uses <a href=\"http://processing.org/\" target=\"_blank\">Processing</a>, <a href=\"http://reactivision.sourceforge.net/\" target=\"_blank\">ReacTIVision</a> and <a href=\"http://www.leebyron.com/else/mesh/\" target=\"_blank\">Mesh</a>.",
 				"media": [
 					{ "path": "dividingSpace01.jpg" },
 					{
@@ -129,9 +131,7 @@
 					{ "path": "final06.jpg" },
 					{ "path": "final08.jpg" },
 					{ "path": "proto02.jpg" }
-				],
-				"tagline": "hands-on geometry exploration",
-				"brief": "Understanding geometry doesn't require pen, paper, and textbooks. Another way to learn geometry is to experience it and experiment with it. This is the philosophy behind the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition.<br><br>Dividing Space presents an interactive <a href=\"http://en.wikipedia.org/wiki/Voronoi_diagram\" target=\"_blank\">Voronoi diagram</a> &ndash; visitors can manipulate the diagram by configuring a field of red pegs and sending a blue puck through them. Custom software ties into a computer vision system to enable this realtime, playful interaction with otherwise complex geometry.</p><p>Dividing Space uses <a href=\"http://processing.org/\" target=\"_blank\">Processing</a>, <a href=\"http://reactivision.sourceforge.net/\" target=\"_blank\">ReacTIVision</a> and <a href=\"http://www.leebyron.com/else/mesh/\" target=\"_blank\">Mesh</a>."
+				]
 			},
 
 			{
@@ -150,6 +150,8 @@
 					{ "id": "itp" },
 					{ "id": "processing" }
 				],
+				"tagline": "rippling reflections",
+				"brief": "A video mirror that projects two-dimensional media into three-dimensional space.<br/><br/>Elastotron exists in multiple iterations, each of which grows from an elastic motion algorithm that creates a bouncy, rippling effect that responds fluidly to viewers' movements.",
 				"media": [
 					{
 						"path": "reflections01.jpg",
@@ -166,7 +168,8 @@
 						"poster": "elastotronReflections.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "Visitors play with their reflections."
 					},
 					{
 						"path": "promo01.jpg",
@@ -183,18 +186,18 @@
 						"poster": "greatwall03.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "Elastotron works well at scale; it doesn't get much larger than 120 feet high."
 					},
 					{
 						"path": "http://player.vimeo.com/video/9809759",
 						"poster": "invite_thumb.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "A version of Elastrotron was shown at the Yerba Buena Center for the Arts in 2010."
 					}
-				],
-				"tagline": "rippling reflections",
-				"brief": "A video mirror that projects two-dimensional media into three-dimensional space.<br/><br/>Elastotron exists in multiple iterations, each of which grows from an elastic motion algorithm that creates a bouncy, rippling effect that responds fluidly to viewers' movements."
+				]
 			},
 
 			{
@@ -215,6 +218,7 @@
 					{ "id": "usergen" },
 					{ "id": "webdev" }
 				],
+				"brief": "<a href=\"http://gamestarmechanic.com\" target=\"_blank\">Gamestar Mechanic</a> is a game about game design. A game editor, online role playing game, and community site are designed to teach kids about complex systems by providing tools to build them.<br><br>Gamestar Mechanic is the brainchild of Katie Salen of the <a href=\"http://www.instituteofplay.org/\" target=\"blank\">Institute of Play</a>. I was the lead developer and architect for the core experience, including a drag-and-drop game editor, a top-down and platformer game engine, and an embeddable game player widget. I also contributed significantly to the user interface and game design.",
 				"media": [
 					{
 						"path": "factory01.jpg",
@@ -307,8 +311,7 @@
 						"caption": "Only takes a few minutes to design and build a working game. A few more will make it really great!",
 						"alt": "The final product"
 					}
-				],
-				"brief": "<p><a href=\"http://gamestarmechanic.com\" target=\"_blank\">Gamestar Mechanic</a> is a game about game design. A game editor, online role playing game, and community site are designed to teach kids about complex systems by providing tools to build them.</p><p>Gamestar Mechanic is the brainchild of Katie Salen of the <a href=\"http://www.instituteofplay.org/\" target=\"blank\">Institute of Play</a>. I was the lead developer and architect for the components built in Flash, including a drag-and-drop game editor, a top-down and platformer game engine, and an embeddable game player widget. I also contributed significantly to the user interface and game design.</p>"
+				]
 			},
 
 			{
@@ -326,15 +329,57 @@
 					{ "id": "installations" },
 					{ "id": "visualization" }
 				],
-				"media": [
-					{ "path": "houseOfDays01.jpg" },
-					{ "path": "houseOfDays02.jpg" },
-					{ "path": "houseOfDays03.jpg" }
-				],
 				"tagline": "a visual history of the Bay",
-				"brief": "A collection of hours, one day at a time. Taken every hour on the hour, these media detail a long-term portrait of San Francisco Bay from individual moments to seasonal and annual patterns."
+				"brief": "A collection of hours, one day at a time. Taken every hour on the hour, these photographs detail a long-term portrait of San Francisco Bay from individual moments to seasonal and annual patterns.",
+				"media": [
+					{
+						"path": "houseOfDays01.jpg",
+						"caption": "The House of Days is a reclaimed Alcatraz searchlight building, positioned on the south edge of the Golden Gate. A camera within takes photographs looking north every hour.",
+						"alt": "The House of Days, on the San Francisco Bay"
+					},
+					{
+						"path": "houseOfDays02.jpg",
+						"caption": "Within the House is a display of days past recently and long ago. Each row contains 24 photographs, comprising a single day.",
+						"alt": "24 hours per row, day after day"
+					},
+					{
+						"path": "houseOfDays03.jpg",
+						"caption": "The photographs scroll upwards and downwards, illustrating the passing of days, seasons, and years. Days grow longer and shorter, fog and rain and sun come and go.",
+						"alt": "Years' worth of days"
+					},
+					{
+						"path": "01_gull04.jpg",
+						"caption": "Every day can be viewed large, with the press of a button. Here, a Western Gull appears right on the hour.",
+						"alt": "Western Gull"
+					},
+					{
+						"path": "04_ship02.jpg",
+						"caption": "Huge container ships come in and out of the Bay regularly.",
+						"alt": "Container ship"
+					},
+					{
+						"path": "08_fog02.jpg",
+						"caption": "San Francisco is known for its fog; the Golden Gate can be especially thick at times.",
+						"alt": "Fog in the Golden Gate"
+					},
+					{
+						"path": "15_ship04.jpg",
+						"caption": "A cruise ship steals into port shortly before daybreak.",
+						"alt": "Cruise ship"
+					},
+					{
+						"path": "10_storm01.jpg",
+						"caption": "Strong storms sometimes sweep in from the west.",
+						"alt": "Storm brewing"
+					},
+					{
+						"path": "14_sunset03.jpg",
+						"caption": "The sun sets far to the north this close to the summer solstice.",
+						"alt": "Solstice sunset"
+					}
+				]
 			},
-
+			/*
 			{
 				"name": "picturing place",
 				"id": "picturingplace",
@@ -349,11 +394,12 @@
 					{ "id": "installations" },
 					{ "id": "visualization" }
 				],
-				"media": [
-				],
+				"tagline": "",
 				"brief": ""
+				"media": [
+				]
 			},
-
+			*/
 			{
 				"name": "plankton populations",
 				"id": "planktonpops",
@@ -368,13 +414,32 @@
 					{ "id": "installations" },
 					{ "id": "visualization" }
 				],
-				"media": [
-					{ "path": "planktonPops01.jpg" },
-					{ "path": "planktonPops02.jpg" },
-					{ "path": "planktonPops03.jpg" }
-				],
 				"tagline": "searching for life in the oceans",
-				"brief": "<p>We all know of the &quot;charismatic megafauna&quot; in the oceans: whales, sharks, dolphins. But what of the plankton that form the base of the marine food web, and produce the oxygen we breathe?</p><p>Plankton Populations allows visitors to examine marine micro-biomes by peering through a wood-and-glass lens into a digital representation of the world's oceans.</p>"
+				"brief": "We all know of the \"charismatic megafauna\" in the oceans: whales, sharks, dolphins. But what of the plankton that form the base of the marine food web, and produce the oxygen we breathe?<br><br>Plankton Populations allows visitors to examine marine micro-biomes by peering through a wood-and-glass lens into a digital representation of the world's oceans.",
+				"media": [
+					{
+						"path": "planktonPops01.jpg",
+						"caption": "Visitors explore plankton types in the world's oceans.",
+						"alt": "Visitors fishing for plankton"
+					},
+					{
+						"path": "https://www.youtube.com/embed/tysoSbEL8Zw",
+						"width": "853",
+						"height": "480",
+						"videoplayer": "youtube",
+						"caption": "Video produced by the Exploratorium Moving Image Department."
+					},
+					{
+						"path": "planktonPops02.jpg",
+						"caption": "Representations of the type and density of plankton populations are visible through the lens.",
+						"alt": "Magnifying plankton populations"
+					},
+					{
+						"path": "planktonPops03.jpg",
+						"caption": "A special marker, opaque to sensors within the table but transparent to humans, allows the system to draw plankton wherever the lens moves.",
+						"alt": "Infrared fiducials tracked by the table"
+					}
+				]
 			},
 
 			{
@@ -392,6 +457,8 @@
 					{ "id": "installations" },
 					{ "id": "visualization" }
 				],
+				"tagline": "tracking ships through the Bay",
+				"brief": "Global shipping is fundamental to San Francisco Bay Area commerce. The ports of Oakland and Richmond turn around multiple massive container and tanker ships daily, providing and supplying raw materials and manufactured goods to the region and the world.<br><br>Understanding the travels of these ships, as well as the daily paths of smaller ships like ferries and tug boats, helps us to better understand our place on the world stage. And it makes for some beautiful visualization.",
 				"media": [
 					{ "path": "shipTracker01.jpg" },
 					{
@@ -406,42 +473,40 @@
 					},
 					{
 						"path": "20130709_americasCup01.jpg",
-						"caption": "An America's Cup race appears on July 9, 2013",
+						"caption": "An America's Cup race appears on July 9, 2013.",
 						"alt": "America's Cup race"
 					},
 					{
 						"path": "prototype01.jpg",
-						"caption": "An early prototype showed only the central Bay",
+						"caption": "An early prototype showed only the central Bay.",
 						"alt": "Early prototype"
 					},
 					{
 						"path": "tugApproach.jpg",
-						"caption": "The view out the window adjacent to Ship Tracker",
+						"caption": "The view out the window adjacent to Ship Tracker: a tugboat travels out toward an incoming container ship.",
 						"alt": "View at the exhibit"
 					},
 					{
 						"path": "colorTest_cargo.jpg",
-						"caption": "Container ship paths for two months",
+						"caption": "Container ship paths for two months.",
 						"alt": "Container ship tracks"
 					},
 					{
 						"path": "colorTest_passenger.jpg",
-						"caption": "Ferry paths for two months",
+						"caption": "Ferry paths for two months.",
 						"alt": "Ferry tracks"
 					},
 					{
 						"path": "colorTest_tanker.jpg",
-						"caption": "Tanker paths for two months; note the mooring circles to the south",
+						"caption": "Tanker paths for two months; note the mooring circles to the south, where tankers until they are prepared to offload their cargo at the Port of Richmond to the north.",
 						"alt": "Tanker tracks"
 					},
 					{
 						"path": "colorTest_tugPilot.jpg",
-						"caption": "Tugboats and Bar Pilot paths for two months",
+						"caption": "Tugboats and Bar Pilot paths for two months.",
 						"alt": "Tugboat tracks"
 					}
-				],
-				"tagline": "tracking ships through the Bay",
-				"brief": "<p>Global shipping is fundamental to San Francisco Bay Area commerce. The ports of Oakland and Richmond turn around multiple massive container and tanker ships daily, providing and supplying raw materials and manufactured goods to the region and the world.</p><p>Understanding the travels of these ships, as well as the daily paths of smaller ships like ferries and tug boats, helps us to better understand our place on the world stage. And it makes for some beautiful visualization.</p>"
+				]
 			},
 
 			{
@@ -455,6 +520,8 @@
 					{ "id": "featured" },
 					{ "id": "installations" }
 				],
+				"tagline": "the wedding photo booth, reinvented",
+				"brief": "May 5, 2012 was a great day for me. It was the day that Gloriane became my wife, and amazingly, also the day my experimental wedding installation did not crash or light anyone on fire.<br><br>The Sparklebooth adds to the tradition of the wedding photobooth, allowing guests to draw over their portraits with sparklers. Custom software adds the sparkler trails to the media as with a long-exposure photograph.",
 				"media": [
 					{ "path": "glorianeAndEric.jpg" },
 					{ "path": "dawnAndMarshall.jpg" },
@@ -462,17 +529,15 @@
 					{ "path": "otis.jpg" },
 					{
 						"path": "development01.jpg",
-						"caption": "The first successful test",
+						"caption": "The first successful test.",
 						"alt": "The first successful test"
 					},
 					{
 						"path": "development02.jpg",
-						"caption": "A lucky accident, writing code in the sun",
-						"alt": "A lucky accident"
+						"caption": "A pretty accident, writing code in the sun.",
+						"alt": "A pretty accident"
 					}
-				],
-				"tagline": "the wedding photo booth, reinvented",
-				"brief": "<p>May 5, 2012 was a great day for me. It was the day that Gloriane became my wife, and amazingly, also the day my experimental wedding installation did not crash or light anyone on fire.</p><p>The Sparklebooth adds to the tradition of the wedding photobooth, allowing guests to draw over their portraits with sparklers. Custom software adds the sparkler trails to the media as with a long-exposure photograph.</p>"
+				]
 			},
 
 			{
@@ -491,14 +556,18 @@
 					{ "id": "installations" },
 					{ "id": "visualization" }
 				],
+				"tagline": "one year of tides, made touchable",
+				"brief": "Tidal Ribbon is a data sculpture displaying NOAA tide data collected in San Francisco Bay. Installed in 2013 in the Exploratorium's Bay Observatory gallery, the piece augments the view of the water with a glimpse of the water's past.</p><p>A collection of lasercut acrylic slices span eight feet, each representing one day and collectively describing a year's worth of tides. Each daily slice is annotated with details of the tide heights, moon phase, and other relevant information.<br><br>Created with <a href=\"http://www.thisdoug.com\" target=\"_blank\">Doug Thistlethwaite</a> at the Exploratorium.",
 				"media": [
 					{ 
 						"path": "tidalRibbon01.jpg",
-						"caption": "Close-up of tide slices",
+						"caption": "Close-up of tide slices. The ridges correspond to the six-minute sampling interval of the tide gauge.<br>Photograph by Gayle Laird, Exploratorium.",
 						"alt": "Tide slices"
 					},
 					{
-						"path": "tidalRibbon02.jpg"
+						"path": "tidalRibbon02.jpg",
+						"caption": "Each slice can be pulled out for closer examination of the daily record.<br>Photograph by Gayle Laird, Exploratorium.",
+						"alt": "Examining the daily slices"
 					},
 					{
 						"path": "waves.jpg",
@@ -515,9 +584,7 @@
 						"caption": "Two early iterations side-by-side",
 						"alt": "Two early iterations"
 					}
-				],
-				"tagline": "one year of tides, made touchable",
-				"brief": "<p>Tidal Ribbon is a data sculpture displaying NOAA tide data collected in San Francisco Bay. Installed in 2013 in the Exploratorium's Bay Observatory gallery, the piece augments the view of the water with a glimpse of the water's past.</p><p>A collection of lasercut acrylic slices span eight feet, each representing one day and collectively describing a year's worth of tides. Each daily slice is annotated with details of the tide heights, moon phase, and other relevant information.</p><p>Created with <a href=\"http://www.thisdoug.com\" target=\"_blank\">Doug Thistlethwaite</a> at the Exploratorium.</p>"
+				]
 			},
 
 			{
@@ -534,6 +601,8 @@
 					{ "id": "featured" },
 					{ "id": "installations" }
 				],
+				"tagline": "pattern designer and explainer",
+				"brief": "Tessellation is perhaps the simplest geometric concept with the broadest range of creative expression. Part of the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition, it allows visitors to explore tessellations by creating them.<br><br>Visitors move a single line on a touchscreen; this line is rotated and translated into three different patterns. These tessellations all respond in real-time, generating a wide range of patterns both on-screen and projected onto a nearby wall. Visitors thereby both design custom patterns and decorate the exhibition with them.",
 				"media": [
 					{
 						"path": "tileDesigner01.jpg"
@@ -558,9 +627,7 @@
 						"caption": "Early sketches explore ideas about environmental applications of visitors' designs.",
 						"alt": "Early sketches"
 					}
-				],
-				"tagline": "pattern designer and explainer",
-				"brief": "<p>Tessellation is perhaps the simplest geometric concept with the broadest range of creative expression. Part of the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition, it allows visitors to explore tessellations by creating them.</p><p>Visitors move a single line on a touchscreen; this line is rotated and translated into three different patterns. These tessellations all respond in real-time, generating a wide range of patterns both on-screen and projected onto a nearby wall. Visitors thereby both design custom patterns and decorate the exhibition with them.</p>"
+				]
 			},
 
 			{
@@ -578,30 +645,32 @@
 					{ "id": "installations" },
 					{ "id": "visualization" }
 				],
+				"tagline": "illustrating Bay Area systems",
+				"brief": "Many complex systems comprise San Francisco Bay Area, from weather and seismology to demographics and transit. These systems often lie invisible due to their physical and temporal scales.<br><br>Visitors can explore these systems via a series of interactive visualizations on display in the Exploratorium's Bay Observatory gallery. Visualizing the Bay Area serves as a platform for this content, with a topographical map carved into solid maple as a physical foundation for a digital framework supporting multiple layers of content.",
 				"media": [
 					{
 						"path": "vizTheBay01.jpg",
-						"caption": "Visitors explore Fog Browser",
+						"caption": "Visitors explore Fog Browser during evening open hours.",
 						"alt": "Fog Browser"
 					},
 					{
 						"path": "findingFaultLines.jpg",
-						"caption": "Seismology and fault lines of the Bay Area, by <a href='http://www.yellowskyscraper.com/' target='_blank'>James Hovell</a>",
+						"caption": "Seismology and fault lines of the Bay Area, by <a href='http://www.yellowskyscraper.com/' target='_blank'>James Hovell</a>.",
 						"alt": "Seismology and fault lines"
 					},
 					{
 						"path": "fogBrowser.jpg",
-						"caption": "Fog patterns over San Francisco Bay, by <a href='http://transmote.com/' target='_blank'>Eric Socolofsky</a>",
+						"caption": "Fog patterns over San Francisco Bay, by <a href='http://transmote.com/' target='_blank'>Eric Socolofsky</a>.",
 						"alt": "SF fog patterns"
 					},
 					{
 						"path": "population_age18.jpg",
-						"caption": "Demographics studies, by <a href='http://www.flickr.com/photos/walkingsf/' target='_blank'>Eric Fischer</a>",
+						"caption": "Demographics studies, by <a href='http://www.flickr.com/photos/walkingsf/' target='_blank'>Eric Fischer</a>.",
 						"alt": "Demographics"
 					},
 					{
 						"path": "salinity.jpg",
-						"caption": "Salinity in the Bay, modeled by <a href='http://berkeley.academia.edu/RustyHolleman' target='_blank'>Rusty Holleman</a>",
+						"caption": "Salinity in the Bay, modeled by <a href='http://berkeley.academia.edu/RustyHolleman' target='_blank'>Rusty Holleman</a>.",
 						"alt": "Salinity in the Bay"
 					},
 					{
@@ -609,14 +678,16 @@
 						"poster": "fogBrowser01.jpg",
 						"width": "750",
 						"height": "600",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "Multiple datasets, including wind, water vapor density, and sunrise/set, combine to create an animation of fog patterns rolling through the Bay Area."
 					},
 					{
 						"path": "http://player.vimeo.com/video/73115372",
 						"poster": "fogBrowser02.jpg",
 						"width": "960",
 						"height": "540",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "Projected onto a topographical model, the flat image of the fog takes on depth."
 					},
 					{
 						"path": "topoModel.jpg",
@@ -628,9 +699,7 @@
 						"caption": "Early fabrication tests.",
 						"alt": "Early fabrication tests"
 					}
-				],
-				"tagline": "illustrating Bay Area systems",
-				"brief": "<p>Many complex systems comprise San Francisco Bay Area, from weather and seismology to demographics and transit. These systems often lie invisible due to their physical and temporal scales.</p><p>Visitors can explore these systems via a series of interactive visualizations on display in the Exploratorium's Bay Observatory gallery. Visualizing the Bay Area serves as a platform for this content, with a topographical map carved into solid maple as a physical foundation for a digital framework supporting multiple layers of content.</p>"
+				]
 			},
 
 			{
@@ -645,9 +714,10 @@
 					{ "id": "usergen" },
 					{ "id": "webdev" }
 				],
+				"tagline": "",
+				"brief": "",
 				"media": [
-				],
-				"brief": ""
+				]
 			},
 
 
@@ -668,6 +738,8 @@
 					{ "id": "processing" },
 					{ "id": "spatial" }
 				],
+				"tagline": "a spatial synthesizer",
+				"brief": "An experiment with malleable space, Aperture is a 'spatial synthesizer' developed during my fellowship in <a href=\"http://eyebeam.org/research/production-lab\" target=\"_blank\">Eyebeam's Production Lab</a>.<br/><br/>Multichannel sonic textures combine with generative visuals overhead to generate six different spatial qualities, exploring concepts from <a href=\"projects/contemplace\">'Contemplace'</a> with greater focus.",
 				"media": [
 					{
 						"path": "vast_satr.jpg",
@@ -675,23 +747,25 @@
 						"alt": "Saturated to vast"
 					},
 					{
-						"path": "vast_anon.jpg",
-						"caption": "'Vast' state, transitioning to 'anonymous' state.",
-						"alt": "Vast to anonymous"
-					},
-					{
 						"path": "http://player.vimeo.com/video/10335935",
 						"poster": "satr_vast.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "'Saturated' state, transitioning to 'vast' state."
+					},
+					{
+						"path": "vast_anon.jpg",
+						"caption": "'Vast' state, transitioning to 'anonymous' state.",
+						"alt": "Vast to anonymous"
 					},
 					{
 						"path": "http://player.vimeo.com/video/10335989",
 						"poster": "vast_anon.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "'Vast' state, transitioning to 'anonymous' state.",
 					},
 					{
 						"path": "anon.jpg",
@@ -713,9 +787,7 @@
 						"caption": "Sketches exploring possibilities for audiovisual textures.",
 						"alt": "Texture sketches"
 					}
-				],
-				"tagline": "a spatial synthesizer",
-				"brief": "An experiment with malleable space, Aperture is a 'spatial synthesizer' developed during my fellowship in <a href=\"http://eyebeam.org/research/production-lab\" target=\"_blank\">Eyebeam's Production Lab</a>.<br/><br/>Multichannel sonic textures combine with generative visuals overhead to generate six different spatial qualities, exploring concepts from <a href=\"projects/contemplace\">'Contemplace'</a> with greater focus."
+				]
 			},
 
 			{
@@ -730,10 +802,10 @@
 					{ "id": "spatial" },
 					{ "id": "fabrication" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 
@@ -750,10 +822,10 @@
 					{ "id": "flash" },
 					{ "id": "motiongfx" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -772,10 +844,10 @@
 					{ "id": "processing" },
 					{ "id": "spatial" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -791,10 +863,10 @@
 					{ "id": "games" },
 					{ "id": "itp" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -809,6 +881,8 @@
 					{ "id": "flash" },
 					{ "id": "usergen" }
 				],
+				"tagline": "taking the 'augh' out of 'augmented reality'",
+				"brief": "FLARManager is a lightweight framework that makes it easier to build augmented reality applications for Flash. This open-source project began as a side project and grew into a full-featured product available for both open and commercial use.",
 				"media": [
 					{
 						"path": "flarManager_v01.jpg",
@@ -832,9 +906,7 @@
 						"caption": "Unfortunately, I haven't had much time to use the tools that I've created.  However, producing examples and documentation have led to <a href=\"http://www.youtube.com/watch?v=r2IShy6uvyE\" target=\"_blank\">some fun side experiments</a>.",
 						"alt": "FLARCatz"
 					}
-				],
-				"tagline": "taking the 'augh' out of 'augmented reality'",
-				"brief": "FLARManager is a lightweight framework that makes it easier to build augmented reality applications for Flash. This open-source project began as a side project and grew into a full-featured product available for both open and commercial use."
+				]
 			},
 
 			{
@@ -850,10 +922,10 @@
 					{ "id": "itp" },
 					{ "id": "spatial" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -869,10 +941,10 @@
 					{ "id": "flash" },
 					{ "id": "games" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -890,10 +962,10 @@
 					{ "id": "processing" },
 					{ "id": "flash" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -911,10 +983,10 @@
 					{ "id": "code" },
 					{ "id": "artwork" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -932,10 +1004,10 @@
 					{ "id": "social" },
 					{ "id": "featured" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -952,10 +1024,10 @@
 					{ "id": "maxmsp" },
 					{ "id": "featured" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -974,10 +1046,10 @@
 					{ "id": "games" },
 					{ "id": "code" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -992,10 +1064,10 @@
 					{ "id": "flash" },
 					{ "id": "itp" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -1010,10 +1082,10 @@
 					{ "id": "ixd" },
 					{ "id": "webdev" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -1029,10 +1101,10 @@
 					{ "id": "ixd" },
 					{ "id": "webdev" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			},
 
 			{
@@ -1051,10 +1123,10 @@
 					{ "id": "installations" },
 					{ "id": "usergen" }
 				],
-				"media": [
-				],
 				"tagline": "",
-				"brief": ""
+				"brief": "",
+				"media": [
+				]
 			}
 
 		]

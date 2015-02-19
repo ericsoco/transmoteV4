@@ -12,14 +12,14 @@
 			<li>
 				{{#ifVideo this}}
 					<div class="container">
-						<iframe {{createVimeoEmbed @index}} frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						<iframe {{createVideoEmbed @index}} frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
 				{{else}}
 					<a href="{{concatPath "projects" ../../id path}}"><img src="{{concatPath "projects" ../../id path}}" {{#if ./alt}}alt="{{./alt}}" {{/if}}/></a>
-					{{#if caption}}
-						<p class="caption-title">{{{caption}}}</p>
-					{{/if}}
 				{{/ifVideo}}
+				{{#if caption}}
+					<p class="caption-title">{{{caption}}}</p>
+				{{/if}}
 			</li>
 		{{/each}}
 		</ul>
