@@ -2,6 +2,10 @@
 	"project_list": {
 		"project": [
 
+			// ================================== //
+			// Featured Projects
+			// ================================== //
+
 			{
 				"name": "build a room",
 				"id": "buildaroom",
@@ -76,25 +80,29 @@
 						"poster": "energy.jpg",
 						"width": "720",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "An overview of energy consumption by country, one continent at a time. Data were taken from various online sources, and combined with the NASA Earth Light Map to reference population centers."
 					},
 					{
 						"path": "http://player.vimeo.com/video/10275493",
 						"width": "720",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "Since its first franchise opening in Des Plains, Illinois, in 1955, McDonalds has expanded to well over 30,000 locations worldwide. This animation chronicles the spread of McDonalds across the globe.The data used for this animation were taken from mcdonalds.com and mcspotlight.org, and were current up to the year 2000."
 					},
 					{
 						"path": "http://player.vimeo.com/video/10275513",
 						"width": "600",
 						"height": "412",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "This animation is based on a map in the New State of the World graphic atlas which shows the number of refugees produced by each country. The exiled refugee population of each country is represented by the total number of tiles in the abstracted country border. Darker tiles represent a higher number of refugees that have fled the country."
 					},
 					{
 						"path": "http://player.vimeo.com/video/10275537",
 						"width": "600",
 						"height": "412",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "This animation is based on a map in the New State of the World graphic atlas which shows the number of refugees received by each country. Refugee entry is abstracted as an imaginary weight falling on a country. Each asylum granted raises the height of the new homeland, leading gradually to a three-dimensional bar graph, with refugee population on the vertical axis. The higher and darker the country, the more refugees are harbored within."
 					}
 				]
 			},
@@ -124,13 +132,34 @@
 						"path": "http://player.vimeo.com/video/14351862",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"videoplayer": "vimeo",
+						"caption": "Dividing space allows visitors to explore Voronoi diagrams by manipulating eight moveable pegs and two rolling pucks.<br>The red pegs provide an opportunity to set up and observe many different Voronoi diagrams, and the blue pucks allow playful experimentation with Voronoi diagrams in motion."
 					},
-					{ "path": "final01.jpg" },
-					{ "path": "final03.jpg" },
-					{ "path": "final06.jpg" },
-					{ "path": "final08.jpg" },
-					{ "path": "proto02.jpg" }
+					{
+						"path": "final01.jpg",
+						"caption": "The pegs and pucks on the table are tracked by a camera above, and their locations are sent to custom software that calculates and projects a Voronoi diagram onto the table below.",
+						"alt": "Voronoi diagram around red pegs and blue pucks"
+					},
+					{
+						"path": "final03.jpg",
+						"caption": "The table is large enough to accommodate multiple visitors at once, and the presence of two rolling pucks and multiple pegs encourages interaction between visitors.",
+						"alt": "Social interaction around the exhibit"
+					},
+					{
+						"path": "final06.jpg",
+						"caption": "Dividing space encourages both active play and contemplative exploration.",
+						"alt": "Active play and contemplative exploration"
+					},
+					{
+						"path": "final08.jpg",
+						"caption": "Dividing Space was originally conceived as a counterpart to Scott Snibbe's <a href=\"http://www.snibbe.com/projects/interactive/boundaryfunctions/\" target=\"_blank\">Boundary Functions</a>, as the non-immersive half of a research pairing designed to investigate the effects of immersivity on visitor experience.",
+						"alt": "Visitors experiment with the geometry"
+					},
+					{
+						"path": "proto02.jpg",
+						"caption": "The first prototype came fairly close to the desired interaction and content delivery.  The most effective change was to add a label at one end of the table, to make it more visible than the bin-mounted labels, and to discourage air hockey-like behavior.",
+						"alt": "The first prototype, open at both ends"
+					}
 				]
 			},
 
@@ -721,6 +750,10 @@
 			},
 
 
+
+			// ================================== //
+			// More Projects
+			// ================================== //
 
 			{
 				"name": "aperture",

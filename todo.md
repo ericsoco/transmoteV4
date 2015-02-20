@@ -10,13 +10,20 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	( ) links to images (from project pages) get routed strangely
 ( ) vertically center images within project thumbs
 ( ) add projects supported in v3
-	( ) elastotron
-		( ) new explo footage??
-	( ) d-fuse: add captions
-	( ) dividing space: add captions
+	(X) d-fuse: add captions
+	(X) dividing space: add captions
 	(X) house of days
 		(X) more footage?
 	( ) picturing place
+	( ) elastotron
+		( ) new explo footage??
+	----- more projects -----
+	( ) breaking ground
+	( ) anthony mccall
+	( ) quickcomic
+	( ) silly walks generator
+	( ) terraformer
+	( ) vectogram
 
 	(X) display on homepage as second section,
 		with shorter (very cropped) hero images
