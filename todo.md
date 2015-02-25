@@ -18,8 +18,8 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	( ) elastotron
 		( ) new explo footage??
 	----- more projects -----
-	( ) breaking ground
-	( ) anthony mccall
+	(X) breaking ground
+	(X) anthony mccall
 	( ) quickcomic
 	( ) silly walks generator
 	( ) terraformer
@@ -29,6 +29,7 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 		with shorter (very cropped) hero images
 ( ) should bot rewrites be [R=301]s?
 	tried adding that flag but it broke rewrites in funny ways.
+( ) get v3 working at transmote.com/v3
 ( ) test:
 	( ) browsers
 	( ) iphone

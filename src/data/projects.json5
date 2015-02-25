@@ -180,7 +180,7 @@
 					{ "id": "processing" }
 				],
 				"tagline": "rippling reflections",
-				"brief": "A video mirror that projects two-dimensional media into three-dimensional space.<br/><br/>Elastotron exists in multiple iterations, each of which grows from an elastic motion algorithm that creates a bouncy, rippling effect that responds fluidly to viewers' movements.",
+				"brief": "A video mirror that projects two-dimensional media into three-dimensional space.<br>Elastotron exists in multiple iterations, each of which grows from an elastic motion algorithm that creates a bouncy, rippling effect that responds fluidly to viewers' movements.",
 				"media": [
 					{
 						"path": "reflections01.jpg",
@@ -772,7 +772,7 @@
 					{ "id": "spatial" }
 				],
 				"tagline": "a spatial synthesizer",
-				"brief": "An experiment with malleable space, Aperture is a 'spatial synthesizer' developed during my fellowship in <a href=\"http://eyebeam.org/research/production-lab\" target=\"_blank\">Eyebeam's Production Lab</a>.<br/><br/>Multichannel sonic textures combine with generative visuals overhead to generate six different spatial qualities, exploring concepts from <a href=\"projects/contemplace\">'Contemplace'</a> with greater focus.",
+				"brief": "An experiment with malleable space, Aperture is a 'spatial synthesizer' developed during my fellowship in <a href=\"http://eyebeam.org/research/production-lab\" target=\"_blank\">Eyebeam's Production Lab</a>.<br>Multichannel sonic textures combine with generative visuals overhead to generate six different spatial qualities, exploring concepts from <a href=\"projects/contemplace\">'Contemplace'</a> with greater focus.",
 				"media": [
 					{
 						"path": "vast_satr.jpg",
@@ -835,9 +835,49 @@
 					{ "id": "spatial" },
 					{ "id": "fabrication" }
 				],
-				"tagline": "",
-				"brief": "",
+				"tagline": "my past life as an architect",
+				"brief": "Breaking Ground is my print portfolio. Completed in 2001, the majority of the works contained within are architectural design projects, some professional and some academic.<br><br>\"As I make headway...I pick up tools necessary to construct. The more tools I acquire, the more varied the project grows. And this is exactly what makes the project worth undertaking.\"",
 				"media": [
+					{
+						"path": "breakingground_cover.jpg",
+						"caption": "The physical object, submitted for acceptance into graduate school. Back when people printed things.",
+						"alt": "Print portfolio"
+					},
+					{
+						"path": "arthouse_lg.jpg",
+						"caption": "Sited in a hybrid industrial-residential neighborhood on St. Louis' south side, this home is texturally and programmatically linked to the community in which it resides.<br>The living quarters for the painter and sculptor occupy the south end of the home, away from the street. The interior and exterior are clad in rough-sawn lumber, an allusion to traditional home building and to the lumberyard next door.<br>Two studios and a gallery provide a place to create and show work. The lumber cladding peels away to reveal board-form concrete walls at the studios, and polished concrete at the gallery.",
+						"alt": "Work-live space for a sculptor and a painter"
+					},
+					{
+						"path": "holmesplace_lg.jpg",
+						"caption": "Occupying a highly visible space in a high-end retail center in downtown Chicago, this space is Holmes Place Health Clubs' introduction to the American populous.<br>The 566sf pre-sales space serves as a marketing, membership, and retail center for the international upscale health club chain.<br>Working with CannonDesign as project designer, architect, and manager, I placed emphasis on maximizing visual impact with a minimum of means. A trim budget and a limited amount of space demanded visual and spatial transparency with effective use of materials.",
+						"alt": "Polished retail space on Michigan Avenue"
+					},
+					{
+						"path": "cpscomp_lg.jpg",
+						"caption": "A competition held by the Chicago Public School District called for a facility to accommodate a diverse body of 800 students; my partner and I expanded the program to accommodate the south-side community of Roseland.<br>By integrating existing buildings into the new, we sought to maintain and enhance neighborhood cohesion. About 15% of the student body will be physically disabled. as such, primary circulation is ramped through the 'vivarium', a semi-outdoor space that changes throughout the year.",
+						"alt": "New school integrated into the existing neighborhood fabric"
+					},
+					{
+						"path": "laumeier_lg.jpg",
+						"caption": "Laumeier is an alternative venue for the display and creation of art. Site-specific and independent artwork is placed throughout the park, in a variety of natural settings.<br>Outdoor and indoor spaces at Laumeier are essentially different rooms in the same gallery -- exterior circulation flows directly into and through interior spaces. Buildings become events along existing and new paths that flow through the outdoor exhibits.",
+						"alt": "Sculpture, painting, and ceramics studios embedded in the park"
+					},
+					{
+						"path": "chezfleur_lg.jpg",
+						"caption": "A friend wanted to build a potting shed in her backyard. I designed Chez Fleur Minihan to be buildable by someone with little construction knowledge and a tight budget. The accompanying drawings are somewhere between a standard set of construction docs and a how-to manual.<br>The material palette is simple in order to keep costs down: a lumber frame with concrete footings, standard hardware, and a corrugated fiberglass roof.<br>The structure itself, while providing shelter for supplies and tools, is kept very open to allow maximum sunlight and air circulation for the plants growing inside and around the shed.",
+						"alt": "Potting shed for a friend"
+					},
+					{
+						"path": "blueoncmu_lg.jpg",
+						"caption": "I needed a desk, but was working with a modest neophyte architect's salary. Acknowledging my fairly transient lifestyle, I opted to design a modular desk that could be broken down for easier moving, and that could be assembled in a variety of configurations to fit a variety of spaces.<br>The structure consists of 9-15 concrete blocks, depending on the chosen configuration. The shelves and top are birch plywood with a custom blue stain and polyurethane finish. The cmu also allows for efficient cable management by routing wires through its open cells.",
+						"alt": "Furniture design/build on a budget"
+					},
+					{
+						"path": "redlamp_lg.jpg",
+						"caption": "Layers of ruby red plexi, offset by washers and nuts, spaced along a single threaded rod that acts as both the main structure and a handle. The core is surrounded by translucent acetate sheeting to diffuse the light. This lamp can be installed as either a desk lamp or a hanging lantern.",
+						"alt": "Experiment in color and light"
+					},
 				]
 			},
 
@@ -1016,9 +1056,49 @@
 					{ "id": "code" },
 					{ "id": "artwork" }
 				],
-				"tagline": "",
-				"brief": "",
+				"tagline": "software for solid light films",
+				"brief": "I met <a href='http://www.anthonymccall.com/' target='_blank'>Anthony McCall</a> while working at <a href='http://eyebeam.org' target='_blank'>Eyebeam</a>, and we maintained a working relationship after the end of my fellowship.<br><br>Anthony's primary medium is \"solid light\", simple geometric forms projected into a room full of haze that transforms points into lines, and lines into shifting, ethereal planes.<br><br>These are examples of the commissioned work I've done for him. I also found <a href='http://bombsite.com/issues/97/articles/2841' target='_blank'>this interview</a> to offer particularly descriptive insight into his work, touching on the relation of film to sculpture in his pieces, and the unique qualities of the medium of \"solid light\".",
 				"media": [
+					{	
+						"path": "AM-Peer-02.jpg",
+						"caption": "Anthony McCall.<br/>\"Between You and I\" (2006), sixteenth minute.<br>Installation at Peer / The Round Chapel , London, 2006.<br>Photo by Hugo Glendenning, copyright Anthony McCall 2006.",
+						"alt": "Between You and I, 16th minute"
+					},
+					{	
+						"path": "AM-Peer-05.jpg",
+						"caption": "Anthony McCall.<br/>\"Between You and I\" (2006), tenth minute.<br>Installation at Peer / The Round Chapel , London, 2006.<br>Photo by Hugo Glendenning, copyright Anthony McCall 2006.",
+						"alt": "Between You and I, 10th minute"
+					},
+					{	
+						"path": "yaiVert01.jpg",
+						"caption": "",
+						"alt": "Screen capture of Between You and I"
+					},
+					{	
+						"path": "yaiVert02.jpg",
+						"caption": "Screen captures of \"Between You and I\".<br>Simple geometric forms in a two-dimensional plane become much more when projected into the third dimension.",
+						"alt": "Screen capture of Between You and I"
+					},
+					{	
+						"path": "yaiVert_ui.jpg",
+						"caption": "",
+						"alt": "Authoring software for Between You and I"
+					},
+					{
+						"path": "yaiHoriz_ui.jpg",
+						"caption": "I developed authoring tools for Anthony to create the horizontal and vertical versions of 'Between You and I'.",
+						"alt": "Authoring software for Between You and I"
+					},
+					{	
+						"path": "hazer2.jpg",
+						"caption": "",
+						"alt": "Early style tests at Eyebeam"
+					},
+					{	
+						"path": "hazer6.jpg",
+						"caption": "Early style tests at <a href='http://eyebeam.org' target='_blank'>Eyebeam</a>.<br>Photographs by <a href='http://thirtyhourday.net/' target='_blank'>Chihcheng Peng</a>.",
+						"alt": "Early style tests at Eyebeam"
+					}
 				]
 			},
 
