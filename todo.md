@@ -29,20 +29,23 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 		with shorter (very cropped) hero images
 ( ) should bot rewrites be [R=301]s?
 	tried adding that flag but it broke rewrites in funny ways.
-( ) get v3 working at transmote.com/v3
+(X) get v3 working at transmote.com/v3
+( ) get v4 working at transmote.com/v4
 ( ) test:
 	( ) browsers
 	( ) iphone
 	( ) ipad
 	( ) android
-( ) deploy
+(X) deploy
 	- note: `<base>` in index.html should contain current directory.
 	  so, `<base href="/" />` at root; `<base href="/lab/v4/" />` in /lab/v4, etc.
 	- note: phantom binary must be made executable (chmod 755);
 	  must use linux-compiled binary (i'm currently on 1.9.2).
+( ) verify google analytics is still working some time after launch
 
 (X) support captions below video embeds
 (X) support youtube embeds?
+( ) social/sharing widgets
 ( ) improve pagespeed
 	http://www.feedthebot.com/pagespeed/
 	( ) cache TTL in htaccess
@@ -60,12 +63,13 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	maybe also include box-shadows?
 
 [BUGS]
+( ) about/contact modal contains content of previously-clicked item, while animating in.
+	repro: click about, then contact, or v.v.
+( ) browser back navigation from images (clicked in project pages) does nothing
 ( ) visiting http://transmote.com/lab/v4/projects/vizthebay as UA: bot gets redirected incorrectly,
 	to http://transmote.com/lab/v4/projects/vizthebay/?url=/lab/v4/projects/vizthebay
 	HTML still looks fine but that URL is all jacked up...
 ( ) about/contact adds to history stack, minor nuisance.
-( ) about/contact modal contains content of previously-clicked item, while animating in.
-	repro: click about, then contact, or v.v.
 ( ) scroll down, click into project, nav back, scroll up and click transmote.com link in header.
 	jumps down page because it's refreshing scroll position.
 	maybe better to cache scroll position as History state.
