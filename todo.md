@@ -8,7 +8,13 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 ( ) verify all existing projects look correct
 	(img paths, copy, etc)
 	( ) links to images (from project pages) get routed strangely
-( ) vertically center images within project thumbs
+		cannot back-nav from images
+(X) vertically center images within project thumbs
+	img: { margin-top }, but have to update this on resize
+	since it's relative to image height (which changes based on container width)
+( ) section headers wrap on iphone;
+	make font sizes smaller in media query.
+( ) meta-blurb at top of home page (what/who is this? what do i do?)
 ( ) add projects supported in v3
 	(X) d-fuse: add captions
 	(X) dividing space: add captions
@@ -17,6 +23,7 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	( ) picturing place
 	( ) elastotron
 		( ) new explo footage??
+	( ) heresay
 	----- more projects -----
 	(X) breaking ground
 	(X) anthony mccall
@@ -33,9 +40,9 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 ( ) get v4 working at transmote.com/v4
 ( ) test:
 	( ) browsers
-	( ) iphone
+	(X) iphone
 	( ) ipad
-	( ) android
+	(X) android
 (X) deploy
 	- note: `<base>` in index.html should contain current directory.
 	  so, `<base href="/" />` at root; `<base href="/lab/v4/" />` in /lab/v4, etc.
@@ -48,6 +55,7 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 ( ) social/sharing widgets
 ( ) improve pagespeed
 	http://www.feedthebot.com/pagespeed/
+	( ) minified JS (main.js) is still 158k??
 	( ) cache TTL in htaccess
 		http://www.feedthebot.com/pagespeed/leverage-browser-caching.html
 	( ) concat CSS into one file if possible

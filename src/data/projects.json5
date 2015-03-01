@@ -660,6 +660,44 @@
 			},
 
 			{
+				"name": "transmote talks",
+				"id": "transmotetalks",
+				"featured": false,
+				"date": "2015.04.13",
+				"role": "public speaker",
+				"tag": [
+				],
+				"tagline": "sometimes i say things out loud.",
+				"brief": "I love sharing ideas with people. While one-on-ones are my favorite, sharing ideas with hundreds of people, one at a time, doesn't feel very efficient. So, people created conferences. And sometimes I speak at them.",
+				"media": [
+					{
+						"path": "https://vimeo.com/81940032",
+						"poster": "andNotOr.jpg",
+						"width": "800",
+						"height": "450",
+						"videoplayer": "vimeo",
+						"caption": "&& ! || (And Not Or): Generalism in a world of divided labor"
+					},
+					{
+						"path": "https://vimeo.com/82394675",
+						"poster": "instIntPanel.jpg",
+						"width": "800",
+						"height": "450",
+						"videoplayer": "vimeo",
+						"caption": "INST-INT Panel: Alexis Lloyd with Eric Socolofsky, Matt Cottam, and Michael Szivos"
+					},
+					{
+						"path": "https://vimeo.com/69096802",
+						"poster": "immediateGratification.jpg",
+						"width": "800",
+						"height": "450",
+						"videoplayer": "vimeo",
+						"caption": "Design for Immediate Gratification: Exhibit design at the Exploratorium"
+					},
+				]
+			},
+
+			{
 				"name": "visualizing the bay area",
 				"id": "vizthebay",
 				"featured": true,

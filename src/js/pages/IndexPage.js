@@ -30,6 +30,8 @@ define(
 					}, 1);
 				}
 
+				window.addEventListener('resize', this.throttle(this.onResize.bind(this)));
+
 				return this.$el;
 			},
 
@@ -55,6 +57,42 @@ define(
 						projects: ProjectModelStore.getMoreProjectModels()
 					}
 				}));
+			},
+
+			throttle: function (fn, delay) {
+				var lastCall,
+				    timeout;
+
+				if (!delay) {
+					delay = 250;
+				}
+
+				return function () {
+					var now = new Date().getTime();
+					if (lastCall && now - lastCall < delay) {
+						clearTimeout(timeout);
+						timeout = setTimeout(function () {
+							lastCall = now;
+							fn();
+						}, delay);
+					} else {
+						lastCall = now;
+						fn();
+					}
+				};
+			},
+
+			onResize: function () {
+				// measure each img height,
+				// and set its margin-top to keep img centered.
+				this.$el.find('.project-thumb').each(function (i, thumbEl) {
+					var $thumb = $(thumbEl),
+					    $img = $thumb.find('img'),
+					    thumbHeight = $thumb.height(),
+					    imgHeight = $img && $img.height();
+
+					$img.css('marginTop', 0.5 * (thumbHeight - imgHeight));
+				});
 			}
 
 		};
