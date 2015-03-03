@@ -4,7 +4,7 @@
 			{{!-- <div class="project-thumb" data-project="{{id}}" style="background-image:url({{concatPath "projects" id media.[0].path}})"> --}}
 			<div class="project-thumb{{#if featured}} featured{{/if}}" data-project="{{id}}">
 				<h3 class="project-thumb-title">{{name}}</h3>
-				{{#ifVideo media.[0]}}
+				{{#ifEmbed media.[0]}}
 					{{#if media.[0].poster}}
 						<img src="{{concatPath "projects" id media.[0].poster}}" class="img-responsive" />
 					{{else}}
@@ -14,7 +14,7 @@
 					{{/if}}
 				{{else}}
 					<img src="{{concatPath "projects" id media.[0].path}}" class="img-responsive" alt="{{name}}" />
-				{{/ifVideo}}
+				{{/ifEmbed}}
 			</div>
 		</a>
 	{{/each}}

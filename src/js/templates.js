@@ -40,7 +40,7 @@ this["transmote"]["missingPage"] = Handlebars.template({"compiler":[6,">= 2.0.0-
 
 this["transmote"]["projectPage"] = Handlebars.template({"1":function(depth0,helpers,partials,data,depths) {
   var stack1, helperMissing=helpers.helperMissing, buffer = "			<li>\n";
-  stack1 = ((helpers.ifVideo || (depth0 && depth0.ifVideo) || helperMissing).call(depth0, depth0, {"name":"ifVideo","hash":{},"fn":this.program(2, data, depths),"inverse":this.program(4, data, depths),"data":data}));
+  stack1 = ((helpers.ifEmbed || (depth0 && depth0.ifEmbed) || helperMissing).call(depth0, depth0, {"name":"ifEmbed","hash":{},"fn":this.program(2, data, depths),"inverse":this.program(4, data, depths),"data":data}));
   if (stack1 != null) { buffer += stack1; }
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.caption : depth0), {"name":"if","hash":{},"fn":this.program(7, data, depths),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
@@ -48,7 +48,7 @@ this["transmote"]["projectPage"] = Handlebars.template({"1":function(depth0,help
 },"2":function(depth0,helpers,partials,data) {
   var helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
   return "					<div class=\"container\">\n						<iframe "
-    + escapeExpression(((helpers.createVideoEmbed || (depth0 && depth0.createVideoEmbed) || helperMissing).call(depth0, (data && data.index), {"name":"createVideoEmbed","hash":{},"data":data})))
+    + escapeExpression(((helpers.createEmbed || (depth0 && depth0.createEmbed) || helperMissing).call(depth0, (data && data.index), {"name":"createEmbed","hash":{},"data":data})))
     + " frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n					</div>\n";
 },"4":function(depth0,helpers,partials,data,depths) {
   var stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "					<a href=\""
@@ -100,7 +100,7 @@ this["transmote"]["projectThumbList"] = Handlebars.template({"1":function(depth0
     + "\">\n				<h3 class=\"project-thumb-title\">"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
     + "</h3>\n";
-  stack1 = ((helpers.ifVideo || (depth0 && depth0.ifVideo) || helperMissing).call(depth0, ((stack1 = (depth0 != null ? depth0.media : depth0)) != null ? stack1['0'] : stack1), {"name":"ifVideo","hash":{},"fn":this.program(4, data),"inverse":this.program(9, data),"data":data}));
+  stack1 = ((helpers.ifEmbed || (depth0 && depth0.ifEmbed) || helperMissing).call(depth0, ((stack1 = (depth0 != null ? depth0.media : depth0)) != null ? stack1['0'] : stack1), {"name":"ifEmbed","hash":{},"fn":this.program(4, data),"inverse":this.program(9, data),"data":data}));
   if (stack1 != null) { buffer += stack1; }
   return buffer + "			</div>\n		</a>\n";
 },"2":function(depth0,helpers,partials,data) {

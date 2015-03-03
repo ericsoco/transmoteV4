@@ -14,8 +14,8 @@ define(
 
 		var inited = false;
 
-		function isVideo (media) {
-			return typeof media.videoplayer !== "undefined";
+		function isEmbed (media) {
+			return typeof media.embedType !== "undefined";
 		}
 
 		/**
@@ -44,21 +44,25 @@ define(
 		 * Creates an embedded Youtube player.
 		 */
 		function createYoutubeEmbed (obj, index) {
-			// <iframe width="560" height="315" src="https://www.youtube.com/embed/tysoSbEL8Zw" frameborder="0" allowfullscreen></iframe>
-			// var vimeoPlayerId = VIMEO_PLAYER_PREFIX + index;
-
-			// iframe id to access via Froogaloop
-			// https://developer.vimeo.com/player/js-api
-			// var embedStr = "id="+ vimeoPlayerId;
 
 			// link to video
 			var embedStr = " src="+ obj.path;
 
-			// apply vimeo settings
-			// embedStr += "?title=1&byline=0&portrait=0&color=C3C3B9&api=1&player_id="+ vimeoPlayerId;
-
 			embedStr += " width="+ obj.width;
 			embedStr += " height="+ obj.height;
+
+			return embedStr;
+		}
+
+		/**
+		 * Creates an embedded Flash player.
+		 */
+		function createFlashEmbed (obj, index) {
+
+			var embedStr = "";
+
+			// TODO: use swfobject.
+			//       probably want markup version, not JS.
 
 			return embedStr;
 		}
@@ -110,24 +114,26 @@ define(
 
 				/**
 				 * Evaluates a media object for a project;
-				 * returns true if the file should be displayed in a video player.
+				 * returns true if the file should be displayed in an embed player.
 				 */
-				Handlebars.registerHelper("ifVideo", function (media, options) {
-					if (isVideo(media)) {
+				Handlebars.registerHelper("ifEmbed", function (media, options) {
+					if (isEmbed(media)) {
 						return options.fn(this);
 					} else {
 						return options.inverse(this);
 					}
 				});
 
-				Handlebars.registerHelper("createVideoEmbed", function (index) {
-					switch (this.videoplayer) {
+				Handlebars.registerHelper("createEmbed", function (index) {
+					switch (this.embedType) {
 						case 'vimeo':
 							return createVimeoEmbed(this, index);
 						case 'youtube':
 							return createYoutubeEmbed(this, index);
+						case 'flash':
+							return createFlashEmbed(this, index);
 						default:
-							console.warn("Invalid videoplayer specified:", this.videoplayer);
+							console.warn("Invalid videoplayer specified:", this.embedType);
 							return '';
 					}
 				});

@@ -10,13 +10,13 @@
 		<ul class="project-media">
 		{{#each media}}
 			<li>
-				{{#ifVideo this}}
+				{{#ifEmbed this}}
 					<div class="container">
-						<iframe {{createVideoEmbed @index}} frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						<iframe {{createEmbed @index}} frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
 				{{else}}
 					<a href="{{concatPath "projects" ../../id path}}"><img src="{{concatPath "projects" ../../id path}}" {{#if ./alt}}alt="{{./alt}}" {{/if}}/></a>
-				{{/ifVideo}}
+				{{/ifEmbed}}
 				{{#if caption}}
 					<p class="caption-title">{{{caption}}}</p>
 				{{/if}}

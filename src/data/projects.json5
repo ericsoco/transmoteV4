@@ -31,7 +31,7 @@
 						"poster": "room02_thumb.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"embedType": "vimeo"
 					},
 					{
 						"path": "buildARoom02.jpg",
@@ -80,28 +80,28 @@
 						"poster": "energy.jpg",
 						"width": "720",
 						"height": "480",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "An overview of energy consumption by country, one continent at a time. Data were taken from various online sources, and combined with the NASA Earth Light Map to reference population centers."
 					},
 					{
 						"path": "http://player.vimeo.com/video/10275493",
 						"width": "720",
 						"height": "480",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "Since its first franchise opening in Des Plains, Illinois, in 1955, McDonalds has expanded to well over 30,000 locations worldwide. This animation chronicles the spread of McDonalds across the globe.The data used for this animation were taken from mcdonalds.com and mcspotlight.org, and were current up to the year 2000."
 					},
 					{
 						"path": "http://player.vimeo.com/video/10275513",
 						"width": "600",
 						"height": "412",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "This animation is based on a map in the New State of the World graphic atlas which shows the number of refugees produced by each country. The exiled refugee population of each country is represented by the total number of tiles in the abstracted country border. Darker tiles represent a higher number of refugees that have fled the country."
 					},
 					{
 						"path": "http://player.vimeo.com/video/10275537",
 						"width": "600",
 						"height": "412",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "This animation is based on a map in the New State of the World graphic atlas which shows the number of refugees received by each country. Refugee entry is abstracted as an imaginary weight falling on a country. Each asylum granted raises the height of the new homeland, leading gradually to a three-dimensional bar graph, with refugee population on the vertical axis. The higher and darker the country, the more refugees are harbored within."
 					}
 				]
@@ -132,7 +132,7 @@
 						"path": "http://player.vimeo.com/video/14351862",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "Dividing space allows visitors to explore Voronoi diagrams by manipulating eight moveable pegs and two rolling pucks.<br>The red pegs provide an opportunity to set up and observe many different Voronoi diagrams, and the blue pucks allow playful experimentation with Voronoi diagrams in motion."
 					},
 					{
@@ -197,7 +197,7 @@
 						"poster": "elastotronReflections.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "Visitors play with their reflections."
 					},
 					{
@@ -215,7 +215,7 @@
 						"poster": "greatwall03.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "Elastotron works well at scale; it doesn't get much larger than 120 feet high."
 					},
 					{
@@ -223,7 +223,7 @@
 						"poster": "invite_thumb.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "A version of Elastrotron was shown at the Yerba Buena Center for the Arts in 2010."
 					}
 				]
@@ -269,21 +269,21 @@
 						"poster": "level01.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"embedType": "vimeo"
 					},
 					{
 						"path": "http://player.vimeo.com/video/10275316",
 						"poster": "level06.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"embedType": "vimeo"
 					},
 					{
 						"path": "http://player.vimeo.com/video/10275368",
 						"poster": "level08.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"embedType": "vimeo"
 					},
 					{
 						"path": "editor01.jpg",
@@ -455,7 +455,7 @@
 						"path": "https://www.youtube.com/embed/tysoSbEL8Zw",
 						"width": "853",
 						"height": "480",
-						"videoplayer": "youtube",
+						"embedType": "youtube",
 						"caption": "Video produced by the Exploratorium Moving Image Department."
 					},
 					{
@@ -671,27 +671,27 @@
 				"brief": "I love sharing ideas with people. While one-on-ones are my favorite, sharing ideas with hundreds of people, one at a time, doesn't feel very efficient. So, people created conferences. And sometimes I speak at them.",
 				"media": [
 					{
-						"path": "https://vimeo.com/81940032",
+						"path": "http://player.vimeo.com/video/81940032",
 						"poster": "andNotOr.jpg",
 						"width": "800",
 						"height": "450",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "&& ! || (And Not Or): Generalism in a world of divided labor"
 					},
 					{
-						"path": "https://vimeo.com/82394675",
+						"path": "http://player.vimeo.com/video/82394675",
 						"poster": "instIntPanel.jpg",
 						"width": "800",
 						"height": "450",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "INST-INT Panel: Alexis Lloyd with Eric Socolofsky, Matt Cottam, and Michael Szivos"
 					},
 					{
-						"path": "https://vimeo.com/69096802",
+						"path": "http://player.vimeo.com/video/69096802",
 						"poster": "immediateGratification.jpg",
 						"width": "800",
 						"height": "450",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "Design for Immediate Gratification: Exhibit design at the Exploratorium"
 					},
 				]
@@ -745,7 +745,7 @@
 						"poster": "fogBrowser01.jpg",
 						"width": "750",
 						"height": "600",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "Multiple datasets, including wind, water vapor density, and sunrise/set, combine to create an animation of fog patterns rolling through the Bay Area."
 					},
 					{
@@ -753,7 +753,7 @@
 						"poster": "fogBrowser02.jpg",
 						"width": "960",
 						"height": "540",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "Projected onto a topographical model, the flat image of the fog takes on depth."
 					},
 					{
@@ -822,7 +822,7 @@
 						"poster": "satr_vast.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "'Saturated' state, transitioning to 'vast' state."
 					},
 					{
@@ -835,7 +835,7 @@
 						"poster": "vast_anon.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo",
+						"embedType": "vimeo",
 						"caption": "'Vast' state, transitioning to 'anonymous' state.",
 					},
 					{
@@ -1005,7 +1005,7 @@
 						"poster": "flarManagerFlareNFT.jpg",
 						"width": "640",
 						"height": "480",
-						"videoplayer": "vimeo"
+						"embedType": "vimeo"
 					},
 					{
 						"path": "flarManager_v07.jpg",
