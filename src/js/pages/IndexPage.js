@@ -32,6 +32,11 @@ define(
 
 				window.addEventListener('resize', this.throttle(this.onResize.bind(this)));
 
+				// Center images if not running in phantom
+				if (!window.phantom) {
+					this.onResize();
+				}
+
 				return this.$el;
 			},
 
@@ -85,14 +90,22 @@ define(
 			onResize: function () {
 				// measure each img height,
 				// and set its margin-top to keep img centered.
-				this.$el.find('.project-thumb').each(function (i, thumbEl) {
-					var $thumb = $(thumbEl),
-					    $img = $thumb.find('img'),
-					    thumbHeight = $thumb.height(),
-					    imgHeight = $img && $img.height();
+				this.$el.find('.project-thumb').each(this.centerThumb.bind(this));
+			},
 
-					$img.css('marginTop', 0.5 * (thumbHeight - imgHeight));
-				});
+			centerThumb: function (i, thumbEl) {
+				var $thumb = $(thumbEl),
+				    $img = $thumb.find('img'),
+				    thumbHeight = $thumb.height(),
+				    imgHeight = $img && $img.height();
+
+				if (!imgHeight) {
+					$img[0].addEventListener('load', function (event) {
+						this.centerThumb(i, thumbEl);
+					}.bind(this));
+				}
+
+				$img.css('marginTop', 0.5 * (thumbHeight - imgHeight));
 			}
 
 		};
