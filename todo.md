@@ -5,14 +5,9 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	virtual host mapping in /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 
 [TODO]
-( ) verify all existing projects look correct
-	(img paths, copy, etc)
-	( ) links to images (from project pages) get routed strangely
-		cannot back-nav from images
-(X) vertically center images within project thumbs
-	img: { margin-top }, but have to update this on resize
-	since it's relative to image height (which changes based on container width)
-( ) section headers wrap on iphone;
+( ) links to images (from project pages) get routed strangely
+	cannot back-nav from images
+(X) section headers wrap on iphone;
 	make font sizes smaller in media query.
 ( ) meta-blurb at top of home page (what/who is this? what do i do?)
 ( ) add projects supported in v3
@@ -27,7 +22,9 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	----- more projects -----
 	(X) breaking ground
 	(X) anthony mccall
+	(X) transmote talks
 	( ) quickcomic
+		( ) flash player embed
 	( ) silly walks generator
 	( ) terraformer
 	( ) vectogram
@@ -43,15 +40,9 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	(X) iphone
 	( ) ipad
 	(X) android
-(X) deploy
-	- note: `<base>` in index.html should contain current directory.
-	  so, `<base href="/" />` at root; `<base href="/lab/v4/" />` in /lab/v4, etc.
-	- note: phantom binary must be made executable (chmod 755);
-	  must use linux-compiled binary (i'm currently on 1.9.2).
 ( ) verify google analytics is still working some time after launch
 
-(X) support captions below video embeds
-(X) support youtube embeds?
+( ) footer could use some responsive cleanup.
 ( ) social/sharing widgets
 ( ) improve pagespeed
 	http://www.feedthebot.com/pagespeed/
@@ -70,10 +61,12 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 ( ) font-family mixins file (standardize across site)
 	maybe also include box-shadows?
 
+
 [BUGS]
+( ) browser back navigation from images (clicked in project pages) does nothing
 ( ) about/contact modal contains content of previously-clicked item, while animating in.
 	repro: click about, then contact, or v.v.
-( ) browser back navigation from images (clicked in project pages) does nothing
+
 ( ) visiting http://transmote.com/lab/v4/projects/vizthebay as UA: bot gets redirected incorrectly,
 	to http://transmote.com/lab/v4/projects/vizthebay/?url=/lab/v4/projects/vizthebay
 	HTML still looks fine but that URL is all jacked up...
@@ -82,7 +75,20 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	jumps down page because it's refreshing scroll position.
 	maybe better to cache scroll position as History state.
 
+
 [DONE]
+(X) verify all existing projects look correct
+	(img paths, copy, etc)
+(X) vertically center images within project thumbs
+	img: { margin-top }, but have to update this on resize
+	since it's relative to image height (which changes based on container width)
+(X) deploy
+	- note: `<base>` in index.html should contain current directory.
+	  so, `<base href="/" />` at root; `<base href="/lab/v4/" />` in /lab/v4, etc.
+	- note: phantom binary must be made executable (chmod 755);
+	  must use linux-compiled binary (i'm currently on 1.9.2).
+(X) support captions below video embeds
+(X) support youtube embeds?
 (X) clear out unused libs, fonts, etc
 (X) add alt to <img> tags
 (X) 'about | contact' spacing is off in header

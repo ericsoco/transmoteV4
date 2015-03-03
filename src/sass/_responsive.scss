@@ -21,6 +21,9 @@ using px units instead.
 	#footer-right-copy {
 		width: auto;
 	}
+	#footer-right-copy-more {
+		display: inline;
+	}
 
 	#site-modal {
 		.modal-large {
@@ -53,6 +56,7 @@ using px units instead.
 	.project-thumb-header {
 		padding-top: 1.0em;
 		margin-bottom: 0.2em;
+		font-size: 4.75em;
 	}
 }
 
@@ -129,6 +133,7 @@ using px units instead.
 
 	.project-thumb-header {
 		padding: 1.5em 0 0.25em 0.25em;
+		font-size: 5em;
 	}
 
 }
