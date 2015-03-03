@@ -12,7 +12,11 @@
 			<li>
 				{{#ifEmbed this}}
 					<div class="container">
-						<iframe {{createEmbed @index}} frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						{{#ifFlashEmbed this}}
+							{{{createEmbed @index}}}
+						{{else}}
+							<iframe {{createEmbed @index}} frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						{{/ifFlashEmbed}}
 					</div>
 				{{else}}
 					<a href="{{concatPath "projects" ../../id path}}"><img src="{{concatPath "projects" ../../id path}}" {{#if ./alt}}alt="{{./alt}}" {{/if}}/></a>

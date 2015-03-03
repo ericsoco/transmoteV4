@@ -18,6 +18,10 @@ define(
 			return typeof media.embedType !== "undefined";
 		}
 
+		function isFlashEmbed (media) {
+			return media.embedType === "flash";
+		}
+
 		/**
 		 * Creates an embedded Vimeo player.
 		 */
@@ -59,12 +63,8 @@ define(
 		 */
 		function createFlashEmbed (obj, index) {
 
-			var embedStr = "";
+			return "<object width='" + obj.width + "' height='" + obj.height + "'><param name='movie' value='" + obj.path + "'/><param name='wmode' value='transparent'/><param name='FlashVars' value='" + obj.flashvars + "'/><embed src='" + obj.path + "' wmode='transparent' width='" + obj.width + "' height='" + obj.height + "' type='application/x-shockwave-flash' FlashVars='" + obj.flashvars + "'></embed></object>";
 
-			// TODO: use swfobject.
-			//       probably want markup version, not JS.
-
-			return embedStr;
 		}
 
 		return {
@@ -118,6 +118,18 @@ define(
 				 */
 				Handlebars.registerHelper("ifEmbed", function (media, options) {
 					if (isEmbed(media)) {
+						return options.fn(this);
+					} else {
+						return options.inverse(this);
+					}
+				});
+
+				/**
+				 * Evaluates a media object for a project;
+				 * returns true if the file should be displayed in a flash embed player.
+				 */
+				Handlebars.registerHelper("ifFlashEmbed", function (media, options) {
+					if (isFlashEmbed(media)) {
 						return options.fn(this);
 					} else {
 						return options.inverse(this);

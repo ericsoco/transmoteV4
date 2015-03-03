@@ -1155,9 +1155,18 @@
 					{ "id": "social" },
 					{ "id": "featured" }
 				],
-				"tagline": "",
-				"brief": "",
+				"tagline": "comic authoring tool",
+				"brief": "I designed and developed Quickcomic to allow people to very quickly serve up their opinions with a side order of humor.  My pals <a href=\"http://eben.com\" target=\"_blank\">Alex Meyer</a> and <a href=\"http://coldhands.info\" target=\"_blank\">Ahmad Saeed</a> helped me bring it to life, with their illustration/graphic design and server-side coding skills (respectively).",
 				"media": [
+					{
+						"path": "http://www.quickcomic.com/remote/qcEmbed.swf",
+						"poster": "quickcomic_title.jpg",
+						"width": "720",
+						"height": "570",
+						"flashvars": "stripId=475",
+						"embedType": "flash",
+						"caption": "Authors are presented with an empty four-panel comic, which they populate with illustrated characters and text. Comics can be shared with others and embedded in other sites."
+					}
 				]
 			},
 
