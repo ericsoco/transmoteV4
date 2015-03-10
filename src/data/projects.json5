@@ -10,6 +10,7 @@
 				"name": "build a room",
 				"id": "buildaroom",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2010.06.01",
 				"role": "exhibit designer, developer",
 				"tag": [
@@ -60,6 +61,7 @@
 				"name": "d-fuse - small global",
 				"id": "dfuse",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2005.09.01",
 				"role": "data visualizer, moving image designer",
 				"tag": [
@@ -111,6 +113,7 @@
 				"name": "dividing space",
 				"id": "dividingspace",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2010.06.02",
 				"role": "exhibit designer/developer",
 				"tag": [
@@ -167,6 +170,7 @@
 				"name": "elastotron",
 				"id": "elastotron",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2010.03.03",
 				"role": "artist/coder",
 				"tag": [
@@ -233,6 +237,7 @@
 				"name": "gamestar mechanic",
 				"id": "gamestar",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2008.04.01",
 				"role": "lead developer, some game/interaction design",
 				"tag": [
@@ -347,6 +352,7 @@
 				"name": "house of days",
 				"id": "houseofdays",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2009.03.17",
 				"role": "exhibit designer/developer",
 				"tag": [
@@ -413,6 +419,7 @@
 				"name": "picturing place",
 				"id": "picturingplace",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2013.09.01",
 				"role": "exhibit designer/developer",
 				"tag": [
@@ -433,6 +440,7 @@
 				"name": "plankton populations",
 				"id": "planktonpops",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2013.04.19",
 				"role": "exhibit designer",
 				"tag": [
@@ -475,6 +483,7 @@
 				"name": "ship tracker",
 				"id": "shiptracker",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2013.04.17",
 				"role": "exhibit designer/developer",
 				"tag": [
@@ -542,6 +551,7 @@
 				"name": "sparklebooth",
 				"id": "sparklebooth",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2012.05.01",
 				"role": "installation designer/developer",
 				"tag": [
@@ -573,6 +583,7 @@
 				"name": "tidal ribbon",
 				"id": "tidalribbon",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2013.04.18",
 				"role": "exhibit designer/developer",
 				"tag": [
@@ -620,6 +631,7 @@
 				"name": "tile designer",
 				"id": "tiledesigner",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2010.06.01",
 				"role": "exhibit designer/developer",
 				"tag": [
@@ -663,6 +675,7 @@
 				"name": "transmote talks",
 				"id": "transmotetalks",
 				"featured": false,
+				"thumbOffsetY": 0.15,
 				"date": "2015.04.13",
 				"role": "public speaker",
 				"tag": [
@@ -701,6 +714,7 @@
 				"name": "visualizing the bay area",
 				"id": "vizthebay",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2013.04.20",
 				"role": "exhibit designer/developer, technical lead",
 				"tag": [
@@ -773,6 +787,7 @@
 				"name": "wind.io",
 				"id": "windio",
 				"featured": true,
+				"thumbOffsetY": 0,
 				"date": "2013.07.29",
 				"role": "front end developer",
 				"tag": [
@@ -797,6 +812,7 @@
 				"name": "aperture",
 				"id": "aperture",
 				"featured": false,
+				"thumbOffsetY": 0.1,
 				"date": "2006.05.01",
 				"role": "artist/coder",
 				"tag": [
@@ -865,6 +881,7 @@
 				"name": "breaking ground",
 				"id": "breakingground",
 				"featured": false,
+				"thumbOffsetY": -0.3,
 				"date": "2002.01.01",
 				"role": "architect, designer",
 				"tag": [
@@ -924,6 +941,7 @@
 				"name": "brian alfred - works",
 				"id": "brianalfred",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2005.06.01",
 				"role": "moving image designer",
 				"tag": [
@@ -943,6 +961,7 @@
 				"name": "contemplace",
 				"id": "contemplace",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2004.05.15",
 				"role": "artist/coder",
 				"tag": [
@@ -965,6 +984,7 @@
 				"name": "eleminer",
 				"id": "eleminer",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2015.09.01",
 				"role": "game designer/developer",
 				"tag": [
@@ -984,6 +1004,7 @@
 				"name": "FLARManager",
 				"id": "flarmanager",
 				"featured": false,
+				"thumbOffsetY": 0.15,
 				"date": "2010.09.01",
 				"role": "library author",
 				"tag": [
@@ -1024,6 +1045,7 @@
 				"name": "grove",
 				"id": "grove",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2003.12.15",
 				"role": "artist",
 				"tag": [
@@ -1043,6 +1065,7 @@
 				"name": "josefina's adventure",
 				"id": "josefina",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2006.08.04",
 				"role": "game developer",
 				"tag": [
@@ -1062,6 +1085,7 @@
 				"name": "marclay studies",
 				"id": "marclay",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2005.01.05",
 				"role": "moving image designer",
 				"tag": [
@@ -1083,6 +1107,7 @@
 				"name": "anthony mccall - works",
 				"id": "mccall",
 				"featured": false,
+				"thumbOffsetY": 0.2,
 				"date": "2005.10.01",
 				"role": "developer",
 				"tag": [
@@ -1144,6 +1169,7 @@
 				"name": "quickcomic",
 				"id": "quickcomic",
 				"featured": false,
+				"thumbOffsetY": 0.05,
 				"date": "2006.10.27",
 				"role": "concept, interaction designer, developer",
 				"tag": [
@@ -1174,6 +1200,7 @@
 				"name": "rift",
 				"id": "rift",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2009.10.04",
 				"role": "co-artist",
 				"tag": [
@@ -1194,6 +1221,7 @@
 				"name": "silly walks generator",
 				"id": "swg",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2006.03.08",
 				"role": "concept, interaction designer, developer",
 				"tag": [
@@ -1207,8 +1235,23 @@
 					{ "id": "code" }
 				],
 				"tagline": "",
-				"brief": "",
+				"brief": "A client approached me to build a promotional game for their release of a series of \"Monty Python's Personal Best\" DVDs. Rather than creating a traditional game, I thought it would be fun to enable users to create their own Silly Walks, based on the original Ministry of Silly Walks sketch.",
 				"media": [
+					{	
+						"path": "ss01_lumberjack.jpg",
+						"caption": "Users can choose from four different Flying Circus backgrounds and four different characters, including the Inquisitor, Lumberjack, Knight, and Mime.",
+						"alt": "Choose the Inquisitor, Lumberjack, Knight, or Mime"
+					},
+					{	
+						"path": "ss02_knight.jpg",
+						"caption": "Drag limbs into position, then set a keyframe. Continue until your animation is complete. Tweak the Speed and Silliness sliders to fine-tune your animation.",
+						"alt": "Keyframe your animation and tweak Speed and Silliness"
+					},
+					{	
+						"path": "ss03_inquisitor.jpg",
+						"caption": "Completed Silly Walks can be sent to friends via unique URLs. This site was my first attempt at user-generated content, and in retrospect, it would be much better with a public gallery and voting system. My next project focusing on user authorship, <a href='http://transmote.com/projects/quickcomic/'>Quickcomic</a>, made much more of an effort to build community around the content.",
+						"alt": "Send Silly Walks to your friends"
+					}
 				]
 			},
 
@@ -1216,6 +1259,7 @@
 				"name": "terraformer",
 				"id": "terraformer",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2003.05.15",
 				"role": "game designer/developer",
 				"tag": [
@@ -1234,6 +1278,7 @@
 				"name": "transmote v1.0",
 				"id": "transmotev1",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2004.03.15",
 				"role": "artist/coder",
 				"tag": [
@@ -1252,6 +1297,7 @@
 				"name": "transmote v2.0",
 				"id": "transmotev2",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2010.09.19",
 				"role": "artist/coder",
 				"tag": [
@@ -1271,6 +1317,7 @@
 				"name": "vectogram",
 				"id": "vectogram",
 				"featured": false,
+				"thumbOffsetY": 0,
 				"date": "2004.08.01",
 				"role": "artist/coder",
 				"tag": [

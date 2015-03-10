@@ -7,8 +7,6 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 [TODO]
 ( ) links to images (from project pages) get routed strangely
 	cannot back-nav from images
-(X) section headers wrap on iphone;
-	make font sizes smaller in media query.
 ( ) meta-blurb at top of home page (what/who is this? what do i do?)
 ( ) add projects supported in v3
 	(X) d-fuse: add captions
@@ -23,9 +21,9 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	(X) breaking ground
 	(X) anthony mccall
 	(X) transmote talks
-	( ) quickcomic
-		( ) flash player embed
-	( ) silly walks generator
+	(X) quickcomic
+		(X) flash player embed
+	(X) silly walks generator
 	( ) terraformer
 	( ) vectogram
 
@@ -33,7 +31,6 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 		with shorter (very cropped) hero images
 ( ) should bot rewrites be [R=301]s?
 	tried adding that flag but it broke rewrites in funny ways.
-(X) get v3 working at transmote.com/v3
 ( ) get v4 working at transmote.com/v4
 ( ) test:
 	( ) browsers
@@ -66,17 +63,22 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 ( ) browser back navigation from images (clicked in project pages) does nothing
 ( ) about/contact modal contains content of previously-clicked item, while animating in.
 	repro: click about, then contact, or v.v.
-
-( ) visiting http://transmote.com/lab/v4/projects/vizthebay as UA: bot gets redirected incorrectly,
-	to http://transmote.com/lab/v4/projects/vizthebay/?url=/lab/v4/projects/vizthebay
-	HTML still looks fine but that URL is all jacked up...
 ( ) about/contact adds to history stack, minor nuisance.
 ( ) scroll down, click into project, nav back, scroll up and click transmote.com link in header.
 	jumps down page because it's refreshing scroll position.
 	maybe better to cache scroll position as History state.
+(-) visiting http://transmote.com/lab/v4/projects/vizthebay as UA: bot gets redirected incorrectly,
+	to http://transmote.com/lab/v4/projects/vizthebay/?url=/lab/v4/projects/vizthebay
+	HTML still looks fine but that URL is all jacked up...
 
 
 [DONE]
+(X) section headers wrap on iphone;
+	make font sizes smaller in media query.
+(X) specify explicit offset (from center) for thumb images
+	(X) build support for it
+	(X) add it to each project image that needs it
+(X) get v3 working at transmote.com/v3
 (X) verify all existing projects look correct
 	(img paths, copy, etc)
 (X) vertically center images within project thumbs

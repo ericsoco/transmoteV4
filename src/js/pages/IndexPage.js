@@ -88,6 +88,10 @@ define(
 			},
 
 			onResize: function () {
+				if (!this.projectModelThumbOffsets) {
+					this.buildProjectModelThumbOffsets();
+				}
+
 				// measure each img height,
 				// and set its margin-top to keep img centered.
 				this.$el.find('.project-thumb').each(this.centerThumb.bind(this));
@@ -105,7 +109,22 @@ define(
 					}.bind(this));
 				}
 
-				$img.css('marginTop', 0.5 * (thumbHeight - imgHeight));
+				// $img.css('marginTop', 0.5 * (thumbHeight - imgHeight));
+				$img.css('marginTop', (0.5 + this.projectModelThumbOffsets[i]) * (thumbHeight - imgHeight));
+			},
+
+			buildProjectModelThumbOffsets: function () {
+				this.projectModelThumbOffsets = [];
+				var models = ProjectModelStore.getFeaturedProjectModels(),
+				    projectName;
+
+				for (projectName in models) {
+					this.projectModelThumbOffsets.push(models[projectName].thumbOffsetY || 0);
+				}
+				models = ProjectModelStore.getMoreProjectModels();
+				for (projectName in models) {
+					this.projectModelThumbOffsets.push(models[projectName].thumbOffsetY || 0);
+				}
 			}
 
 		};
