@@ -646,7 +646,8 @@
 				"brief": "Tessellation is perhaps the simplest geometric concept with the broadest range of creative expression. Part of the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition, it allows visitors to explore tessellations by creating them.<br><br>Visitors move a single line on a touchscreen; this line is rotated and translated into three different patterns. These tessellations all respond in real-time, generating a wide range of patterns both on-screen and projected onto a nearby wall. Visitors thereby both design custom patterns and decorate the exhibition with them.",
 				"media": [
 					{
-						"path": "tileDesigner01.jpg"
+						"path": "tileDesigner01.jpg",
+						"alt": "visitor drawing tesselations",
 					},
 					{
 						"path": "tileDesigner02.jpg",
@@ -1330,9 +1331,63 @@
 					{ "id": "installations" },
 					{ "id": "usergen" }
 				],
-				"tagline": "",
-				"brief": "",
+				"tagline": "generative art as two-player game",
+				"brief": "Vectogram is a two-player generative drawing tool sporting a sleek arcade cocktail cabinet. Players can choose to cooperate or compete for control of the electronic canvas.<br><br>Select from five different Vectoids, each with its own drawing style and vulnerability to other Vectoids. Deploy Vectoids thoughtfully in order to paint a picture pleasing to your eye!",
 				"media": [
+					{
+						"path": "purpleWhite04.jpg",
+						"caption": "Each player chooses a color, and has at their disposal five different Vectoids.",
+						"alt": "purple v. white"
+					},
+					{
+						"path": "whiteBlue02.jpg",
+						"alt": "white v. blue"
+					},
+					{
+						"path": "greenWhite03.jpg",
+						"alt": "green v. white"
+					},
+					{
+						"path": "blueWhite02.jpg",
+						"alt": "blue v. white"
+					},
+					{
+						"path": "blueRed04.jpg",
+						"alt": "blue v. red"
+					},
+					{
+						"path": "redPurple01.jpg",
+						"alt": "red v. purple"
+					},
+					{
+						"path": "cin01.jpg",
+						"caption": "The custom-built cocktail arcade cabinet.",
+						"alt": "custom-built cocktail arcade cabinet"
+					},
+					{
+						"path": "socolofsky_eric_2_adjusted.jpg",
+						"caption": "Vectogram made its debut at this 3-day event at <a href='http://compactimpact.com/' target='_blank'>Compact-Impact</a>, New York City.",
+						"alt": "Compact-Impact Night, Vol. 3"
+					},
+					{
+						"path": "cin03.jpg",
+						"caption": "Best thing about the cocktail arcade cabinet?  Cocktails.",
+						"alt": "cocktails + vectogram = <3"
+					},
+					{
+						"path": "cin05.jpg",
+						"alt": "fierce competition"
+					},
+					{
+						"path": "const00.jpg",
+						"caption": "The cabinet was fabricated in the cozy lil' shop at <a href='http://itp.nyu.edu' target='_blank'>ITP</a>.<br><br>I intended to use an old tube TV, but didn't realize how very low the resolution was on those things...so had to swap with an LCD flat-panel at the last minute.",
+						"alt": "cabinet construction"
+					},
+					{
+						"path": "const01.jpg",
+						"caption": "<a href='http://www.thecreatorsproject.com/creators/jin-yo-mok' target='_blank'>Jin-Yo Mok</a> 'helps' with documentation.</a>",
+						"alt": "jin-yo helps"
+					}
 				]
 			}
 

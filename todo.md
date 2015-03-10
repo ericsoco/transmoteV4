@@ -25,7 +25,8 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 		(X) flash player embed
 	(X) silly walks generator
 	( ) terraformer
-	( ) vectogram
+	(X) vectogram
+	( ) deploy new projects + changes!
 
 	(X) display on homepage as second section,
 		with shorter (very cropped) hero images
