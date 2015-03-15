@@ -1034,10 +1034,13 @@
 						"caption": "FLARManager also provides smarter marker recognition and tracking, similar to other fiducial-tracking engines like <a href=\"http://reactivision.sourceforge.net/\" target=\"_blank\">reacTIVision</a>.",
 						"alt": "Marker recognition and tracking"
 					},
-					{	
-						"path": "flarManager_v06.jpg",
-						"caption": "Unfortunately, I haven't had much time to use the tools that I've created.  However, producing examples and documentation have led to <a href=\"http://www.youtube.com/watch?v=r2IShy6uvyE\" target=\"_blank\">some fun side experiments</a>.",
-						"alt": "FLARCatz"
+					{
+						"path": "https://www.youtube.com/embed/r2IShy6uvyE",
+						"poster": "flarManager_v06.jpg",
+						"width": "640",
+						"height": "480",
+						"embedType": "youtube",
+						"caption": "Unfortunately, I haven't had much time to use the tools that I've created.  However, producing examples and documentation have led to some fun side experiments."
 					}
 				]
 			},
