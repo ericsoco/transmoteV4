@@ -7,38 +7,17 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 [TODO]
 ( ) links to images (from project pages) get routed strangely
 	cannot back-nav from images
+	http://stackoverflow.com/questions/28803379/how-can-i-route-to-serve-static-files-with-page-js-and-apache
 ( ) meta-blurb at top of home page (what/who is this? what do i do?)
-( ) add projects supported in v3
-	(X) d-fuse: add captions
-	(X) dividing space: add captions
-	(X) house of days
-		(X) more footage?
+( ) remaining projects:
+	( ) heresay
 	( ) picturing place
 	( ) elastotron
 		( ) new explo footage??
-	( ) heresay
 	----- more projects -----
-	(X) breaking ground
-	(X) anthony mccall
-	(X) transmote talks
-	(X) quickcomic
-		(X) flash player embed
-	(X) silly walks generator
 	( ) terraformer
-	(X) vectogram
-	( ) deploy new projects + changes!
-
-	(X) display on homepage as second section,
-		with shorter (very cropped) hero images
 ( ) should bot rewrites be [R=301]s?
 	tried adding that flag but it broke rewrites in funny ways.
-( ) get v4 working at transmote.com/v4
-( ) test:
-	( ) browsers
-	(X) iphone
-	( ) ipad
-	(X) android
-( ) verify google analytics is still working some time after launch
 
 ( ) footer could use some responsive cleanup.
 ( ) social/sharing widgets
@@ -68,12 +47,36 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 ( ) scroll down, click into project, nav back, scroll up and click transmote.com link in header.
 	jumps down page because it's refreshing scroll position.
 	maybe better to cache scroll position as History state.
+( ) firefox: thumb images are not offset properly;
+	first project thumb in More projects section is squished
 (-) visiting http://transmote.com/lab/v4/projects/vizthebay as UA: bot gets redirected incorrectly,
 	to http://transmote.com/lab/v4/projects/vizthebay/?url=/lab/v4/projects/vizthebay
 	HTML still looks fine but that URL is all jacked up...
 
 
 [DONE]
+(X) add projects supported in v3
+	(X) d-fuse: add captions
+	(X) dividing space: add captions
+	(X) house of days
+		(X) more footage?
+	(X) breaking ground
+	(X) anthony mccall
+	(X) transmote talks
+	(X) quickcomic
+		(X) flash player embed
+	(X) silly walks generator
+	(X) vectogram
+	(X) deploy new projects + changes!
+	(X) display on homepage as second section,
+		with shorter (very cropped) hero images
+(X) test:
+	(X) browsers
+	(X) iphone
+	(X) ipad
+	(X) android
+(X) get v4 working at transmote.com/v4
+(X) verify google analytics is still working some time after launch
 (X) section headers wrap on iphone;
 	make font sizes smaller in media query.
 (X) specify explicit offset (from center) for thumb images
