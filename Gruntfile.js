@@ -165,7 +165,6 @@ module.exports = function (grunt) {
 				namespace: 'transmote',
 				processName: function (filePath) {
 					// Strip initial path and file extension
-					console.log("filePath:", filePath);
 					return filePath.replace(/^\.\/src\/templates\//, '').replace(/\.hb$/, '');
 				}
 			},
