@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /clients/
+Disallow: /lab/
+Disallow: /share/
+Disallow: /sounds/
+Disallow: /subs/
+Disallow: /css/selectedProject.css
+Disallow: /min/selectedProject.css
+
+Sitemap: http://transmote.com/sitemap.xml
