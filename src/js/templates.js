@@ -61,14 +61,12 @@ this["transmote"]["projectPage"] = Handlebars.template({"1":function(depth0,help
     + escapeExpression(((helpers.createEmbed || (depth0 && depth0.createEmbed) || helperMissing).call(depth0, (data && data.index), {"name":"createEmbed","hash":{},"data":data})))
     + " frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n";
 },"7":function(depth0,helpers,partials,data,depths) {
-  var stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "					<a href=\""
-    + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depths[2] != null ? depths[2].id : depths[2]), (depth0 != null ? depth0.path : depth0), {"name":"concatPath","hash":{},"data":data})))
-    + "\"><img src=\""
+  var stack1, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "					<img src=\""
     + escapeExpression(((helpers.concatPath || (depth0 && depth0.concatPath) || helperMissing).call(depth0, "projects", (depths[2] != null ? depths[2].id : depths[2]), (depth0 != null ? depth0.path : depth0), {"name":"concatPath","hash":{},"data":data})))
     + "\" ";
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.alt : depth0), {"name":"if","hash":{},"fn":this.program(8, data, depths),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "/></a>\n";
+  return buffer + "/>\n";
 },"8":function(depth0,helpers,partials,data) {
   var lambda=this.lambda, escapeExpression=this.escapeExpression;
   return "alt=\""

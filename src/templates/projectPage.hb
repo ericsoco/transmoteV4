@@ -19,7 +19,8 @@
 						{{/ifFlashEmbed}}
 					</div>
 				{{else}}
-					<a href="{{concatPath "projects" ../../id path}}"><img src="{{concatPath "projects" ../../id path}}" {{#if ./alt}}alt="{{./alt}}" {{/if}}/></a>
+					{{!-- <a href="{{concatPath "projects" ../../id path}}"><img src="{{concatPath "projects" ../../id path}}" {{#if ./alt}}alt="{{./alt}}" {{/if}}/></a> --}}
+					<img src="{{concatPath "projects" ../../id path}}" {{#if ./alt}}alt="{{./alt}}" {{/if}}/>
 				{{/ifEmbed}}
 				{{#if caption}}
 					<p class="caption-title">{{{caption}}}</p>
