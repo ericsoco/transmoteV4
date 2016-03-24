@@ -30,10 +30,9 @@ define(
 					}, 1);
 				}
 
-				window.addEventListener('resize', this.throttle(this.onResize.bind(this)));
-
 				// Center images if not running in phantom
 				if (!window.phantom) {
+					window.addEventListener('resize', this.throttle(this.onResize.bind(this)));
 					this.onResize();
 				}
 
