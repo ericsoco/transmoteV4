@@ -31,7 +31,6 @@ define(
 				}
 
 				// Center images if not running in phantom
-				// if (!window.phantom) {
 				if (!/PhantomJS/.test(window.navigator.userAgent)) {
 					window.addEventListener('resize', this.throttle(this.onResize.bind(this)));
 					this.onResize();
