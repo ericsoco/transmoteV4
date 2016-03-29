@@ -1,7 +1,30 @@
-## Transmote v4
-Finally getting around to getting Transmote back on its feet.
+# Transmote v4
+AKA Transmote For Dummies. Nothing experimental here.
 
-## TODO
-- [X] Scrap the interim v4.
-- [X] Set up the new v4, with a decent build pipeline.
-- [X] Put it on GitHub.
+
+
+## dev
+
+`npm start` to run dev build (to `./build/dev/`) and serve via `grunt-contrib-connect` on `localhost:5421`
+
+
+
+## deploy
+
+`npm run dist` to run deploy build (to `./build/deploy/`) and serve via `grunt-contrib-connect` on `localhost:5420`
+
+Deploy files in `./build/deploy/` to root as needed.
+
+
+
+## server config
+
+Files in `./server-config/` do not run through build process; deploy to server as needed/updated. Ideally, this content, and the contents of `./renderer`, would be copied to build folders as needed, and `phantomjs-1.9.2-linux` would be renamed `phantomjs` and have `chmod` run on it. But that part of the build is just not quite worked out. Oh well.
+
+
+
+## server rendering
+
+Bots are redirected to `./index-bots.php` via `./htaccess`. That php file sends the request through [PhantomJS](http://phantomjs.org/), which renders via [`phantom-renderer.js`](./src/renderer/phantom-renderer.js). Note that the repo contains, embarrassingly, two compiled versions of PhantomJS: an [OSX version](./src/renderer/phantomjs) for testing locally, and a [Linux version](./server-config/phantomjs-1.9.2-linux). The latter must be deployed to the server and renamed `phantomjs` (no extension), and made executable (`chmod 755`) in order for `index-bots.php` to run it when a bot requests a page.
+
+Side note: there are a few commented-out lines in `htaccess` about "php parsing within html". I thought these were different configurations that needed to be toggled to run on MAMP/transmote, but things appear to work well in both dev and prod with everything commented out.

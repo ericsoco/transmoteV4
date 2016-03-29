@@ -203,17 +203,19 @@ module.exports = function (grunt) {
 						dest: './build/dev/.htaccess',
 					},
 					{
+						src: './src/projects/.htaccess',
+						dest: './build/dev/projects/.htaccess',
+					},
+					/*
+					{
 						src: './src/.htaccess',
 						dest: './build/server-config/htaccess.txt',
 					},
 					{
 						src: './src/projects/.htaccess',
-						dest: './build/dev/projects/.htaccess',
-					},
-					{
-						src: './src/projects/.htaccess',
 						dest: './build/server-config/htaccess-projects.txt',
 					},
+					*/
 					{
 						expand: true,
 						cwd: './src/css/',
