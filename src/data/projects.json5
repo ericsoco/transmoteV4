@@ -26,7 +26,11 @@
 				"tagline": "3D drawing in physical space",
 				"brief": "At the core of the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition is the concept of spatial reasoning: the ability to create a mental model of a space, and to navigate and manipulate it. Build A Room allows visitors to create three-dimensional spaces out of thin air with a \"light brush\", custom software, and a room-sized canvas.",
 				"media": [
-					{ "path": "buildARoom01.jpg" },
+					{
+						"path": "buildARoom01.jpg",
+						"width": "960",
+						"height": "540"
+					},
 					{
 						"path": "http://player.vimeo.com/video/74178950",
 						"poster": "room02_thumb.jpg",
@@ -130,7 +134,11 @@
 				"tagline": "hands-on geometry exploration",
 				"brief": "Understanding geometry doesn't require pen, paper, and textbooks. Another way to learn geometry is to experience it and experiment with it. This is the philosophy behind the Exploratorium's <a href=\"http://exploratorium.edu/geometryplayground\" target=\"_blank\">&quot;Geometry Playground&quot;</a> exhibition.<br><br>Dividing Space presents an interactive <a href=\"http://en.wikipedia.org/wiki/Voronoi_diagram\" target=\"_blank\">Voronoi diagram</a> &ndash; visitors can manipulate the diagram by configuring a field of red pegs and sending a blue puck through them. Custom software ties into a computer vision system to enable this realtime, playful interaction with otherwise complex geometry.</p><p>Dividing Space uses <a href=\"http://processing.org/\" target=\"_blank\">Processing</a>, <a href=\"http://reactivision.sourceforge.net/\" target=\"_blank\">ReacTIVision</a> and <a href=\"http://www.leebyron.com/else/mesh/\" target=\"_blank\">Mesh</a>.",
 				"media": [
-					{ "path": "dividingSpace01.jpg" },
+					{
+						"path": "dividingSpace01.jpg",
+						"width": "1276",
+						"height": "718",
+					},
 					{
 						"path": "http://player.vimeo.com/video/14351862",
 						"width": "640",
@@ -188,6 +196,8 @@
 				"media": [
 					{
 						"path": "reflections01.jpg",
+						"width": "1600",
+						"height": "1200",
 						"caption": "Elastotron was shown in 2009 at San Francisco's Exploratorium in the 'Reflections' exhibition, which showcased works that asked viewers to, um, reflect on the nature of their self-image.",
 						"alt": "'Reflections', Exploratorium, 2009"
 					},
@@ -256,6 +266,8 @@
 				"media": [
 					{
 						"path": "factory01.jpg",
+						"width": "942",
+						"height": "629",
 						"caption": "Factory 7, home of the 6 schools of Game Mechanics.",
 						"alt": "Factory 7"
 					},
@@ -369,6 +381,8 @@
 				"media": [
 					{
 						"path": "houseOfDays01.jpg",
+						"width": "1280",
+						"height": "960",
 						"caption": "The House of Days is a reclaimed Alcatraz searchlight building, positioned on the south edge of the Golden Gate. A camera within takes photographs looking north every hour.",
 						"alt": "The House of Days, on the San Francisco Bay"
 					},
@@ -456,6 +470,8 @@
 				"media": [
 					{
 						"path": "planktonPops01.jpg",
+						"width": "900",
+						"height": "601",
 						"caption": "Visitors explore plankton types in the world's oceans.",
 						"alt": "Visitors fishing for plankton"
 					},
@@ -498,7 +514,11 @@
 				"tagline": "tracking ships through the Bay",
 				"brief": "Global shipping is fundamental to San Francisco Bay Area commerce. The ports of Oakland and Richmond turn around multiple massive container and tanker ships daily, providing and supplying raw materials and manufactured goods to the region and the world.<br><br>Understanding the travels of these ships, as well as the daily paths of smaller ships like ferries and tug boats, helps us to better understand our place on the world stage. And it makes for some beautiful visualization.",
 				"media": [
-					{ "path": "shipTracker01.jpg" },
+					{
+						"path": "shipTracker01.jpg",
+						"width": "1920",
+						"height": "1080"
+					},
 					{
 						"path": "shipTracker02.jpg",
 						"caption": "Visitors can see where boats are and have been recently...",
@@ -562,7 +582,11 @@
 				"tagline": "the wedding photo booth, reinvented",
 				"brief": "May 5, 2012 was a great day for me. It was the day that Gloriane became my wife, and amazingly, also the day my experimental wedding installation did not crash or light anyone on fire.<br><br>The Sparklebooth adds to the tradition of the wedding photobooth, allowing guests to draw over their portraits with sparklers. Custom software adds the sparkler trails to the media as with a long-exposure photograph.",
 				"media": [
-					{ "path": "glorianeAndEric.jpg" },
+					{
+						"path": "glorianeAndEric.jpg",
+						"width": "1920",
+						"height": "1080"
+					},
 					{ "path": "dawnAndMarshall.jpg" },
 					{ "path": "radbertAndTin.jpg" },
 					{ "path": "otis.jpg" },
@@ -601,6 +625,8 @@
 				"media": [
 					{ 
 						"path": "tidalRibbon01.jpg",
+						"width": "1280",
+						"height": "720",
 						"caption": "Close-up of tide slices. The ridges correspond to the six-minute sampling interval of the tide gauge.<br>Photograph by Gayle Laird, Exploratorium.",
 						"alt": "Tide slices"
 					},
@@ -647,6 +673,8 @@
 				"media": [
 					{
 						"path": "tileDesigner01.jpg",
+						"width": "1024",
+						"height": "768",
 						"alt": "visitor drawing tesselations",
 					},
 					{
@@ -741,7 +769,9 @@
 					{
 						"path": "vizTheBay01.jpg",
 						"caption": "Visitors explore Fog Browser during evening open hours.",
-						"alt": "Fog Browser"
+						"alt": "Fog Browser",
+						"width": 1920,
+						"height": 1080
 					},
 					{
 						"path": "findingFaultLines.jpg",
@@ -839,6 +869,8 @@
 				"media": [
 					{
 						"path": "vast_satr.jpg",
+						"width": "1600",
+						"height": "1200",
 						"caption": "'Saturated' state, transitioning to 'vast' state.",
 						"alt": "Saturated to vast"
 					},
@@ -904,6 +936,8 @@
 				"media": [
 					{
 						"path": "breakingground_cover.jpg",
+						"width": "1024",
+						"height": "768",
 						"caption": "The physical object, submitted for acceptance into graduate school. Back when people printed things.",
 						"alt": "Print portfolio"
 					},
@@ -1027,6 +1061,8 @@
 				"media": [
 					{
 						"path": "flarManager_v01.jpg",
+						"width": "640",
+						"height": "480",
 						"caption": "Inspired by the <a href=\"http://ge.ecomagination.com/smartgrid/#/augmented_reality\" target=\"_blank\">GE Smart Grid campaign</a>, I decided to put together a toolset to make creating applications with <a href=\"http://www.libspark.org/wiki/saqoosha/FLARToolKit/en\" target=\"_blank\">FLARToolkit</a> easier.",
 						"alt": "FLARManager"
 					},
@@ -1136,6 +1172,8 @@
 				"media": [
 					{	
 						"path": "AM-Peer-02.jpg",
+						"width": "600",
+						"height": "896",
 						"caption": "Anthony McCall.<br/>\"Between You and I\" (2006), sixteenth minute.<br>Installation at Peer / The Round Chapel , London, 2006.<br>Photo by Hugo Glendenning, copyright Anthony McCall 2006.",
 						"alt": "Between You and I, 16th minute"
 					},
@@ -1251,6 +1289,8 @@
 				"media": [
 					{	
 						"path": "ss01_lumberjack.jpg",
+						"width": "800",
+						"height": "600",
 						"caption": "Users can choose from four different Flying Circus backgrounds and four different characters, including the Inquisitor, Lumberjack, Knight, and Mime.",
 						"alt": "Choose the Inquisitor, Lumberjack, Knight, or Mime"
 					},
@@ -1347,6 +1387,8 @@
 				"media": [
 					{
 						"path": "purpleWhite04.jpg",
+						"width": "1196",
+						"height": "600",
 						"caption": "Each player chooses a color, and has at their disposal five different Vectoids.",
 						"alt": "purple v. white"
 					},

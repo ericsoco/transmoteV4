@@ -99,59 +99,121 @@ define(
 
 			updateMetaTags: function (pageData, projectModel) {
 
-				console.log(">>>>> projectModel:", projectModel);
+				try {
 
-				if (!pageData || !projectModel) {
+					var widthMeta,
+						heightMeta;
 
-					// no pageData or no projectModel; display default transmote meta tags
+					if (!pageData || !projectModel) {
 
-					// html
-					document.querySelector('meta[name="description"]').setAttribute('content', "Selected works by Eric Socolofsky. Once an architect, now mapping and visualizing @Stamen. In between: exhibit designer, web engineer, interaction designer/programmer, game developer, teacher.");
-					document.title = 'transmote [v4] : selected works by Eric Socolofsky';
+						// no pageData or no projectModel; display default transmote meta tags
 
-					// facebook opengraph
-					document.querySelector('meta[property="og:url"]').setAttribute('content', "http://transmote.com/");
-					document.querySelector('meta[property="og:title"]').setAttribute('content', "transmote [v4] : selected works by Eric Socolofsky");
-					document.querySelector('meta[property="og:description"]').setAttribute('content', "Selected works by Eric Socolofsky. Once an architect, now mapping and visualizing @Stamen. In between: exhibit designer, web engineer, interaction designer/programmer, game developer, teacher.");
-					// document.querySelector('meta[property="og:site_name"]').setAttribute('content', "transmote");
-					document.querySelector('meta[property="og:image"]').setAttribute('content', "http://transmote.com/img/transmoteEmbedImage.jpg");
-					// document.querySelector('meta[property="og:image:type"]').setAttribute('content', "image/jpeg");
-					document.querySelector('meta[property="og:image:width"]').setAttribute('content', "1280");
-					document.querySelector('meta[property="og:image:height"]').setAttribute('content', "640");
-					
-					// twitter card
-					// document.querySelector('meta[name="twitter:card"]').setAttribute('content', "summary_large_image");
-					// document.querySelector('meta[name="twitter:site"]').setAttribute('content', "@ericsoco");
-					// document.querySelector('meta[name="twitter:creator"]').setAttribute('content', "@ericsoco");
-					document.querySelector('meta[name="twitter:title"]').setAttribute('content', "transmote [v4]");
-					document.querySelector('meta[name="twitter:description"]').setAttribute('content', "Selected works by Eric Socolofsky. Once an architect, now mapping and visualizing @Stamen. In between: exhibit designer, web engineer, interaction designer/programmer, game developer, teacher.");
-					document.querySelector('meta[name="twitter:image"]').setAttribute('content', "http://transmote.com/img/transmoteEmbedImage.jpg");
+						// html
+						document.querySelector('meta[name="description"]').setAttribute('content', "Selected works by Eric Socolofsky. Once an architect, now mapping and visualizing @Stamen. In between: exhibit designer, web engineer, interaction designer/programmer, game developer, teacher.");
+						document.title = 'transmote [v4] : selected works by Eric Socolofsky';
 
-				} else {
+						// facebook opengraph
+						document.querySelector('meta[property="og:url"]').setAttribute('content', "http://transmote.com/");
+						document.querySelector('meta[property="og:title"]').setAttribute('content', "transmote [v4] : selected works by Eric Socolofsky");
+						document.querySelector('meta[property="og:description"]').setAttribute('content', "Selected works by Eric Socolofsky. Once an architect, now mapping and visualizing @Stamen. In between: exhibit designer, web engineer, interaction designer/programmer, game developer, teacher.");
+						document.querySelector('meta[property="og:image"]').setAttribute('content', "http://transmote.com/img/transmoteEmbedImage.jpg");
 
-					// projectModel available; customize meta tags to display selected project
+						// width and height metatags may have been omitted
+						// by a project without a width/height available
+						// (see below), so restore them if necessary
+						widthMeta = document.querySelector('meta[property="og:image:width"]');
+						if (!widthMeta) {
+							widthMeta = document.createElement('meta');
+							widthMeta.setAttribute('property', 'og:image:width');
+							document.querySelector('head').appendChild(widthMeta);
+						}
+						widthMeta.setAttribute('content', "1280");
 
-					// html
-					document.querySelector('meta[name="description"]').setAttribute('content', "Selected works by Eric Socolofsky. Once an architect, now mapping and visualizing @Stamen. In between: exhibit designer, web engineer, interaction designer/programmer, game developer, teacher.");
-					document.title = 'transmote [v4] : ' + projectModel.name;
+						heightMeta = document.querySelector('meta[property="og:image:height"]');
+						if (!heightMeta) {
+							heightMeta = document.createElement('meta');
+							heightMeta.setAttribute('property', 'og:image:height');
+							document.querySelector('head').appendChild(heightMeta);
+						}
+						heightMeta.setAttribute('content', "640");
+						
+						// twitter card
+						document.querySelector('meta[name="twitter:title"]').setAttribute('content', "transmote [v4]");
+						document.querySelector('meta[name="twitter:description"]').setAttribute('content', "Selected works by Eric Socolofsky. Once an architect, now mapping and visualizing @Stamen. In between: exhibit designer, web engineer, interaction designer/programmer, game developer, teacher.");
+						document.querySelector('meta[name="twitter:image"]').setAttribute('content', "http://transmote.com/img/transmoteEmbedImage.jpg");
 
-					// facebook opengraph
-					document.querySelector('meta[property="og:url"]').setAttribute('content', "http://transmote.com/");
-					document.querySelector('meta[property="og:title"]').setAttribute('content', "transmote [v4]");
-					document.querySelector('meta[property="og:description"]').setAttribute('content', projectModel.brief);
-					// document.querySelector('meta[property="og:site_name"]').setAttribute('content', "transmote");
-					document.querySelector('meta[property="og:image"]').setAttribute('content', "http://transmote.com/img/transmoteEmbedImage.jpg");
-					// document.querySelector('meta[property="og:image:type"]').setAttribute('content', "image/jpeg");
-					document.querySelector('meta[property="og:image:width"]').setAttribute('content', "1280");
-					document.querySelector('meta[property="og:image:height"]').setAttribute('content', "640");
-					
-					// twitter card
-					// document.querySelector('meta[name="twitter:card"]').setAttribute('content', "summary_large_image");
-					// document.querySelector('meta[name="twitter:site"]').setAttribute('content', "@ericsoco");
-					// document.querySelector('meta[name="twitter:creator"]').setAttribute('content', "@ericsoco");
-					document.querySelector('meta[name="twitter:title"]').setAttribute('content', 'transmote [v4] : ' + projectModel.name);
-					document.querySelector('meta[name="twitter:description"]').setAttribute('content', projectModel.brief);
-					document.querySelector('meta[name="twitter:image"]').setAttribute('content', "http://transmote.com/img/transmoteEmbedImage.jpg");
+					} else {
+
+						// projectModel available; customize meta tags to display selected project
+
+						// html
+						document.querySelector('meta[name="description"]').setAttribute('content', projectModel.brief);
+						document.title = 'transmote [v4] : ' + projectModel.name;
+
+						var image,
+							width,
+							height;
+
+						if (projectModel.media && projectModel.media.length && projectModel.media[0]) {
+							var media = projectModel.media[0];
+							if (typeof media.embedType !== 'undefined') {
+								image = "projects/" + projectModel.id + "/" + media.poster;
+							} else {
+								image = "projects/" + projectModel.id + "/" + media.path;
+							}
+							width = media.width;
+							height = media.height;
+						}
+
+						if (!image) {
+							image = 'img/transmoteEmbedImage.jpg';
+							width = '1280';
+							height = '640';
+						}
+
+						// facebook opengraph
+						document.querySelector('meta[property="og:url"]').setAttribute('content', "http://transmote.com/projects/" + projectModel.id);
+						document.querySelector('meta[property="og:title"]').setAttribute('content', "transmote [v4] : " + projectModel.name);
+						document.querySelector('meta[property="og:description"]').setAttribute('content', projectModel.brief);
+						document.querySelector('meta[property="og:image"]').setAttribute('content', "http://transmote.com/" + image);
+
+						// width and height metatags may have been omitted
+						// by a project without a width/height available
+						// so restore them if necessary and populate with values from projectModel
+						if (width) {
+							widthMeta = document.querySelector('meta[property="og:image:width"]');
+							if (!widthMeta) {
+								widthMeta = document.createElement('meta');
+								widthMeta.setAttribute('property', 'og:image:width');
+								document.querySelector('head').appendChild(widthMeta);
+							}
+							widthMeta.setAttribute('content', width.toString());
+						} else {
+							document.querySelector('head').removeChild(document.querySelector('meta[property="og:image:width"]'));
+						}
+
+						if (height) {
+							heightMeta = document.querySelector('meta[property="og:image:height"]');
+							if (!heightMeta) {
+								heightMeta = document.createElement('meta');
+								heightMeta.setAttribute('property', 'og:image:height');
+								document.querySelector('head').appendChild(heightMeta);
+							}
+							heightMeta.setAttribute('content', height.toString());
+						} else {
+							document.querySelector('head').removeChild(document.querySelector('meta[property="og:image:height"]'));
+						}
+						
+						// twitter card
+						document.querySelector('meta[name="twitter:title"]').setAttribute('content', "transmote [v4] : " + projectModel.name);
+						document.querySelector('meta[name="twitter:description"]').setAttribute('content', projectModel.brief);
+						document.querySelector('meta[name="twitter:image"]').setAttribute('content', "http://transmote.com/" + image);
+
+					}
+
+				} catch (error) {
+
+					console.error("Error updating metatags:", error);
 
 				}
 
