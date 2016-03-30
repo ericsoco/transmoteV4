@@ -172,7 +172,7 @@ define(
 						}
 
 						// facebook opengraph
-						document.querySelector('meta[property="og:url"]').setAttribute('content', "http://transmote.com/projects/" + projectModel.id);
+						document.querySelector('meta[property="og:url"]').setAttribute('content', "http://transmote.com/projects/" + projectModel.id + "/");
 						document.querySelector('meta[property="og:title"]').setAttribute('content', "transmote [v4] : " + projectModel.name);
 						document.querySelector('meta[property="og:description"]').setAttribute('content', projectModel.brief);
 						document.querySelector('meta[property="og:image"]').setAttribute('content', "http://transmote.com/" + image);
