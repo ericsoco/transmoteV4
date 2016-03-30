@@ -40,7 +40,7 @@ RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 # redirect search engine bots to index-bots.php
 # in order to serve rendered HTML via phantomjs
-RewriteCond %{HTTP_USER_AGENT} (bot|crawl|slurp|spider) [NC]
+RewriteCond %{HTTP_USER_AGENT} (bot|crawl|slurp|spider|facebookexternalhit) [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !^/index-bots\.php [NC]
 RewriteRule ^(.*)$ index-bots.php?url=%{REQUEST_URI} [L,QSA]
