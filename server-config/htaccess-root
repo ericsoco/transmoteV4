@@ -1,0 +1,60 @@
+# note: this is a copy of ./src/.htaccess.
+# canonical version lives at ./src/projects/.htaccess.
+
+# location: /
+# [revision log]
+#   2016.03.29: Add facebook crawler to bot redirects
+#   2015.02.26: Launch v4, move v3 to /v3
+#   2015.02.08: Redirect search engine bots to index-bots.php
+#               PHP as DreamHost default
+#   2015.01.26: Implement gzip
+#   2014.11.22: PHP as CGI instead of Apache module
+#   2013.08.13: /portfolio redirect to /v4
+#   2013.02.18: remove www subdomain
+#               /v3 redirect to /
+#   2012.10.06: v3 launch
+
+
+##### -----[enable gzip compression]----- #####
+# from: http://wiki.dreamhost.com/Htaccess_tricks
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css $
+</ifmodule>
+
+
+##### -----[php parsing within html]----- #####
+#AddType application/x-httpd-php .html .htm			# MAMP php as apache module
+#AddType application/x-httpd-php5 .html .htm		# DREAMHOST php as apache module
+#AddHandler application/x-httpd-php .html .htm		# php as CGI
+
+
+##### -----[bot blocking]----- #####
+# explicitly deny dizzler's robots
+Order Allow,Deny
+Allow from all
+Deny from 66.232.150.219
+
+
+##### -----[rewrites]----- #####
+Options +FollowSymLinks
+RewriteEngine On
+
+# remove www subdomain, per no-www.org
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# redirect search engine bots to index-bots.php
+# in order to serve rendered HTML via phantomjs
+RewriteCond %{HTTP_USER_AGENT} (bot|crawl|slurp|spider|facebookexternalhit) [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/index-bots\.php [NC]
+RewriteRule ^(.*)$ index-bots.php?url=%{REQUEST_URI} [L,QSA]
+
+
+##### -----[redirects]----- #####
+# transmote.com/flar --> words.transmote.com
+redirect 301 /flar/index.html http://words.transmote.com/wp/flarmanager/
+# transmote.com/v4 --> transmote.com/
+redirect 302 /v4 http://transmote.com
+# transmote.com/portfolio --> transmote.com/
+redirect 302 /portfolio http://transmote.com/

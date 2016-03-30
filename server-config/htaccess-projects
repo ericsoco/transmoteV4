@@ -1,0 +1,25 @@
+# note: this is a copy of ./src/projects/.htaccess because ./src/project is .gitignore-d.
+# canonical version lives at ./src/projects/.htaccess.
+
+# location: /projects, /v4/projects
+# [revision log]
+#   2015.02.08: Redirect search engine bots to ../index-bots.php
+#   2012.08.25: Set up pushstate support for v3 launch
+
+Options +FollowSymLinks
+RewriteEngine On
+
+# redirect search engine bots to index-bots.php
+# in order to serve rendered HTML via phantomjs
+RewriteCond %{HTTP_USER_AGENT} (bot|crawl|slurp|spider|facebookexternalhit) [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ ../index-bots.php?url=%{REQUEST_URI} [L,QSA]
+
+
+# html5 pushstate (history) support
+# from: http://www.josscrowcroft.com/2012/code/htaccess-for-html5-history-pushstate-url-routing/
+RewriteCond %{REQUEST_FILENAME} !-f
+# diasallow access to any subfolders
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !index
+RewriteRule ^.*$ ../index.html [QSA,L,NE]
