@@ -5,11 +5,15 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	virtual host mapping in /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 
 [TODO]
+( ) on hover on project thumbs, display brief (max one sentence) copy describing project.
+	important to be able to browse without clicking into each project.
 ( ) links to images (from project pages) get routed strangely
 	cannot back-nav from images
 	http://stackoverflow.com/questions/28803379/how-can-i-route-to-serve-static-files-with-page-js-and-apache
 ( ) meta-blurb at top of home page (what/who is this? what do i do?)
 ( ) remaining projects:
+	( ) baby name experiments?
+	( ) atlas of emotions
 	( ) heresay
 	( ) picturing place
 	( ) elastotron
