@@ -361,6 +361,61 @@
 			},
 
 			{
+				"name": "hoodline prototypes",
+				"id": "hoodline",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2017.03.01",
+				"role": "data visualizer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "the City via Yelp",
+				"brief": "Hoodline hired Stamen to investigate San Francisco via public data. This series of prototypes uses Yelp data to tell stories about the city, narrated by its reviewers.<br>Read more about it <a href=\"https://hi.stamen.com/the-city-through-its-people-2b4dde77416f\" target=\"_blank\">in this blog post</a>.",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+					{
+						"path": "yelp03.gif",
+						"width": "1200",
+						"height": "675",
+						"caption": "Rating as color, number of reviews as height on 3D map",
+						"alt": "Ratings, number of reviews"
+					},
+					{
+						"path": "yelp03-restaurants.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Restaurants reliably get many reviews",
+						"alt": "Restaurants on 3D map"
+					},
+					{
+						"path": "yelp06-restaurantCorridors.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "A quick, not-that-successful experiment in determining business corridors via k-means clustering",
+						"alt": "Restaurants, in k-means clusters"
+					},
+					{
+						"path": "yelp06a-boundaries.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Another experiment: find neighborhood boundaries by identifying businesses tagged with multiple neighborhoods",
+						"alt": "Neighborhood overlaps"
+					}
+				]
+			},
+
+			{
 				"name": "house of days",
 				"id": "houseofdays",
 				"featured": true,
@@ -621,7 +676,7 @@
 					{ "id": "visualization" }
 				],
 				"tagline": "one year of tides, made touchable",
-				"brief": "Tidal Ribbon is a data sculpture displaying NOAA tide data collected in San Francisco Bay. Installed in 2013 in the Exploratorium's Bay Observatory gallery, the piece augments the view of the water with a glimpse of the water's past.</p><p>A collection of lasercut acrylic slices span eight feet, each representing one day and collectively describing a year's worth of tides. Each daily slice is annotated with details of the tide heights, moon phase, and other relevant information.<br><br>Created with <a href=\"http://www.thisdoug.com\" target=\"_blank\">Doug Thistlethwaite</a> at the Exploratorium.",
+				"brief": "Tidal Ribbon is a data sculpture displaying NOAA tide data collected in San Francisco Bay. Installed in 2013 in the Exploratorium's Bay Observatory gallery, the piece augments the view of the water with a glimpse of the water's past.</p><p>A collection of lasercut acrylic slices span eight feet, each representing one day and collectively describing a year's worth of tides. Each daily slice is annotated with details of the tide heights, moon phase, and other relevant information.<br><br>Created with <a href=\"http://www.thisdoug.com\" target=\"_blank\">Doug Thistlethwaite</a> at the Exploratorium; inspired by the work of <a href=\"https://www.adriensegal.com/\" target=\"_blank\">Adrien Segal</a>.",
 				"media": [
 					{ 
 						"path": "tidalRibbon01.jpg",
@@ -1284,7 +1339,7 @@
 					{ "id": "games" },
 					{ "id": "code" }
 				],
-				"tagline": "",
+				"tagline": "roll your own Silly Walk",
 				"brief": "A client approached me to build a promotional game for their release of a series of \"Monty Python's Personal Best\" DVDs. Rather than creating a traditional game, I thought it would be fun to enable users to create their own Silly Walks, based on the original Ministry of Silly Walks sketch.",
 				"media": [
 					{	

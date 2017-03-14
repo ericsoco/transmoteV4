@@ -105,9 +105,11 @@ this["transmote"]["projectThumbList"] = Handlebars.template({"1":function(depth0
   if (stack1 != null) { buffer += stack1; }
   buffer += "\" data-project=\""
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
-    + "\">\n				<h3 class=\"project-thumb-title\">"
+    + "\">\n				<div class=\"project-thumb-info\">\n					<h3 class=\"project-thumb-title\">"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
-    + "</h3>\n";
+    + "</h3>\n					<h5 class=\"project-thumb-tagline\">"
+    + escapeExpression(((helper = (helper = helpers.tagline || (depth0 != null ? depth0.tagline : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"tagline","hash":{},"data":data}) : helper)))
+    + "</h5>\n				</div>\n";
   stack1 = ((helpers.ifEmbed || (depth0 && depth0.ifEmbed) || helperMissing).call(depth0, ((stack1 = (depth0 != null ? depth0.media : depth0)) != null ? stack1['0'] : stack1), {"name":"ifEmbed","hash":{},"fn":this.program(4, data),"inverse":this.program(9, data),"data":data}));
   if (stack1 != null) { buffer += stack1; }
   return buffer + "			</div>\n		</a>\n";
