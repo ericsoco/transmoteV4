@@ -74,6 +74,7 @@
 					{ "id": "clients" },
 					{ "id": "code" },
 					{ "id": "eyebeam" },
+					{ "id": "maps" },
 					{ "id": "motiongfx" },
 					{ "id": "processing" },
 					{ "id": "visualization" }
@@ -370,6 +371,7 @@
 				"tag": [
 					{ "id": "code" },
 					{ "id": "featured" },
+					{ "id": "maps" },
 					{ "id": "stamen" },
 					{ "id": "visualization" },
 					{ "id": "webdev" }
@@ -414,6 +416,163 @@
 					}
 				]
 			},
+
+
+
+
+
+
+			/*
+			{
+				"name": "baby bubbles",
+				"id": "babynames",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2016.06.01",
+				"role": "data visualizer, concept",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "",
+				"brief": "",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+				]
+			},
+
+			{
+				"name": "atlas of emotions",
+				"id": "atlasofemo",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2016.07.01",
+				"role": "data visualizer, developer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "",
+				"brief": "",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+				]
+			},
+
+			{
+				"name": "open redistricting",
+				"id": "openredist",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2017.04.01",
+				"role": "developer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "maps" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "",
+				"brief": "",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+				]
+			},
+
+			{
+				"name": "consumer reports",
+				"id": "consumerreports",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2017.02.01",
+				"role": "exhibit designer/developer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "educational" },
+					{ "id": "exhibit" },
+					{ "id": "explo" },
+					{ "id": "featured" },
+					{ "id": "installations" },
+					{ "id": "maps" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "",
+				"brief": "",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+				]
+			},
+
+			{
+				"name": "living liquid",
+				"id": "livingliquid",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2017.04.01",
+				"role": "developer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "educational" },
+					{ "id": "exhibit" },
+					{ "id": "explo" },
+					{ "id": "featured" },
+					{ "id": "installations" },
+					{ "id": "maps" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "",
+				"brief": "",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+				]
+			},
+			*/
+
+
+
+
+
 
 			{
 				"name": "house of days",
@@ -518,6 +677,7 @@
 					{ "id": "explo" },
 					{ "id": "featured" },
 					{ "id": "installations" },
+					{ "id": "maps" },
 					{ "id": "visualization" }
 				],
 				"tagline": "searching for life in the oceans",
@@ -564,6 +724,7 @@
 					{ "id": "explo" },
 					{ "id": "featured" },
 					{ "id": "installations" },
+					{ "id": "maps" },
 					{ "id": "visualization" }
 				],
 				"tagline": "tracking ships through the Bay",
@@ -816,6 +977,7 @@
 					{ "id": "explo" },
 					{ "id": "featured" },
 					{ "id": "installations" },
+					{ "id": "maps" },
 					{ "id": "visualization" }
 				],
 				"tagline": "illustrating Bay Area systems",
