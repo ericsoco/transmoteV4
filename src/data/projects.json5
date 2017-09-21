@@ -6,6 +6,168 @@
 			// Featured Projects
 			// ================================== //
 
+
+			{
+				"name": "baby bubbles",
+				"id": "babynames",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2016.06.01",
+				"role": "data visualizer, concept",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "hey baby, what's your name?",
+				"brief": "<p>Cinco de Mayo, 2016: baby Leif comes into the world. In a sleep-deprived haze, I found myself inspired to make a visualization of baby name popularity from SSA data (because, you know, there <a href=\"http://www.babynamewizard.com/voyager\" target=\"_blank\">aren't</a> <a href=\"https://www.visualcinnamon.com/portfolio/babynames\" target=\"_blank\">enough</a> <a href=\"https://bl.ocks.org/syntagmatic/8ab9dc27f144683bc015eb4a2639d234\" target=\"_blank\">already</a>).</p><p>First, I <a href=\"https://github.com/ericsoco/baby-name-scraper/\" target=\"_blank\">scraped the data</a> from the Social Security Administration. Then, I played with it until we arrived here.</p><p>View it live at <a href=\"http://babybubbl.es/\" target=\"_blank\">babybubbl.es</a>.</p>",
+				"media": [
+					{
+						"path": "babynames-sample.jpg",
+						"width": "1200",
+						"height": "600",
+						"caption": "The final version (detail)",
+						"alt": "Baby names visualization"
+					},
+					{
+						"path": "babynames-full.jpg",
+						"width": "1600",
+						"height": "829",
+						"caption": "The final version",
+						"alt": "Baby names visualization"
+					}/*,
+					{
+						// TODO: gif showing animation (did alan make one for tweet?)
+					},
+					{
+						// TODO: images of prototypes
+					}
+					*/
+				]
+			},
+
+			/*
+			{
+				"name": "atlas of emotions",
+				"id": "atlasofemo",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2016.07.01",
+				"role": "data visualizer, developer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "",
+				"brief": "",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+				]
+			},
+
+			{
+				"name": "open redistricting",
+				"id": "openredist",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2017.04.01",
+				"role": "developer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "maps" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "",
+				"brief": "",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+				]
+			},
+
+			{
+				"name": "consumer reports",
+				"id": "consumerreports",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2017.02.01",
+				"role": "exhibit designer/developer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "educational" },
+					{ "id": "exhibit" },
+					{ "id": "explo" },
+					{ "id": "featured" },
+					{ "id": "installations" },
+					{ "id": "maps" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "",
+				"brief": "",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+				]
+			},
+
+			{
+				"name": "living liquid",
+				"id": "livingliquid",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2017.04.01",
+				"role": "developer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "educational" },
+					{ "id": "exhibit" },
+					{ "id": "explo" },
+					{ "id": "featured" },
+					{ "id": "installations" },
+					{ "id": "maps" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "",
+				"brief": "",
+				"media": [
+					{
+						"path": "yelp02.jpg",
+						"width": "1484",
+						"height": "828",
+						"caption": "Yelp businesses: rating as color, number of reviews as size",
+						"alt": "Ratings, number of reviews"
+					},
+				]
+			},
+			*/
+
 			{
 				"name": "build a room",
 				"id": "buildaroom",
@@ -416,163 +578,6 @@
 					}
 				]
 			},
-
-
-
-
-
-
-			/*
-			{
-				"name": "baby bubbles",
-				"id": "babynames",
-				"featured": true,
-				"thumbOffsetY": 0,
-				"date": "2016.06.01",
-				"role": "data visualizer, concept",
-				"tag": [
-					{ "id": "code" },
-					{ "id": "featured" },
-					{ "id": "visualization" },
-					{ "id": "webdev" }
-				],
-				"tagline": "",
-				"brief": "",
-				"media": [
-					{
-						"path": "yelp02.jpg",
-						"width": "1484",
-						"height": "828",
-						"caption": "Yelp businesses: rating as color, number of reviews as size",
-						"alt": "Ratings, number of reviews"
-					},
-				]
-			},
-
-			{
-				"name": "atlas of emotions",
-				"id": "atlasofemo",
-				"featured": true,
-				"thumbOffsetY": 0,
-				"date": "2016.07.01",
-				"role": "data visualizer, developer",
-				"tag": [
-					{ "id": "code" },
-					{ "id": "featured" },
-					{ "id": "stamen" },
-					{ "id": "visualization" },
-					{ "id": "webdev" }
-				],
-				"tagline": "",
-				"brief": "",
-				"media": [
-					{
-						"path": "yelp02.jpg",
-						"width": "1484",
-						"height": "828",
-						"caption": "Yelp businesses: rating as color, number of reviews as size",
-						"alt": "Ratings, number of reviews"
-					},
-				]
-			},
-
-			{
-				"name": "open redistricting",
-				"id": "openredist",
-				"featured": true,
-				"thumbOffsetY": 0,
-				"date": "2017.04.01",
-				"role": "developer",
-				"tag": [
-					{ "id": "code" },
-					{ "id": "featured" },
-					{ "id": "maps" },
-					{ "id": "stamen" },
-					{ "id": "visualization" },
-					{ "id": "webdev" }
-				],
-				"tagline": "",
-				"brief": "",
-				"media": [
-					{
-						"path": "yelp02.jpg",
-						"width": "1484",
-						"height": "828",
-						"caption": "Yelp businesses: rating as color, number of reviews as size",
-						"alt": "Ratings, number of reviews"
-					},
-				]
-			},
-
-			{
-				"name": "consumer reports",
-				"id": "consumerreports",
-				"featured": true,
-				"thumbOffsetY": 0,
-				"date": "2017.02.01",
-				"role": "exhibit designer/developer",
-				"tag": [
-					{ "id": "code" },
-					{ "id": "educational" },
-					{ "id": "exhibit" },
-					{ "id": "explo" },
-					{ "id": "featured" },
-					{ "id": "installations" },
-					{ "id": "maps" },
-					{ "id": "stamen" },
-					{ "id": "visualization" },
-					{ "id": "webdev" }
-				],
-				"tagline": "",
-				"brief": "",
-				"media": [
-					{
-						"path": "yelp02.jpg",
-						"width": "1484",
-						"height": "828",
-						"caption": "Yelp businesses: rating as color, number of reviews as size",
-						"alt": "Ratings, number of reviews"
-					},
-				]
-			},
-
-			{
-				"name": "living liquid",
-				"id": "livingliquid",
-				"featured": true,
-				"thumbOffsetY": 0,
-				"date": "2017.04.01",
-				"role": "developer",
-				"tag": [
-					{ "id": "code" },
-					{ "id": "educational" },
-					{ "id": "exhibit" },
-					{ "id": "explo" },
-					{ "id": "featured" },
-					{ "id": "installations" },
-					{ "id": "maps" },
-					{ "id": "stamen" },
-					{ "id": "visualization" },
-					{ "id": "webdev" }
-				],
-				"tagline": "",
-				"brief": "",
-				"media": [
-					{
-						"path": "yelp02.jpg",
-						"width": "1484",
-						"height": "828",
-						"caption": "Yelp businesses: rating as color, number of reviews as size",
-						"alt": "Ratings, number of reviews"
-					},
-				]
-			},
-			*/
-
-
-
-
-
 
 			{
 				"name": "house of days",
