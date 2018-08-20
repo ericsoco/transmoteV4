@@ -8,6 +8,32 @@
 
 
 			{
+				"name": "atlas of emotions",
+				"id": "atlasofemo",
+				"featured": true,
+				"thumbOffsetY": 0,
+				"date": "2016.07.01",
+				"role": "data visualizer, developer",
+				"tag": [
+					{ "id": "code" },
+					{ "id": "featured" },
+					{ "id": "stamen" },
+					{ "id": "visualization" },
+					{ "id": "webdev" }
+				],
+				"tagline": "A visual exploration of human emotion",
+				"brief": "<p>This unusual engagement paired Stamen and the Dalai Lama up with Dr. Paul Ekman to visualize his research into universal human emotion. Our charge: to distill decades of scientific research into a digestible field guide for the Dalai Lama's disciples and lay people alike to use while navigating the landscape of human emotion.</p><p>My contributions included design conversations, implementation of the website, and generative coding to bring to life and transition between the design templates for each emotional concept.</p><p>Stamen documented this project thoroughly: <ul><li><a href=\"https://hi.stamen.com/in-2014-the-dalai-lama-asked-his-friend-scientist-dr-2a46f0c6bd80\" target=\"_blank\">Eric Rodenbeck's back story</a></li><li><a href=\"https://hi.stamen.com/embracing-the-abstract-in-visualized-data-47044cee8bd3\" target=\"_blank\">Nicolette Hayes' illustration of the design process</a></li><li><a href=\"https://hi.stamen.com/finding-calm-in-the-atlas-of-emotions-185b2e665ff1\" target=\"_blank\">Zan Armstrong's description of our work to bring the emotions to life</a></li><li><a href=\"https://hi.stamen.com/the-shapes-of-emotions-72c3851143e2\" target=\"_blank\">My recounting of our iterations and polish work</a></li></ul>",
+				"media": [
+					{
+						"path": "states.jpg",
+						"width": "2400",
+						"height": "409",
+						"caption": "The five states of human emotion",
+						"alt": "The five states of human emotion"
+					},
+				]
+			},
+			{
 				"name": "baby bubbles",
 				"id": "babynames",
 				"featured": true,
@@ -46,35 +72,7 @@
 					*/
 				]
 			},
-
 			/*
-			{
-				"name": "atlas of emotions",
-				"id": "atlasofemo",
-				"featured": true,
-				"thumbOffsetY": 0,
-				"date": "2016.07.01",
-				"role": "data visualizer, developer",
-				"tag": [
-					{ "id": "code" },
-					{ "id": "featured" },
-					{ "id": "stamen" },
-					{ "id": "visualization" },
-					{ "id": "webdev" }
-				],
-				"tagline": "",
-				"brief": "",
-				"media": [
-					{
-						"path": "yelp02.jpg",
-						"width": "1484",
-						"height": "828",
-						"caption": "Yelp businesses: rating as color, number of reviews as size",
-						"alt": "Ratings, number of reviews"
-					},
-				]
-			},
-
 			{
 				"name": "open redistricting",
 				"id": "openredist",
@@ -524,8 +522,8 @@
 			},
 
 			{
-				"name": "hoodline prototypes",
-				"id": "hoodline",
+				"name": "yelp prototypes",
+				"id": "yelp",
 				"featured": true,
 				"thumbOffsetY": 0,
 				"date": "2017.03.01",
@@ -539,7 +537,7 @@
 					{ "id": "webdev" }
 				],
 				"tagline": "the City via Yelp",
-				"brief": "Hoodline hired Stamen to investigate San Francisco via public data. This series of prototypes uses Yelp data to tell stories about the city, narrated by its reviewers.<br>Read more about it <a href=\"https://hi.stamen.com/the-city-through-its-people-2b4dde77416f\" target=\"_blank\">in this blog post</a>.",
+				"brief": "A client hired Stamen to investigate San Francisco via public data. This series of prototypes uses Yelp data to tell stories about the city, narrated by its reviewers.<br>Read more about it <a href=\"https://medium.com/@ericsoco/2b4dde77416f\" target=\"_blank\">in this blog post</a>.",
 				"media": [
 					{
 						"path": "yelp02.jpg",

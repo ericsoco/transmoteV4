@@ -4,6 +4,12 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	hostname configured in /etc/hosts;
 	virtual host mapping in /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
 
+[ADDING A PROJECT]
+- collect media in lab/transmote-projects/
+- add media to src/projects
+- add markup to projects.json
+- add to sitemap.xml
+
 [TODO]
 ( ) on hover on project thumbs, display brief (max one sentence) copy describing project.
 	important to be able to browse without clicking into each project.
@@ -19,7 +25,7 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	( ) openredist
 	( ) living liquid + prototypes
 	( ) consumer reports + prototypes ?
-	(-) loxodo
+	( ) loxodo (redact client, point to medium d3 post)
 	
 	( ) spotify prototypes
 	( ) heresay
@@ -52,6 +58,7 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 
 
 [BUGS]
+( ) baby bubbles doesn't respond to click, d3 error??
 ( ) browser back navigation from images (clicked in project pages) does nothing
 ( ) about/contact modal contains content of previously-clicked item, while animating in.
 	repro: click about, then contact, or v.v.

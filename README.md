@@ -5,6 +5,8 @@ AKA Transmote For Dummies. Nothing experimental here.
 
 ## dev
 
+`nvm use` to switch to the old-ass version (`@0.12`) of Node I'm using here.
+
 `npm start` to run dev build (to `./build/dev/`) and serve via `grunt-contrib-connect` on `localhost:5421`
 
 
