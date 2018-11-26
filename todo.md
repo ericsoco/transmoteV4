@@ -20,13 +20,25 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 ( ) remaining projects:
 	(X) hoodline prototypes
 	( ) baby bubbles / baby name experiments
+		(X) cover
+		( ) sitemap
 	( ) atlas of emotions
+		(X) cover
+		( ) sitemap
 	( ) eleminer
-	( ) openredist
+		(X) cover
+		( ) sitemap
 	( ) living liquid + prototypes
-	( ) consumer reports + prototypes ?
+		(X) cover
+		( ) sitemap
 	( ) loxodo (redact client, point to medium d3 post)
+		(X) cover
+		( ) sitemap
+	( ) consumer reports + prototypes ?
+		(X) cover
+		( ) sitemap
 	
+	( ) openredist
 	( ) spotify prototypes
 	( ) heresay
 	( ) picturing place
