@@ -28,8 +28,8 @@
 						"path": "continents_gradient.jpg",
 						"width": "2400",
 						"height": "1200",
-						"caption": "The five continents of human emotion",
-						"alt": "The five continents of human emotion"
+						"caption": "The five human emotions",
+						"alt": "The five human emotions"
 					},
 				]
 			},
@@ -88,7 +88,7 @@
 					{ "id": "webdev" }
 				],
 				"tagline": "automobile zeitgeist",
-				"brief": "TODO",
+				"brief": "Coming soon!",
 				"media": [
 					{
 						"path": "detail-gradient.jpg",
@@ -101,7 +101,7 @@
 			},
 
 			{
-				"name": "living liquid",
+				"name": "sea of genes",
 				"id": "livingliquid",
 				"featured": true,
 				"thumbOffsetY": 0.05,
@@ -119,14 +119,14 @@
 					{ "id": "webdev" }
 				],
 				"tagline": "metagenomic fishbowl",
-				"brief": "TODO",
+				"brief": "<p>The third installment in the <a href='https://www.exploratorium.edu/cellstoself/projects/living-liquid' target='_blank'>Living Liquid grant</a>, I found myself working again with my pals at the <a href='https://www.exploratorium.edu/' target='_blank'>Exploratorium</a>, this time as a client of <a href='https://www.stamen.com/' target='_blank'>Stamen</a>.</p><p>Alongside <a href='http://transmote.com/projects/planktonpops' target='_blank'>Plankton Populations</a>, this was my second exploration of <a href='https://en.wikipedia.org/wiki/Metagenomics' target='_blank'>metagenomics</a> on the grant. Sea of Genes presents a simulation of microscopic life driven by metagenomic data. Organisms in the simulation interact with one another and their environment in a realistic abstraction of the marine communities they represent.</p><p>More on this project to come!</p>",
 				"media": [
 					{
 						"path": "beta-shipped-detail.jpg",
 						"width": "1800",
 						"height": "1000",
-						"caption": "TODO: caption here",
-						"alt": "TODO: alt here"
+						"caption": "Detail of the exhibit",
+						"alt": "Detail of the exhibit"
 					},
 				]
 			},
@@ -147,14 +147,50 @@
 					{ "id": "webdev" }
 				],
 				"tagline": "newest of the news",
-				"brief": "TODO",
+				"brief": "<p>A large American news organization contracted <a href='https://www.stamen.com/' target='_blank'>Stamen</a> to prototype a display for a large video wall in their newsroom. Granted access to their internal API, we developed a visualization that switches between two modes: a cluster chart, highlighting the top stories within sections of the newspaper and the aggregate traffic to each section, and a trend graph that illustrates the realtime change in viewership of current stories.</p><p>This project also gave me the opportunity to get under the hood with force simulations in <a href='https://d3js.org/' target='_blank'>D3.js</a>. I wrote up my findings <a href='https://hi.stamen.com/forcing-functions-inside-d3-v4-forces-and-layout-transitions-f3e89ee02d12' target='_blank'>here</a> and released two open-source companion D3 packages, <a href='https://www.npmjs.com/package/d3-force-attract' target='_blank'><code>d3-force-attract</code></a> and <a href='https://www.npmjs.com/package/d3-force-cluster' target='_blank'><code>d3-force-cluster</code></a>.</p>",
 				"media": [
 					{
 						"path": "detail.jpg",
 						"width": "1600",
 						"height": "800",
-						"caption": "TODO: caption here",
-						"alt": "TODO: alt here"
+						"caption": "Detail of cluster chart",
+						"alt": "Detail of cluster chart"
+					},
+					{
+						"path": "clusters_low.jpg",
+						"width": "2400",
+						"height": "1350",
+						"caption": "Cluster chart: Popularity by and within sections",
+						"alt": "Popularity by and within sections"
+					},
+					{
+						"path": "trendGraph_low.jpg",
+						"width": "2400",
+						"height": "1350",
+						"caption": "Trend graph: change in viewership over time",
+						"alt": "Trend graph: change in viewership over time"
+					},
+					{
+						"path": "http://player.vimeo.com/video/189845967",
+						"poster": "video_poster.jpg",
+						"width": "1800",
+						"height": "1013",
+						"embedType": "vimeo",
+						"caption": "The visualization periodically alternates between the two modes",
+					},
+					{
+						"path": "clusterToBeeswarm.gif",
+						"width": "700",
+						"height": "394",
+						"caption": "Cluster chart transition to beeswarm plot",
+						"alt": "Cluster chart transition to beeswarm plot"
+					},
+					{
+						"path": "beeswarmToCluster.gif",
+						"width": "700",
+						"height": "394",
+						"caption": "Beeswarm transition to cluster chart",
+						"alt": "Beeswarm transition to cluster chart"
 					},
 				]
 			},
@@ -1264,7 +1300,7 @@
 				"media": [
 				]
 			},
-
+			/*
 			{
 				"name": "eleminer",
 				"id": "eleminer",
@@ -1284,7 +1320,7 @@
 				"media": [
 				]
 			},
-
+			*/
 			{
 				"name": "FLARManager",
 				"id": "flarmanager",
