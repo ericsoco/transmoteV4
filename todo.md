@@ -42,7 +42,7 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 	( ) loxodo (redact client, point to medium d3 post)
 		(X) cover
 		(X) brief
-		( ) media
+		(X) media
 		( ) sitemap
 	( ) consumer reports + prototypes ?
 		(X) cover
