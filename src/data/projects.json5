@@ -22,7 +22,7 @@
 					{ "id": "webdev" }
 				],
 				"tagline": "a visual exploration of human emotion",
-				"brief": "<p>This unusual engagement paired Stamen and the Dalai Lama up with Dr. Paul Ekman to visualize his research into universal human emotion. Our charge: to distill decades of scientific research into a digestible field guide for the Dalai Lama's disciples and lay people alike to use while navigating the landscape of human emotion.</p><p>My contributions included design conversations, implementation of the website, and generative coding to bring to life and transition between the design templates for each emotional concept.</p><p>Stamen documented this project thoroughly: <ul><li><a href=\"https://hi.stamen.com/in-2014-the-dalai-lama-asked-his-friend-scientist-dr-2a46f0c6bd80\" target=\"_blank\">Eric Rodenbeck's back story</a></li><li><a href=\"https://hi.stamen.com/embracing-the-abstract-in-visualized-data-47044cee8bd3\" target=\"_blank\">Nicolette Hayes' illustration of the design process</a></li><li><a href=\"https://hi.stamen.com/finding-calm-in-the-atlas-of-emotions-185b2e665ff1\" target=\"_blank\">Zan Armstrong's description of our work to bring the emotions to life</a></li><li><a href=\"https://hi.stamen.com/the-shapes-of-emotions-72c3851143e2\" target=\"_blank\">My recounting of our iterations and polish work</a></li></ul><p>The project is live <a href='http://atlasofemotions.org/' target='_blank'>here</a>; more documentation to come!</p>",
+				"brief": "<p>This unique engagement paired Stamen and the Dalai Lama up with Dr. Paul Ekman to visualize his research into universal human emotion. Our charge: to distill decades of scientific research into a digestible field guide for the Dalai Lama's disciples and lay people alike to use while navigating the landscape of human emotion.</p><p>My contributions included design conversations, implementation of the website, and generative coding to bring to life and transition between the design templates for each emotional concept.</p><p>Stamen documented this project thoroughly: <ul><li><a href=\"https://hi.stamen.com/in-2014-the-dalai-lama-asked-his-friend-scientist-dr-2a46f0c6bd80\" target=\"_blank\">Eric Rodenbeck's back story</a></li><li><a href=\"https://hi.stamen.com/embracing-the-abstract-in-visualized-data-47044cee8bd3\" target=\"_blank\">Nicolette Hayes' illustration of the design process</a></li><li><a href=\"https://hi.stamen.com/finding-calm-in-the-atlas-of-emotions-185b2e665ff1\" target=\"_blank\">Zan Armstrong's description of our work to bring the emotions to life</a></li><li><a href=\"https://hi.stamen.com/the-shapes-of-emotions-72c3851143e2\" target=\"_blank\">My recounting of our iterations and polish work</a></li></ul><p>The project is live <a href='http://atlasofemotions.org/' target='_blank'>here</a>; more documentation to come!</p>",
 				"media": [
 					{
 						"path": "continents_gradient.jpg",
@@ -72,7 +72,7 @@
 					*/
 				]
 			},
-
+			/*
 			{
 				"name": "consumer reports",
 				"id": "consumerreports",
@@ -99,7 +99,7 @@
 					},
 				]
 			},
-
+			*/
 			{
 				"name": "sea of genes",
 				"id": "livingliquid",
@@ -171,12 +171,19 @@
 						"alt": "Trend graph: change in viewership over time"
 					},
 					{
-						"path": "http://player.vimeo.com/video/189845967",
+						"path": "http://player.vimeo.com/video/303445057",
 						"poster": "video_poster.jpg",
-						"width": "1800",
-						"height": "1013",
+						"width": "800",
+						"height": "450",
 						"embedType": "vimeo",
 						"caption": "The visualization periodically alternates between the two modes",
+					},
+					{
+						"path": "concepts.jpg",
+						"width": "2400",
+						"height": "1164",
+						"caption": "Concept sketches exploring different visual forms",
+						"alt": "Concept sketches exploring different visual forms"
 					},
 					{
 						"path": "clusterToBeeswarm.gif",
@@ -198,8 +205,8 @@
 			{
 				"name": "build a room",
 				"id": "buildaroom",
-				"featured": true,
-				"thumbOffsetY": 0,
+				"featured": false,
+				"thumbOffsetY": 0.1,
 				"date": "2010.06.01",
 				"role": "exhibit designer, developer",
 				"tag": [
@@ -791,8 +798,8 @@
 			{
 				"name": "sparklebooth",
 				"id": "sparklebooth",
-				"featured": true,
-				"thumbOffsetY": 0,
+				"featured": false,
+				"thumbOffsetY": -0.2,
 				"date": "2012.05.01",
 				"role": "installation designer/developer",
 				"tag": [
@@ -877,8 +884,8 @@
 			{
 				"name": "tile designer",
 				"id": "tiledesigner",
-				"featured": true,
-				"thumbOffsetY": 0,
+				"featured": false,
+				"thumbOffsetY": -0.3,
 				"date": "2010.06.01",
 				"role": "exhibit designer/developer",
 				"tag": [
@@ -925,8 +932,8 @@
 				"name": "transmote talks",
 				"id": "transmotetalks",
 				"featured": false,
-				"thumbOffsetY": 0.15,
-				"date": "2015.04.13",
+				"thumbOffsetY": 0.25,
+				"date": "2017.04.01",
 				"role": "public speaker",
 				"tag": [
 				],
@@ -939,15 +946,15 @@
 						"width": "800",
 						"height": "450",
 						"embedType": "vimeo",
-						"caption": "&& ! || (And Not Or): Generalism in a world of divided labor"
+						"caption": "[INST-INT 2013] && ! || (And Not Or): Generalism in a world of divided labor"
 					},
 					{
-						"path": "https://www.youtube.com/embed/_wGYzYyLZkk",
-						"poster": "howWeUsedTo.jpg",
+						"path": "https://www.youtube.com/embed/fIy7rkYyyhI",
+						"poster": "creativeConstraint.jpg",
 						"width": "800",
 						"height": "450",
 						"embedType": "youtube",
-						"caption": "How We Used To. How We Will: innovation and iteration viewed through the lens of Flickr's history"
+						"caption": "[OpenVis Conf 2017] Data as Creative Constraint"
 					},
 					{
 						"path": "http://player.vimeo.com/video/82394675",
@@ -955,7 +962,7 @@
 						"width": "800",
 						"height": "450",
 						"embedType": "vimeo",
-						"caption": "INST-INT Panel: Alexis Lloyd with Eric Socolofsky, Matt Cottam, and Michael Szivos"
+						"caption": "[INST-INT 2013] Panel: Alexis Lloyd with Eric Socolofsky, Matt Cottam, and Michael Szivos"
 					},
 					{
 						"path": "http://player.vimeo.com/video/69096802",
@@ -963,7 +970,15 @@
 						"width": "800",
 						"height": "450",
 						"embedType": "vimeo",
-						"caption": "Design for Immediate Gratification: Exhibit design at the Exploratorium"
+						"caption": "[EYEO 2013] Design for Immediate Gratification: Exhibit design at the Exploratorium"
+					},
+					{
+						"path": "https://www.youtube.com/embed/_wGYzYyLZkk",
+						"poster": "howWeUsedTo.jpg",
+						"width": "800",
+						"height": "450",
+						"embedType": "youtube",
+						"caption": "[FITC 2015] How We Used To. How We Will: innovation and iteration viewed through the lens of Flickr's history"
 					},
 				]
 			},

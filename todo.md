@@ -10,6 +10,11 @@ local deploy: `grunt deploy` to build to build/deploy/, start MAMP, open local.t
 - add markup to projects.json
 - add to sitemap.xml
 
+[DEPLOYING]
+- run `npm run dist` to generate bundle
+- use transmit (or whatever) to transfer files
+- copy files from /build to corresponding folders in transmote root
+
 [TODO]
 ( ) on hover on project thumbs, display brief (max one sentence) copy describing project.
 	important to be able to browse without clicking into each project.
