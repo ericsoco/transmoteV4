@@ -102,7 +102,7 @@
 			*/
 			{
 				"name": "sea of genes",
-				"id": "livingliquid",
+				"id": "seaofgenes",
 				"featured": true,
 				"thumbOffsetY": 0.05,
 				"date": "2017.04.01",
@@ -119,7 +119,7 @@
 					{ "id": "webdev" }
 				],
 				"tagline": "metagenomic fishbowl",
-				"brief": "<p>The third installment in the <a href='https://www.exploratorium.edu/cellstoself/projects/living-liquid' target='_blank'>Living Liquid grant</a>, I found myself working again with my pals at the <a href='https://www.exploratorium.edu/' target='_blank'>Exploratorium</a>, this time as a client of <a href='https://www.stamen.com/' target='_blank'>Stamen</a>.</p><p>Alongside <a href='http://transmote.com/projects/planktonpops' target='_blank'>Plankton Populations</a>, this was my second exploration of <a href='https://en.wikipedia.org/wiki/Metagenomics' target='_blank'>metagenomics</a> on the grant. Sea of Genes presents a simulation of microscopic life driven by metagenomic data. Organisms in the simulation interact with one another and their environment in a realistic abstraction of the marine communities they represent.</p><p>More on this project to come!</p>",
+				"brief": "<p>The third installment in the <a href='https://www.exploratorium.edu/cellstoself/projects/living-liquid' target='_blank'>Living Liquid grant</a>, I found myself working again with my pals at the <a href='https://www.exploratorium.edu/' target='_blank'>Exploratorium</a>, this time as a client of <a href='https://www.stamen.com/' target='_blank'>Stamen</a>.</p><p>Alongside <a href='http://transmote.com/projects/planktonpops' target='_blank'>Plankton Populations</a>, this was my second exploration of <a href='https://en.wikipedia.org/wiki/Metagenomics' target='_blank'>metagenomics</a> on the grant. Sea of Genes presents a simulation of microscopic life driven by metagenomic data. Organisms in the simulation interact with one another and their environment in a realistic abstraction of the marine communities they represent.</p>",
 				"media": [
 					{
 						"path": "beta-shipped-detail.jpg",
@@ -127,6 +127,34 @@
 						"height": "1000",
 						"caption": "Detail of the exhibit",
 						"alt": "Detail of the exhibit"
+					},
+					{
+						"path": "beta-shipped.jpg",
+						"width": "2000",
+						"height": "1250",
+						"caption": "Visitors deploy organisms into the community, where they interact with each other and their environment",
+						"alt": "Visitors deploy organisms into the community, where they interact with each other and their environment"
+					},
+					{
+						"path": "aylward-01.jpg",
+						"width": "762",
+						"height": "782",
+						"caption": "An early exploratory prototype of gene activation by sample date",
+						"alt": "An early exploratory prototype of gene activation by sample date"
+					},
+					{
+						"path": "aylward-02b.jpg",
+						"width": "1503",
+						"height": "1065",
+						"caption": "Another prototype displaying gene activation by hour of day",
+						"alt": "Another prototype displaying gene activation by hour of day"
+					},
+					{
+						"path": "aylward-03a.jpg",
+						"width": "1092",
+						"height": "873",
+						"caption": "Metabolic pathways by species by sample date",
+						"alt": "Metabolic pathways by species by sample date"
 					},
 				]
 			},
